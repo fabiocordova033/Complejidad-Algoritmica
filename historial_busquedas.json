@@ -1,0 +1,2062 @@
+[
+  {
+    "id": 138,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "La Mar y, Ate 15012, Perú",
+    "origen_lat": -12.1863788,
+    "origen_lon": -76.9746029,
+    "destino_lat": -12.0542517,
+    "destino_lon": -76.96318749999999,
+    "modo": "A pie",
+    "tiempo_minutos": 245,
+    "distancia_km": 16.96,
+    "polyline": "zckiAfbytMyFlA_ATq\\jHKa@SDI@Q}@XCGAe@@CG}@mFyHvAm@P}@JcAP[DcDl@cBJeUxDkY~EgEp@K[cCmNcCoOMi@_Gb@_Kl@kGZiDP}@@eBC_FYcBU_Cc@{FcBcGkBqA]g[gGe@Q{Es@WCgCvBqGzFu@l@gAt@qG`Gw@f@_Ad@iEvAqA\\mBh@oATW@uE[wA@wBLu@Ls@TgE|AyHtBEOgD|@mAR{AD{B@q@E_GFs@HMDyEHeEKY@sA@gACmDDyJK{E?aABuI\\oBHmMJ_CFyEBuAB}DRkGd@yBLc@_GAYK]qDuF{@wAO?g@I}KoDiAa@oA_@[GaF}AaDaAsMgEkGeBk@Eo@DqA^w@F{@M}FeBqJsCoA_@{@Q_@ByHlC]FU@c@Qm@a@uDmEY[w@m@w@_@uDcA_@O_@Iw@_@eHw@uAKsEEgNIcADcANw@Tc@R{@f@{@v@m@~@{@nBg@r@iAfA}@h@kAb@w@TEGe@HIGM[]KIAODUIc@Um@UIG}B_EsA_CuAeBaA_A_Aq@sDmBWE_HeEwBkAeFmBcEkBMKoClAwBl@eCd@oC\\eBJoCB}KMyCB{HGcEHyAHkBRoCXkEf@eEt@u@^uC~Ai@TqPfFaFxAyD~@KACC]}@c@WeBsFeCeI_AaC_AiCH]",
+    "fecha": "2026-07-05 04:06 PM"
+  },
+  {
+    "id": 137,
+    "origen_nombre": "Av. Nicolás Ayllón 3180, Ate 15023, Perú",
+    "destino_nombre": "La Mar y, Ate 15012, Perú",
+    "origen_lat": -12.056466499999999,
+    "origen_lon": -76.9685717,
+    "destino_lat": -12.0542517,
+    "destino_lon": -76.96318749999999,
+    "modo": "A pie",
+    "tiempo_minutos": 10,
+    "distancia_km": 0.64,
+    "polyline": "|wqhAp|wtM_EcMeCeI_AaC_AiCH]",
+    "fecha": "2026-07-05 04:06 PM"
+  },
+  {
+    "id": 136,
+    "origen_nombre": "Av. Nicolás Ayllón 3180, Ate 15023, Perú",
+    "destino_nombre": "La Mar y, Ate 15012, Perú",
+    "origen_lat": -12.0564667,
+    "origen_lon": -76.9685721,
+    "destino_lat": -12.0542517,
+    "destino_lon": -76.96318749999999,
+    "modo": "Auto",
+    "tiempo_minutos": 2,
+    "distancia_km": 0.64,
+    "polyline": "|wqhAp|wtM_EcMeCeI_AaC_AiCH]",
+    "fecha": "2026-07-05 04:06 PM"
+  },
+  {
+    "id": 135,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.1862972,
+    "origen_lon": -76.97436979999999,
+    "destino_lat": -11.877753499999999,
+    "destino_lon": -77.0260586,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 50.52,
+    "polyline": "jckiAx`ytMlIgBxCq@XD~FcAf@KvFk@^I`@WV[Rc@pAaG`@mDjBmRB{Bk@wKYcGe@cHKgCPGDMEWOMQAKFGJ@VFJFbABJpApUZzFBdBC`A_@rCqAfNUpCIf@ITOfAMb@SXc@`@OHm@RyCX}A^_FtAIFINcH~A}SlEkCl@yHfBcPjDw_@lI{IjBsK`CsDr@}Cl@g\\nGkJlBaB^ua@`IeEf@wCL_DDgGO}CWeDe@}NeDaAUsIyAup@uGyDg@_Cc@mD{@wf@mNiEiAyAU}COiKJgE@iJPaIDeQVuDPwKx@sCNaHn@qNdA{Ij@{ABqCXsGb@Y@kg@rDqEd@}Jp@}CPuIl@cLx@uHf@QEmBJsEZmAPcBl@gB|@cBr@sA\\w@H{@?mAUk@SeAk@wAyAu@_A{D}DcCsCcFsFkCiCuCwBaBaAeBw@aBq@aNiEkIgCyVeI{GsB_EmA}Cq@oBYqBI}H?mDTkBRaANiCl@aCr@mFdB_Bl@cPjFgA`@}@VgAT{CpAsBr@gErAmEbBmAl@iAp@}CzB}@|@o@n@sJdLgArAwLlNyN~PgAlA{ArAOTcBnAuBlAyBbAgBp@{C|@_GhAwIvAqDr@yBp@mDxAyD|B}BbB{AtAwB|BqA`BaB`Cy@xAkDlH]z@g@hBO|@OtB?dBBl@Fl@pA|FhHfWtBvHj@nBfCnGvApCVb@tAjCtDlGlBpCj@x@~JzLzCxDzCtDjB~BtCnEzBdE\\p@lE`LzCzIr@rBj@dCn@pEJfBBx@]xXG~AQfAi@xBy@lCwB|FeAfCgBrD]bAqAtEu@lBc@z@s@lAsB`Cm@n@oAdB{@zAGJIb@k@pB_Iz`@q@xD]vDg@nEMn@a@rAYjB[~Aa@`BeCvIaAlDaCvHmAfCyBpDkC~CQH}@~@y@l@iEpCuBhAqAj@gA\\oBf@mC^{Jr@um@hFcAFyHv@sHj@{ALYFuALyDLwDTyJ`AaBVsE~@w@JcAFqL`AyEPsAD}DVcE^yIr@qEf@sa@lDaCVuEn@eDZcO~@gPnAsZhCgS~A}RfBeE^oAF_UpBwX~B_DZsFn@sF\\{MfAyDVeQ|Aw]xCoBLkRbBmIp@gj@~BmCJiEXc]|AsGV_Aa@_@]W_@Oa@M{AWoDUiBq@}Cu@}Bq@}AqA}Bw@iA}AiBaBwAkBsAyBkAg[wNuFmCmT_KwLoFoFeCaCgA}BmAuHiDcFyB}GeDoAo@gEoBwAm@]QuEuBwBeAaBu@cF_CeBu@aCmAuIyDwGaDoa@iRsDuBqCkBsC}BG[{@uAUk@UaAIyABwALy@lCaLd@eA^o@dFsGtGeIrBiCSOyB}@aCq@aB]q@UiBu@eCkA}DcBgGuCSIiAu@cAk@sQcJkIqE_OaIqCwA}PeJSM",
+    "fecha": "2026-07-05 04:05 PM"
+  },
+  {
+    "id": 134,
+    "origen_nombre": "Pasaje A Mz.D - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "5XC8+6X Carabayllo, Perú",
+    "origen_lat": -12.1862541,
+    "origen_lon": -76.97438369999999,
+    "destino_lat": -11.829944099999999,
+    "destino_lon": -77.03266049999999,
+    "modo": "Auto",
+    "tiempo_minutos": 92,
+    "distancia_km": 57.32,
+    "polyline": "`ckiAz`ytMxHaBvDy@XD~FcAf@KvFk@^I`@WV[Rc@pAaG`@mDjBmRB{Bk@wKYcGe@cHKgCPGDMEWOMQAKFGJ@VFJFbABJpApUZzFBdBC`A_@rCqAfNUpCIf@ITOfAMb@SXc@`@OHm@RyCX}A^_FtAIFINcH~A}SlEkCl@yHfBcPjDw_@lI{IjBsK`CsDr@}Cl@g\\nGkJlBaB^ua@`IeEf@wCL_DDgGO}CWeDe@}NeDaAUsIyAup@uGyDg@_Cc@mD{@wf@mNiEiAyAU}COiKJgE@iJPaIDeQVuDPwKx@sCNaHn@qNdA{Ij@{ABqCXsGb@Y@kg@rDqEd@}Jp@}CPuIl@cLx@uHf@QEmBJsEZmAPcBl@gB|@cBr@sA\\w@H{@?mAUk@SeAk@wAyAu@_A{D}DcCsCcFsFkCiCuCwBaBaAeBw@aBq@aNiEkIgCyVeI{GsB_EmA}Cq@oBYqBI}H?mDTkBRaANiCl@aCr@mFdB_Bl@cPjFgA`@}@VgAT{CpAsBr@gErAmEbBmAl@iAp@}CzB}@|@o@n@sJdLgArAwLlNyN~PgAlA{ArAOTcBnAuBlAyBbAgBp@{C|@_GhAwIvAqDr@yBp@mDxAyD|B}BbB{AtAwB|BqA`BaB`Cy@xAkDlH]z@g@hBO|@OtB?dBBl@Fl@pA|FhHfWtBvHj@nBfCnGvApCVb@tAjCtDlGlBpCj@x@~JzLzCxDzCtDjB~BtCnEzBdE\\p@lE`LzCzIr@rBj@dCn@pEJfBBx@]xXG~AQfAi@xBy@lCwB|FeAfCgBrD]bAqAtEu@lBc@z@s@lAsB`Cm@n@oAdB{@zAGJIb@k@pB_Iz`@q@xD]vDg@nEMn@a@rAYjB[~Aa@`BeCvIaAlDaCvHmAfCyBpDkC~CQH}@~@y@l@iEpCuBhAqAj@gA\\oBf@mC^{Jr@um@hFcAFyHv@sHj@{ALYFuALyDLwDTyJ`AaBVsE~@w@JcAFqL`AyEPsAD}DVcE^yIr@qEf@sa@lDaCVuEn@eDZcO~@gPnAsZhCgS~A}RfBeE^oAF_UpBwX~B_DZsFn@sF\\{MfAyDVeQ|Aw]xCoBLkRbBmIp@gj@~BmCJiEXc]|AeQr@oAHwMl@{VjAoa@hBu@DmJZwCLmA?qAEgBWu@UaBo@gCyAWSyA_AaCcB_HiEsDaCeFiCm@WkUcIcAWsAUgAK{A?qRd@kFJ_BBcHNoDLgPZgLPiM\\qGLg^x@ek@nAuCD{AQc@?gALi@LcAVk@\\i@b@k@j@wEnCWPa@k@kR}\\Yc@g@Y}@_@mK[_@?JcDBkEIe@EMCu@DiBCiAQsBC}@y@wDqIs^{AcH_E}PKi@_C{IaAuFo@cC}@aEi@uBWSi@iB]qAgA_Fe@mBq@sAaC_Eu@_BgBoC[w@}@wAmBqD_DoF_DqFaAmB}A_CiBcDU]qBoEy@yAqAiBsFmJ{AaCsA_BoAiBcHsHcEqDkKgLeAuAsAkAaAk@yDmBgEqAoCqAa@OWGS?UBm@TYPw@r@]Va@Rq@N{FJ{DBy@Cy@UKEORkBnB{I`K}AbB_FzFqArAGPa@pQQbAaB`HoAfF",
+    "fecha": "2026-07-05 04:05 PM"
+  },
+  {
+    "id": 133,
+    "origen_nombre": "5W5P+594, Carabayllo 15122, Perú",
+    "destino_nombre": "5XC8+6X Carabayllo, Perú",
+    "origen_lat": -11.8411537,
+    "origen_lon": -77.0639922,
+    "destino_lat": -11.8299446,
+    "destino_lon": -77.0326564,
+    "modo": "Auto",
+    "tiempo_minutos": 15,
+    "distancia_km": 5.48,
+    "polyline": "dvggA|pjuMpBb@H[rBl@X}@zA}BP_@LOlCqBb@i@x@uAZq@e@G_@Mm@c@GI]Qu@QkJyGwIoGcL_IQWEa@FYXk@BU?}@]mDUuAEUWc@_AgAk@y@EWt@aAhFyJTUXATOHU@WIUSOUCWBKFqAo@}L{GiMuF_Bu@q@]M?a@c@iGuJy@kAg@_@aD{AaANiATu@JY_FOi@KYQmBAe@{A_IJQBOXo@PYTYVOp@KnEiCzAw@vKsF|E_CzC_ByAuA_EwCiJgHmDcDM[C[?I",
+    "fecha": "2026-07-05 04:04 PM"
+  },
+  {
+    "id": 132,
+    "origen_nombre": "Tu ubicación actual",
+    "destino_nombre": "5X42+F8X, Los Gladiolos, Carabayllo 15121, Perú",
+    "origen_lat": -12.186049299999999,
+    "origen_lon": -76.9744479,
+    "destino_lat": -11.8437201,
+    "destino_lon": -77.04937989999999,
+    "modo": "Auto",
+    "tiempo_minutos": 85,
+    "distancia_km": 55.03,
+    "polyline": "xakiAhaytM`JoBvDy@XD~FcAf@KvFk@^I`@WV[Rc@pAaG`@mDjBmRB{Bk@wKYcGe@cHKgCPGDMEWOMQAKFGJ@VFJFbABJpApUZzFBdBC`A_@rCqAfNUpCIf@ITOfAMb@SXc@`@OHm@RyCX}A^_FtAIFINcH~A}SlEkCl@yHfBcPjDw_@lI{IjBsK`CsDr@}Cl@g\\nGkJlBaB^ua@`IeEf@wCL_DDgGO}CWeDe@}NeDaAUsIyAup@uGyDg@_Cc@mD{@wf@mNiEiAyAU}COiKJgE@iJPaIDeQVuDPwKx@sCNaHn@qNdA{Ij@{ABqCXsGb@Y@kg@rDqEd@}Jp@}CPuIl@cLx@uHf@QEmBJsEZmAPcBl@gB|@cBr@sA\\w@H{@?mAUk@SeAk@wAyAu@_A{D}DcCsCcFsFkCiCuCwBaBaAeBw@aBq@aNiEkIgCyVeI{GsB_EmA}Cq@oBYqBI}H?mDTkBRaANiCl@aCr@mFdB_Bl@cPjFgA`@}@VgAT{CpAsBr@gErAmEbBmAl@iAp@}CzB}@|@o@n@sJdLgArAwLlNyN~PgAlA{ArAOTcBnAuBlAyBbAgBp@{C|@_GhAwIvAqDr@yBp@mDxAyD|B}BbB{AtAwB|BqA`BaB`Cy@xAkDlH]z@g@hBO|@OtB?dBBl@Fl@pA|FhHfWtBvHj@nBfCnGvApCVb@tAjCtDlGlBpCj@x@~JzLzCxDzCtDjB~BtCnEzBdE\\p@lE`LzCzIr@rBj@dCn@pEJfBBx@]xXG~AQfAi@xBy@lCwB|FeAfCgBrD]bAqAtEu@lBc@z@s@lAsB`Cm@n@oAdB{@zAGJIb@k@pB_Iz`@q@xD]vDg@nEMn@a@rAYjB[~Aa@`BeCvIaAlDaCvHmAfCyBpDkC~CQH}@~@y@l@iEpCuBhAqAj@gA\\oBf@mC^{Jr@um@hFcAFyHv@sHj@{ALYFuALyDLwDTyJ`AaBVsE~@w@JcAFqL`AyEPsAD}DVcE^yIr@qEf@sa@lDaCVuEn@eDZcO~@gPnAsZhCgS~A}RfBeE^oAF_UpBwX~B_DZsFn@sF\\{MfAyDVeQ|Aw]xCoBLkRbBmIp@gj@~BmCJiEXc]|AeQr@oAHwMl@{VjAoa@hBu@DmJZwCLmA?qAEgBWu@UaBo@gCyAWSyA_AaCcB_HiEsDaCeFiCm@WkUcIcAWsAUgAK{A?qRd@kFJ_BBcHNoDLgPZgLPiM\\qGLg^x@ek@nAuCDsALiBXeAVaA\\y@b@_MhHoAl@cJnFU?e@R}IdFg@`@Sa@e@cBSy@qB`ASEKQMMyFkEsAmAkCsBYM_PiM]OaAu@oAiAuFoE}FeE[IGAc@Dk@Vc@d@_DpEONyEvFWC_EcEuBsBk@u@s@q@gAiAoAgAsXuXaEeAe@G_@Mm@c@GI]Qu@QkJyGwIoGcL_IQWEa@FYXk@BU?}@]mDUuAEUWc@_AgAk@y@EWt@aAhFyJTUXALITHzIlFfEkGJKlAqBfDwEp@gAtC|B",
+    "fecha": "2026-07-05 03:55 PM"
+  },
+  {
+    "id": 131,
+    "origen_nombre": "Calle Los Claveles Mz.E - Lt.26, Carabayllo 15121, Perú",
+    "destino_nombre": "5X42+F8X, Los Gladiolos, Carabayllo 15121, Perú",
+    "origen_lat": -11.8302182,
+    "origen_lon": -77.0162082,
+    "destino_lat": -11.8437176,
+    "destino_lon": -77.0493778,
+    "modo": "Auto",
+    "tiempo_minutos": 16,
+    "distancia_km": 6.01,
+    "polyline": "zqegAhfauMR[`AOLIRs@PGl@JTJ@J]xAe@dCq@pElAf@lAb@gA~COp@Kx@xAR|Cf@|CrAvFrCzBfAdBt@r@Zr@Nr@BbJIrAEv@QZQ~@u@XYh@WXKTCR?VF`A^xBdA|DlAlExBl@^vAnAvAfBtJpKbEpDbHrHnAhBrA~AnCjE~DbHzAxBn@hApBnEsAd@kAt@m@p@qAbBgDvEq@bAa@r@wHlLyJzMkAzAUCoAAg@Ne@Z{BjBg@^rE|G~@~A\\jAFt@Bb@KfAO`Aa@|@u@`Ac@`@yAdA{AnA_@`@MLP?b@\\_AbAoAbBtC|B",
+    "fecha": "2026-07-05 03:54 PM"
+  },
+  {
+    "id": 130,
+    "origen_nombre": "C. C Mz.A - Lt.7, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Av. El Triunfo Mz.H1 - Lt.8, San Juan de Miraflores 15058, Perú",
+    "origen_lat": -12.18442,
+    "origen_lon": -76.97665239999999,
+    "destino_lat": -12.189327100000002,
+    "destino_lon": -76.9734014,
+    "modo": "Auto",
+    "tiempo_minutos": 3,
+    "distancia_km": 1.13,
+    "polyline": "rwjiA`oytMc@eByA^oEx@o@yC~MuCfAYPOd@W\\MDK@K~KcCvDy@tBg@",
+    "fecha": "2026-07-05 03:50 PM"
+  },
+  {
+    "id": 129,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Prol. Pedro Miota 610, Lima 15842, Perú",
+    "origen_lat": -12.1862605,
+    "origen_lon": -76.9743816,
+    "destino_lat": -12.1856916,
+    "destino_lon": -76.9743806,
+    "modo": "Auto",
+    "tiempo_minutos": 7,
+    "distancia_km": 4.02,
+    "polyline": "bckiAz`ytMvHaBvDy@XD~FcAf@KvFk@^I`@WV[Rc@pAaG`@mDjBmRB{Bk@wKYcGe@cHKgCPGDMEWOMQAKFGJ@VFJFbABJpApUZzFBdBC`A_@rCqAfNUpCIf@ITOfAMb@SXc@`@OHm@RyCX}A^_FtAIFINcH~AuKzB",
+    "fecha": "2026-07-05 03:47 PM"
+  },
+  {
+    "id": 128,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.1862639,
+    "origen_lon": -76.9743805,
+    "destino_lat": -11.877753499999999,
+    "destino_lon": -77.0260586,
+    "modo": "Auto",
+    "tiempo_minutos": 77,
+    "distancia_km": 50.52,
+    "polyline": "bckiAz`ytMvHaBvDy@XD~FcAf@KvFk@^I`@WV[Rc@pAaG`@mDjBmRB{Bk@wKYcGe@cHKgCPGDMEWOMQAKFGJ@VFJFbABJpApUZzFBdBC`A_@rCqAfNUpCIf@ITOfAMb@SXc@`@OHm@RyCX}A^_FtAIFINcH~A}SlEkCl@yHfBcPjDw_@lI{IjBsK`CsDr@}Cl@g\\nGkJlBaB^ua@`IeEf@wCL_DDgGO}CWeDe@}NeDaAUsIyAup@uGyDg@_Cc@mD{@wf@mNiEiAyAU}COiKJgE@iJPaIDeQVuDPwKx@sCNaHn@qNdA{Ij@{ABqCXsGb@Y@kg@rDqEd@}Jp@}CPuIl@cLx@uHf@QEmBJsEZmAPcBl@gB|@cBr@sA\\w@H{@?mAUk@SeAk@wAyAu@_A{D}DcCsCcFsFkCiCuCwBaBaAeBw@aBq@aNiEkIgCyVeI{GsB_EmA}Cq@oBYqBI}H?mDTkBRaANiCl@aCr@mFdB_Bl@cPjFgA`@}@VgAT{CpAsBr@gErAmEbBmAl@iAp@}CzB}@|@o@n@sJdLgArAwLlNyN~PgAlA{ArAOTcBnAuBlAyBbAgBp@{C|@_GhAwIvAqDr@yBp@mDxAyD|B}BbB{AtAwB|BqA`BaB`Cy@xAkDlH]z@g@hBO|@OtB?dBBl@Fl@pA|FhHfWtBvHj@nBfCnGvApCVb@tAjCtDlGlBpCj@x@~JzLzCxDzCtDjB~BtCnEzBdE\\p@lE`LzCzIr@rBj@dCn@pEJfBBx@]xXG~AQfAi@xBy@lCwB|FeAfCgBrD]bAqAtEu@lBc@z@s@lAsB`Cm@n@oAdB{@zAGJIb@k@pB_Iz`@q@xD]vDg@nEMn@a@rAYjB[~Aa@`BeCvIaAlDaCvHmAfCyBpDkC~CQH}@~@y@l@iEpCuBhAqAj@gA\\oBf@mC^{Jr@um@hFcAFyHv@sHj@{ALYFuALyDLwDTyJ`AaBVsE~@w@JcAFqL`AyEPsAD}DVcE^yIr@qEf@sa@lDaCVuEn@eDZcO~@gPnAsZhCgS~A}RfBeE^oAF_UpBwX~B_DZsFn@sF\\{MfAyDVeQ|Aw]xCoBLkRbBmIp@gj@~BmCJiEXc]|AsGV_Aa@_@]W_@Oa@M{AWoDUiBq@}Cu@}Bq@}AqA}Bw@iA}AiBaBwAkBsAyBkAg[wNuFmCmT_KwLoFoFeCaCgA}BmAuHiDcFyB}GeDoAo@gEoBwAm@]QuEuBwBeAaBu@cF_CeBu@aCmAuIyDwGaDoa@iRsDuBqCkBsC}BG[{@uAUk@UaAIyABwALy@lCaLd@eA^o@dFsGtGeIrBiCSOyB}@aCq@aB]q@UiBu@eCkA}DcBgGuCSIiAu@cAk@sQcJkIqE_OaIqCwA}PeJSM",
+    "fecha": "2026-07-05 03:47 PM"
+  },
+  {
+    "id": 127,
+    "origen_nombre": "Tu ubicación actual",
+    "destino_nombre": "5XCJ+Q57, Pje. Los Geranios, Carabayllo 15121, Perú",
+    "origen_lat": -12.1861683,
+    "origen_lon": -76.9746665,
+    "destino_lat": -11.828050099999999,
+    "destino_lon": -77.01981959999999,
+    "modo": "A pie",
+    "tiempo_minutos": 647,
+    "distancia_km": 45.78,
+    "polyline": "pbkiAtbytMoE~@_ATq\\jHKa@SDI@Q}@XCGAe@@CGw@sEyIxAkGhAuQzCoIhAiTtDaE~@}AV_Eh@cB^gSfDeBZY@KCIFW?MTqHfAuGlAi@\\WLeBpA}@x@uF`EyBlBmCdAs@RO@c@A_@FaB@u@CaE[CXLAACCBQ`BB@?EIAG?C\\mAAo@Fk@Ns@\\m@d@]d@s@f@c@Je@DuA@a@H[N[b@{@ROHoA^e@rASIo@fB}@`BS\\g@j@cCpBqChBiFtDu@j@kBbBITuF|EaBrAYHULeBvA_FbEuA~@q@^WYsMlIaFzCOBiAn@sChB{MfJmLbHaB|@q@T_@B]Kc@A_@D]TQTGVARBFB`@?JR`@NNHB]?c@LoAx@_Ap@QV}AdA{MfIsGtD}@NcDjB{D`CgHbEkI~Em@XyBxA}FhDq@b@uQhKs@h@cB`AWJsDvBcKrGgClBaMzKyEfEmAjAqHHoCLw@@iDd@qA`@gA^q^tK{Af@IxCC`CGtCcD|IKf@A\\XdDwKt@}Lz@eIp@yCRwCV\\tDJVPVk@KwIl@wL|@kE^kWjBkDZmDVoMfAWQmC{@mBd@_D`A{EhAmA\\qCp@}IdC}FvAoAd@_E~@uF`BHjAmDdAqCr@_Bj@k@\\_B`BIPONc@ZoBn@Kh@c@nACr@PfDiFPiERaK`@oOj@_Jj@oBNoBJcHb@oG`LqC~Ec@t@OIYEW?WDQJQRO^?^Hb@UI{@DqBNgELQFWRU`@YLa@BW?WKUWGK]K[AoDRsEVkC@}FX}BFaAH}@Dk@BwFTcBFiDBcNb@iJb@aABeI\\g@NEBuC~CyBfCcElEkEbFeDdEyC|Dw@p@a@Zy@ZiAT_AN_E^qXdDON{F|@uMfB}Ep@sC`@aBToGx@q@?wDf@iZlDq@BOLuLbAwR|AgB@{DK_@@{ANwA`@aAb@sEhDsAp@u@V}@VyAXoCH{GIkHi@e@?kBPaBf@YPwDxAa@HmShCMCe@NkNjBaDf@]@wAGi@BiDf@]B{G~@UCQMEIo@Wc@GgFFw@De}@hLsO`CUH?Oo@DQAWKUWi@}@S[gAgA}@q@kAk@u@W{H}A_AO}EcAmBWyDOkIHaNNcGTaQhAyGp@_@@iHS{Eg@iBYcAUmDkAkHeDcJqEkQiIUKoAg@wUqKiD}A_CaAuAq@yAm@sDaAiDk@aKaAgAMsE_@mCYmDg@yCs@_G}BELeJkE{MiGyAu@_@OiA_@aAk@yVmLwCsAcNoGuE}BeJaE{DkB_Bs@kK_F[IcNoG}EwBqBu@{DgAgCo@yB_AiCsBcA}@s@k@yAaAi@WsHgDaIqD}AcAaHsDwGeDiHwD{BsAUIaRuJ{F}CkJcFUOw@hA[d@KLUJkBV{Eh@{AZ}B~@_EjBaA^WFSAu@h@a@H{EzBsAl@cFbBgAXi@NaDr@}DPaC\\_Hn@aD`@aGfAwDj@KBKR_JrAiDh@k@P}C|A_FlBwAj@U@QDkB_C{@}Au@aA}BgD}@eB}E}GwB{Bm@{@cAoA}AuA{@k@_@]g@kAEOOSYU}CqCe@m@aAoAa@y@_@s@m@c@y@Um@WuAy@SGeAs@QWwCk@iEoAyAiAkBqAaBtA]`AI\\KNcA|@eAuAsAkAaAk@yDmBgEqAkCqAe@OWGS?UBm@TYPw@r@]Va@Rq@N{FJ{DBy@Cy@U_Ac@wB}@_IaE_Aa@gBu@}Cg@yASaUwAHVLDT@Kx@zAR",
+    "fecha": "2026-07-05 03:45 PM"
+  },
+  {
+    "id": 126,
+    "origen_nombre": "Tu ubicación actual",
+    "destino_nombre": "5XCJ+Q57, Pje. Los Geranios, Carabayllo 15121, Perú",
+    "origen_lat": -12.186104199999999,
+    "origen_lon": -76.97443059999999,
+    "destino_lat": -11.828050099999999,
+    "destino_lon": -77.01981959999999,
+    "modo": "Auto",
+    "tiempo_minutos": 90,
+    "distancia_km": 57.03,
+    "polyline": "bbkiAdaytMvIkBvDy@XD~FcAf@KvFk@^I`@WV[Rc@pAaG`@mDjBmRB{Bk@wKYcGe@cHKgCPGDMEWOMQAKFGJ@VFJFbABJpApUZzFBdBC`A_@rCqAfNUpCIf@ITOfAMb@SXc@`@OHm@RyCX}A^_FtAIFINcH~A}SlEkCl@yHfBcPjDw_@lI{IjBsK`CsDr@}Cl@g\\nGkJlBaB^ua@`IeEf@wCL_DDgGO}CWeDe@}NeDaAUsIyAup@uGyDg@_Cc@mD{@wf@mNiEiAyAU}COiKJgE@iJPaIDeQVuDPwKx@sCNaHn@qNdA{Ij@{ABqCXsGb@Y@kg@rDqEd@}Jp@}CPuIl@cLx@uHf@QEmBJsEZmAPcBl@gB|@cBr@sA\\w@H{@?mAUk@SeAk@wAyAu@_A{D}DcCsCcFsFkCiCuCwBaBaAeBw@aBq@aNiEkIgCyVeI{GsB_EmA}Cq@oBYqBI}H?mDTkBRaANiCl@aCr@mFdB_Bl@cPjFgA`@}@VgAT{CpAsBr@gErAmEbBmAl@iAp@}CzB}@|@o@n@sJdLgArAwLlNyN~PgAlA{ArAOTcBnAuBlAyBbAgBp@{C|@_GhAwIvAqDr@yBp@mDxAyD|B}BbB{AtAwB|BqA`BaB`Cy@xAkDlH]z@g@hBO|@OtB?dBBl@Fl@pA|FhHfWtBvHj@nBfCnGvApCVb@tAjCtDlGlBpCj@x@~JzLzCxDzCtDjB~BtCnEzBdE\\p@lE`LzCzIr@rBj@dCn@pEJfBBx@]xXG~AQfAi@xBy@lCwB|FeAfCgBrD]bAqAtEu@lBc@z@s@lAsB`Cm@n@oAdB{@zAGJIb@k@pB_Iz`@q@xD]vDg@nEMn@a@rAYjB[~Aa@`BeCvIaAlDaCvHmAfCyBpDkC~CQH}@~@y@l@iEpCuBhAqAj@gA\\oBf@mC^{Jr@um@hFcAFyHv@sHj@{ALYFuALyDLwDTyJ`AaBVsE~@w@JcAFqL`AyEPsAD}DVcE^yIr@qEf@sa@lDaCVuEn@eDZcO~@gPnAsZhCgS~A}RfBeE^oAF_UpBwX~B_DZsFn@sF\\{MfAyDVeQ|Aw]xCoBLkRbBmIp@gj@~BmCJiEXc]|AeQr@oAHwMl@{VjAoa@hBu@DmJZwCLmA?qAEgBWu@UaBo@gCyAWSyA_AaCcB_HiEsDaCeFiCm@WkUcIcAWsAUgAK{A?qRd@kFJ_BBcHNoDLgPZgLPiM\\qGLg^x@ek@nAuCD{AQc@?gALi@LcAVk@\\i@b@k@j@wEnCWPa@k@kR}\\Yc@g@Y}@_@mK[_@?JcDBkEIe@EMCu@DiBCiAQsBC}@y@wDqIs^{AcH_E}PKi@_C{IaAuFo@cC}@aEi@uBWSi@iB]qAgA_Fe@mBq@sAaC_Eu@_BgBoC[w@}@wAmBqD_DoF_DqFaAmB}A_CiBcDU]qBoEy@yAqAiBsFmJ{AaCsA_BoAiBcHsHcEqDkKgLeAuAsAkAaAk@yDmBgEqAoCqAa@OWGS?UBm@TYPw@r@]Va@Rq@N{FJ{DBy@Cy@U_Ac@wB}@_IaE_Aa@gBu@}Cg@yASaUwALXHBT@Kx@zAR",
+    "fecha": "2026-07-05 03:44 PM"
+  },
+  {
+    "id": 125,
+    "origen_nombre": "Av. José Saco Rojas 3971, Carabayllo 15121, Perú",
+    "destino_nombre": "5XCJ+Q57, Pje. Los Geranios, Carabayllo 15121, Perú",
+    "origen_lat": -11.8491574,
+    "origen_lon": -77.02943590000001,
+    "destino_lat": -11.8280523,
+    "destino_lon": -77.01982009999999,
+    "modo": "Auto",
+    "tiempo_minutos": 6,
+    "distancia_km": 2.98,
+    "polyline": "fhigA~xcuMYc@sA_BoAiBcHsHcEqDkKgLeAuAsAkAaAk@yDmBgEqAoCqAa@OWGS?UBm@TYPw@r@]Va@Rq@N{FJ{DBy@Cy@U_Ac@wB}@_IaE_Aa@gBu@}Cg@yASaUwALXHBT@Kx@zAR",
+    "fecha": "2026-07-05 03:44 PM"
+  },
+  {
+    "id": 124,
+    "origen_nombre": "Los Platanales Mz.D6 - Lt.11, Carabayllo 15122, Perú",
+    "destino_nombre": "5XPM+FQ Carabayllo, Perú",
+    "origen_lat": -11.8338989,
+    "origen_lon": -77.05614729999999,
+    "destino_lat": -11.8124379,
+    "destino_lon": -77.0126976,
+    "modo": "Auto",
+    "tiempo_minutos": 27,
+    "distancia_km": 12.41,
+    "polyline": "zhfgA|_iuMQhAs@|D]dAMb@KZSZ]fAOr@An@Ed@AVBVFVDHJHPDd@H\\B^DBBBVDhAFhABl@E~@EnBE`@sBSy@G{@d@Ej@M|AuAKmBKwAE_@{G]sE[kGK{DE{AfAIz@E`AYp@qAj@iAfB{Ch@sBZeALKZQ\\K`BE^BV@P?|@Ab@IlFcBdBk@tAo@\\Wd@m@\\e@`AkBhC_FTc@\\_@P?VKNW@QCQAGBULa@~DiHx@}Ar@sAbBeDx@uB|CoH\\_A\\{@V[T[R]hAoAv@aAvAoAn@a@l@a@pAcAf@c@b@Wh@Od@G\\API\\c@xAqBrDaFxC_ElGqJjAoBbBcCtBwCpAcBl@q@jAu@hAa@HCO[aBsDy@yAqAiBg@}@{AgC_BqCOU{AaCsA_By@mAe@m@mDuDeBkBuEgEkAoAiEwEmAsA{AkBsAkAaAk@yDmB_@Mw@UcA[k@Qi@YaBw@e@Ok@Go@NSHYPo@n@e@Za@Rc@Jc@DqBDmFD{A@s@Iq@Uq@]oAg@{BgA{C}AqCsAgBu@]EaAQsB[yCWuCQuLu@mF]wCCeA@_AHcALiAVs\\zI_Bh@[P_@Z[\\Wb@Sd@Ol@UpAK`@O^WZ]RUJ[DWB_@A_A[_@O{Ay@{A{@uCaBiCwAiCwA{@g@YYWY]q@SuAIyAIm@EKSY]Sa@Qa@Ac@D_@LYR[f@K|@B`A?j@Gb@OZQP_@L_@?YGYQSYIYEm@KmBEyAFs@Ri@zAqCJUJa@Ai@EMO[[WwAeAcAaAs@aAqCqEg@{@CCTKh@WTM|@a@ZUVY\\e@POdAm@r@s@PM^OdBe@bAUfBYb@@",
+    "fecha": "2026-07-05 02:48 PM"
+  },
+  {
+    "id": 123,
+    "origen_nombre": "Los Platanales Mz.D6 - Lt.11, Carabayllo 15122, Perú",
+    "destino_nombre": "5XPM+FQ Carabayllo, Perú",
+    "origen_lat": -11.8338989,
+    "origen_lon": -77.05614729999999,
+    "destino_lat": -11.8124379,
+    "destino_lon": -77.0126976,
+    "modo": "Auto",
+    "tiempo_minutos": 27,
+    "distancia_km": 12.41,
+    "polyline": "zhfgA|_iuMQhAs@|D]dAMb@KZSZ]fAOr@An@Ed@AVBVFVDHJHPDd@H\\B^DBBBVDhAFhABl@E~@EnBE`@sBSy@G{@d@Ej@M|AuAKmBKwAE_@{G]sE[kGK{DE{AfAIz@E`AYp@qAj@iAfB{Ch@sBZeALKZQ\\K`BE^BV@P?|@Ab@IlFcBdBk@tAo@\\Wd@m@\\e@`AkBhC_FTc@\\_@P?VKNW@QCQAGBULa@~DiHx@}Ar@sAbBeDx@uB|CoH\\_A\\{@V[T[R]hAoAv@aAvAoAn@a@l@a@pAcAf@c@b@Wh@Od@G\\API\\c@xAqBrDaFxC_ElGqJjAoBbBcCtBwCpAcBl@q@jAu@hAa@HCO[aBsDy@yAqAiBg@}@{AgC_BqCOU{AaCsA_By@mAe@m@mDuDeBkBuEgEkAoAiEwEmAsA{AkBsAkAaAk@yDmB_@Mw@UcA[k@Qi@YaBw@e@Ok@Go@NSHYPo@n@e@Za@Rc@Jc@DqBDmFD{A@s@Iq@Uq@]oAg@{BgA{C}AqCsAgBu@]EaAQsB[yCWuCQuLu@mF]wCCeA@_AHcALiAVs\\zI_Bh@[P_@Z[\\Wb@Sd@Ol@UpAK`@O^WZ]RUJ[DWB_@A_A[_@O{Ay@{A{@uCaBiCwAiCwA{@g@YYWY]q@SuAIyAIm@EKSY]Sa@Qa@Ac@D_@LYR[f@K|@B`A?j@Gb@OZQP_@L_@?YGYQSYIYEm@KmBEyAFs@Ri@zAqCJUJa@Ai@EMO[[WwAeAcAaAs@aAqCqEg@{@CCTKh@WTM|@a@ZUVY\\e@POdAm@r@s@PM^OdBe@bAUfBYb@@",
+    "fecha": "2026-07-05 02:47 PM"
+  },
+  {
+    "id": 122,
+    "origen_nombre": "Calle Jose Nicolas de Rodrigo 440, Santiago de Surco 15023, Perú",
+    "destino_nombre": "R28F+8XR, Ctra. Panamericana Sur, Cercado de Lima 15058, Perú",
+    "origen_lat": -12.10316,
+    "origen_lon": -76.96272,
+    "destino_lat": -12.18412,
+    "destino_lon": -76.97507,
+    "modo": "Auto",
+    "tiempo_minutos": 22,
+    "distancia_km": 10.83,
+    "polyline": "v{zhA~wvtMWMKA[RUX?F?B@BLFXKTCRB^LdBfCbDzEXd@FPLr@AHBVBDNHRAHBRJrEpGxBnDd@x@tEnHrDrFp@hAXx@Vv@Pp@Ln@J`CZhK\\|LN~GB`@K^SVODOB[Am@[WSGM?YHSJIPKHI~D[tFc@tF_@pOiAdJk@~BK`B?t@Adb@_@~FI~HEdBJnATfB^jI`C@@fV`H`MdDhAPl@LlC\\J@lBRzJ`Al\\dDdFj@~Ev@tHdB`FlAzE`AzDf@|DR`D@`EMZArEg@xDo@jDs@bCe@tJmBtHyAzIkBtKuBxAYpCo@hOsCnBe@vCe@pCi@pFiApFsAnDw@nCo@|Dw@`VkFbQwD|Bg@rBc@",
+    "fecha": "2026-06-30 10:26 AM"
+  },
+  {
+    "id": 121,
+    "origen_nombre": "Calle Jose Nicolas de Rodrigo 440, Santiago de Surco 15023, Perú",
+    "destino_nombre": "R28F+8XR, Ctra. Panamericana Sur, Cercado de Lima 15058, Perú",
+    "origen_lat": -12.10316,
+    "origen_lon": -76.96272,
+    "destino_lat": -12.18412,
+    "destino_lon": -76.97507,
+    "modo": "Auto",
+    "tiempo_minutos": 22,
+    "distancia_km": 10.83,
+    "polyline": "v{zhA~wvtMWMKA[RUX?F?B@BLFXKTCRB^LdBfCbDzEXd@FPLr@AHBVBDNHRAHBRJrEpGxBnDd@x@tEnHrDrFp@hAXx@Vv@Pp@Ln@J`CZhK\\|LN~GB`@K^SVODOB[Am@[WSGM?YHSJIPKHI~D[tFc@tF_@pOiAdJk@~BK`B?t@Adb@_@~FI~HEdBJnATfB^jI`C@@fV`H`MdDhAPl@LlC\\J@lBRzJ`Al\\dDdFj@~Ev@tHdB`FlAzE`AzDf@|DR`D@`EMZArEg@xDo@jDs@bCe@tJmBtHyAzIkBtKuBxAYpCo@hOsCnBe@vCe@pCi@pFiApFsAnDw@nCo@|Dw@`VkFbQwD|Bg@rBc@",
+    "fecha": "2026-06-30 10:25 AM"
+  },
+  {
+    "id": 120,
+    "origen_nombre": "Calle Jose Nicolas de Rodrigo 440, Santiago de Surco 15023, Perú",
+    "destino_nombre": "R28F+8XR, Ctra. Panamericana Sur, Cercado de Lima 15058, Perú",
+    "origen_lat": -12.1031613,
+    "origen_lon": -76.9627182,
+    "destino_lat": -12.1841859,
+    "destino_lon": -76.97529089999999,
+    "modo": "A pie",
+    "tiempo_minutos": 184,
+    "distancia_km": 13.72,
+    "polyline": "v{zhA~wvtMjA|Ar@dAtE~G`@x@B@LJDJd@r@rBzChF`I~EpHvCnExA~Bh@xA\\rANxAB^hDhA~LxDfAhBpDtFHRBNPrCP~BJ?nCShF_@xCOfAEjGE~BG`EEjGExBIjI]`CElJHlB@pDA|B@rAAh@AbBD`@@n@BxEIf@KxGK~@DrDEf@Ez@OfD}@DNDAhCq@tEsArDwAx@Qj@GbBKvAA~DXl@?l@KnCs@`EmAxAg@pAq@hB{AlEaEbBmAl@g@`DuCnEyDRQVBfBVrBZTH`@LpDp@fGlAfMfCtA\\vAd@bJpC|Bf@xCb@hDTzCF|@AjQaA|F]jF_@TjA`@`CxAjJnBfLXtADJNAjCc@dCc@PCB@@B@DCFREt@MhASvI{A|Dq@jG{@pCc@fOeCjGiAhGcApCe@|SuDzCi@~LsBdQyCrEe@fAKT@d@FJHL@DCHBR@^EdAKfA?~@Bx@@hAKnA?xBDrAJvOjBf@DIXTFK|@UI?@CZiD]_Ec@cD]uAKmBI_AB{@Ao@@s@Fw@F_@Fa@Fc@DoEd@eDr@{Bf@yBd@sBf@gCj@eAPaAVoGrA_ATcARw@P",
+    "fecha": "2026-06-30 10:24 AM"
+  },
+  {
+    "id": 119,
+    "origen_nombre": "Calle Jose Nicolas de Rodrigo 440, Santiago de Surco 15023, Perú",
+    "destino_nombre": "R28F+8XR, Ctra. Panamericana Sur, Cercado de Lima 15058, Perú",
+    "origen_lat": -12.1031613,
+    "origen_lon": -76.9627182,
+    "destino_lat": -12.1841195,
+    "destino_lon": -76.9750686,
+    "modo": "Moto",
+    "tiempo_minutos": 16,
+    "distancia_km": 10.83,
+    "polyline": "v{zhA~wvtMWMKA[RUX?F?B@BLFXKTCRB^LdBfCbDzEXd@FPLr@AHBVBDNHRAHBRJrEpGxBnDd@x@tEnHrDrFp@hAXx@Vv@Pp@Ln@J`CZhK\\|LN~GB`@K^SVODOB[Am@[WSGM?YHSJIPKHI~D[tFc@tF_@pOiAdJk@~BK`B?t@Adb@_@~FI~HEdBJnATfB^jI`C@@fV`H`MdDhAPl@LlC\\J@lBRzJ`Al\\dDdFj@~Ev@tHdB`FlAzE`AzDf@|DR`D@`EMZArEg@xDo@jDs@bCe@tJmBtHyAzIkBtKuBxAYpCo@hOsCnBe@vCe@pCi@pFiApFsAnDw@nCo@|Dw@`VkFbQwD|Bg@rBc@",
+    "fecha": "2026-06-30 10:24 AM"
+  },
+  {
+    "id": 118,
+    "origen_nombre": "Calle Jose Nicolas de Rodrigo 440, Santiago de Surco 15023, Perú",
+    "destino_nombre": "R28F+8XR, Ctra. Panamericana Sur, Cercado de Lima 15058, Perú",
+    "origen_lat": -12.1031611,
+    "origen_lon": -76.962718,
+    "destino_lat": -12.1841192,
+    "destino_lon": -76.9750687,
+    "modo": "Auto",
+    "tiempo_minutos": 22,
+    "distancia_km": 10.83,
+    "polyline": "v{zhA~wvtMWMKA[RUX?F?B@BLFXKTCRB^LdBfCbDzEXd@FPLr@AHBVBDNHRAHBRJrEpGxBnDd@x@tEnHrDrFp@hAXx@Vv@Pp@Ln@J`CZhK\\|LN~GB`@K^SVODOB[Am@[WSGM?YHSJIPKHI~D[tFc@tF_@pOiAdJk@~BK`B?t@Adb@_@~FI~HEdBJnATfB^jI`C@@fV`H`MdDhAPl@LlC\\J@lBRzJ`Al\\dDdFj@~Ev@tHdB`FlAzE`AzDf@|DR`D@`EMZArEg@xDo@jDs@bCe@tJmBtHyAzIkBtKuBxAYpCo@hOsCnBe@vCe@pCi@pFiApFsAnDw@nCo@|Dw@`VkFbQwD|Bg@rBc@",
+    "fecha": "2026-06-30 10:23 AM"
+  },
+  {
+    "id": 117,
+    "origen_nombre": "5W3M+QR5, Carabayllo 15122, Perú",
+    "destino_nombre": "Avenida San Lorenzo Mz.D - Lt.7, Carabayllo 15122, Perú",
+    "origen_lat": -11.8455778,
+    "origen_lon": -77.0657615,
+    "destino_lat": -11.841234,
+    "destino_lon": -77.05943549999999,
+    "modo": "Auto",
+    "tiempo_minutos": 4,
+    "distancia_km": 1.14,
+    "polyline": "zqhgA~{juMm@m@X[dAaAfAiAh@a@pA}Ap@s@NO[WiAkAmDmDiAiA{Bk@eAYeAUu@m@WO{@SyF_EsDkC",
+    "fecha": "2026-06-30 07:37 AM"
+  },
+  {
+    "id": 116,
+    "origen_nombre": "Av José Antonio Lavalle 675, Chorrillos 15067, Perú",
+    "destino_nombre": "Av. Primavera 2390, Santiago de Surco 15023, Perú",
+    "origen_lat": -12.19736,
+    "origen_lon": -77.00754,
+    "destino_lat": -12.10368,
+    "destino_lon": -76.96322,
+    "modo": "Auto",
+    "tiempo_minutos": 55,
+    "distancia_km": 19.53,
+    "polyline": "nhmiAbp_uMf@g@QQd@c@`@o@t@x@dBhBf@h@n@j@vAmBvFsH`@_@d@]pDeCNYtCoBvA_AfBeAfL}FZOs@gAqBwC_AyAaDmEu@iAe@g@kC}BqAkAwJsIMOXYXYfBeBbC_CbEaElHkHrFmFvJqJfEeEtDoDzByBjMgMhIaIrDqDd@g@Va@r@gAX]XUD?LCJIDMAMP_@NU~@s@vAwApBuBX_@f@aANw@HcAFoCFyBBy@D[Ha@JSb@i@^U\\Mj@Gd@FZRPVFT@`@K\\[^i@PoAPIBMHq@AyCI{IaAcTwBoPkBmCYqMsAmFm@mFi@eEg@eMsAaXoCgLoAyAK}AIiCIuA@eCFeAFu@FyATe@JsGrAqHbBoU~EoAXcDt@oQzDiGtAwQ|DmFjAmH|AkOfDsDr@qFbAsYxFkJlB{Y~FgF`AiDj@oCZkAFqCDyADgGOe@EwBQeDe@_Q{DsIyAcFi@u[_D{LkAyDg@oB_@k@MoBc@yHyBsVeHuJmCcBa@uAOgAGu@CkFFiA?sABgE@kDFiABk@BeSPoGHy@BGCGCk@MIEMAQkBqA}B_BkCgDyEkAcBg@}@aA\\eCdA_@k@yBgDcBcCyB_D]m@o@_AS[k@^kBpAi@Xm@PaBLa@BOBQFEIa@{@i@{@cD_FiF_I{EoHeA{AiBkC?CEKKKC?c@{@uE_Hs@eAJ?ND",
+    "fecha": "2026-06-30 07:28 AM"
+  },
+  {
+    "id": 115,
+    "origen_nombre": "Av José Antonio Lavalle 675, Chorrillos 15067, Perú",
+    "destino_nombre": "Av. Primavera 2390, Santiago de Surco 15023, Perú",
+    "origen_lat": -12.19736,
+    "origen_lon": -77.00754,
+    "destino_lat": -12.10368,
+    "destino_lon": -76.96322,
+    "modo": "Auto",
+    "tiempo_minutos": 55,
+    "distancia_km": 19.53,
+    "polyline": "nhmiAbp_uMf@g@QQd@c@`@o@t@x@dBhBf@h@n@j@vAmBvFsH`@_@d@]pDeCNYtCoBvA_AfBeAfL}FZOs@gAqBwC_AyAaDmEu@iAe@g@kC}BqAkAwJsIMOXYXYfBeBbC_CbEaElHkHrFmFvJqJfEeEtDoDzByBjMgMhIaIrDqDd@g@Va@r@gAX]XUD?LCJIDMAMP_@NU~@s@vAwApBuBX_@f@aANw@HcAFoCFyBBy@D[Ha@JSb@i@^U\\Mj@Gd@FZRPVFT@`@K\\[^i@PoAPIBMHq@AyCI{IaAcTwBoPkBmCYqMsAmFm@mFi@eEg@eMsAaXoCgLoAyAK}AIiCIuA@eCFeAFu@FyATe@JsGrAqHbBoU~EoAXcDt@oQzDiGtAwQ|DmFjAmH|AkOfDsDr@qFbAsYxFkJlB{Y~FgF`AiDj@oCZkAFqCDyADgGOe@EwBQeDe@_Q{DsIyAcFi@u[_D{LkAyDg@oB_@k@MoBc@yHyBsVeHuJmCcBa@uAOgAGu@CkFFiA?sABgE@kDFiABk@BeSPoGHy@BGCGCk@MIEMAQkBqA}B_BkCgDyEkAcBg@}@aA\\eCdA_@k@yBgDcBcCyB_D]m@o@_AS[k@^kBpAi@Xm@PaBLa@BOBQFEIa@{@i@{@cD_FiF_I{EoHeA{AiBkC?CEKKKC?c@{@uE_Hs@eAJ?ND",
+    "fecha": "2026-06-30 07:24 AM"
+  },
+  {
+    "id": 114,
+    "origen_nombre": "Av José Antonio Lavalle 675, Chorrillos 15067, Perú",
+    "destino_nombre": "Av. Primavera 2390, Santiago de Surco 15023, Perú",
+    "origen_lat": -12.19736,
+    "origen_lon": -77.00754,
+    "destino_lat": -12.10368,
+    "destino_lon": -76.96322,
+    "modo": "Auto",
+    "tiempo_minutos": 55,
+    "distancia_km": 19.53,
+    "polyline": "nhmiAbp_uMf@g@QQd@c@`@o@t@x@dBhBf@h@n@j@vAmBvFsH`@_@d@]pDeCNYtCoBvA_AfBeAfL}FZOs@gAqBwC_AyAaDmEu@iAe@g@kC}BqAkAwJsIMOXYXYfBeBbC_CbEaElHkHrFmFvJqJfEeEtDoDzByBjMgMhIaIrDqDd@g@Va@r@gAX]XUD?LCJIDMAMP_@NU~@s@vAwApBuBX_@f@aANw@HcAFoCFyBBy@D[Ha@JSb@i@^U\\Mj@Gd@FZRPVFT@`@K\\[^i@PoAPIBMHq@AyCI{IaAcTwBoPkBmCYqMsAmFm@mFi@eEg@eMsAaXoCgLoAyAK}AIiCIuA@eCFeAFu@FyATe@JsGrAqHbBoU~EoAXcDt@oQzDiGtAwQ|DmFjAmH|AkOfDsDr@qFbAsYxFkJlB{Y~FgF`AiDj@oCZkAFqCDyADgGOe@EwBQeDe@_Q{DsIyAcFi@u[_D{LkAyDg@oB_@k@MoBc@yHyBsVeHuJmCcBa@uAOgAGu@CkFFiA?sABgE@kDFiABk@BeSPoGHy@BGCGCk@MIEMAQkBqA}B_BkCgDyEkAcBg@}@aA\\eCdA_@k@yBgDcBcCyB_D]m@o@_AS[k@^kBpAi@Xm@PaBLa@BOBQFEIa@{@i@{@cD_FiF_I{EoHeA{AiBkC?CEKKKC?c@{@uE_Hs@eAJ?ND",
+    "fecha": "2026-06-30 07:23 AM"
+  },
+  {
+    "id": 113,
+    "origen_nombre": "Av José Antonio Lavalle 675, Chorrillos 15067, Perú",
+    "destino_nombre": "Av. Primavera 2390, Santiago de Surco 15023, Perú",
+    "origen_lat": -12.19736,
+    "origen_lon": -77.00754,
+    "destino_lat": -12.1041,
+    "destino_lon": -76.96301,
+    "modo": "A pie",
+    "tiempo_minutos": 193,
+    "distancia_km": 13.29,
+    "polyline": "nhmiAbp_uMf@g@QQd@c@`@o@u@w@e@i@yAcBCKyA{AiAmA]_@IHoCjCmAfAoBnBsAnAK@[BE\\aDAyBBkBBq@@[SaBgA_Ak@i@]]^cA~@_AbAsA|@mAd@_APmAHuA?{DEwAIkDISEc@QWWKCHM?MMeA[}Ca@aDaB{AkBqAqEqDmB}AuEqD{HmGwLqJcBqAkGsEyDsCmCyBgEyD}@o@oB{A}EiE{BsBUUMUGUEc@?SsAGaHMkJL[B[GmBaA}I{DSKUBWA[K_EoBsAw@yBwAmAe@sCgAi@Og@Gm@Cu@@c@Dg@Fk@Po@VoAp@S[uCdBmBpAy@f@e@PqA\\{@HkAAkAQg@QkDsBYQ_Am@oBkAo@_@iAu@a@SsA{@[UgAeAuA}As@w@g@a@}@i@]OkDyA_Bq@}Ai@{AQiJy@}Iw@kOyAqQeB}NqAkCe@kGcB{IiCmD_AsCw@{Bo@_B]qAKeBFcAN_AXoAh@cAp@i@h@KL_BwAs@q@{@y@}DuDmEcEWKe@AiEFuCDgEDcDDEsFAyC?CJ?EMWGO??CCaAVAR?@A?C?Eq@BgDDcB?gADyCNiF^oCRK?Q_CQsCCOISqDuFgAiB{A_Cg@w@eBaCgEqGwEmH{LuQaCqDk@aAqBqCUe@kAkB}@yA_A{Ao@TUPE@c@i@I@O?MAOBAC",
+    "fecha": "2026-06-30 07:23 AM"
+  },
+  {
+    "id": 112,
+    "origen_nombre": "Av José Antonio Lavalle 675, Chorrillos 15067, Perú",
+    "destino_nombre": "Av. Primavera 2390, Santiago de Surco 15023, Perú",
+    "origen_lat": -12.1973588,
+    "origen_lon": -77.00754049999999,
+    "destino_lat": -12.1036764,
+    "destino_lon": -76.96321689999999,
+    "modo": "Moto",
+    "tiempo_minutos": 40,
+    "distancia_km": 19.55,
+    "polyline": "nhmiAbp_uMf@g@QQd@c@`@o@t@x@dBhBf@h@n@j@vAmBvFsH`@_@d@]pDeCNYtCoBvA_AfBeAfL}FZOs@gAqBwC_AyAaDmEu@iAe@g@kC}BqAkAwJsIMOXYXYfBeBbC_CbEaElHkHrFmFvJqJfEeEtDoDzByBjMgMhIaIrDqDd@g@Va@r@gAX]XUD?LCJIDMAMP_@NU~@s@vAwApBuBX_@f@aANw@HcAFoCFyBBy@D[Ha@JSb@i@^U\\Mj@Gd@FZRPVFT@`@K\\[^i@PoAPIBMHq@AyCI{IaAcTwBoPkBmCYqMsAmFm@mFi@eEg@eMsAaXoCgLoAyAK}AIiCIuA@eCFeAFu@FyATe@JsGrAqHbBoU~EoAXcDt@oQzDiGtAwQ|DmFjAmH|AkOfDsDr@qFbAsYxFkJlB{Y~FgF`AiDj@oCZkAFqCDyADgGOe@EwBQeDe@_Q{D_Es@WYMGc@IIGAEUCo@EiLkAcQgBcAGEXwCYiFi@wEg@}Cc@w@QmBc@qBk@oX{H_RgFyAUu@CgBKoGFaID{FJmBDaIDoMPuBDKGe@IYMG@I}@Gm@u@qAmBcDcB_C}D_GGOQFuDzAiEsGcEeGkAgBuDdCo@Ta@DcBJi@Ly@_BgGiJuCiEi@}@cDcFwAqBmBsCAGOQA?OYw@qAqAiB}BkDW_@F?F?D@DB",
+    "fecha": "2026-06-30 07:23 AM"
+  },
+  {
+    "id": 111,
+    "origen_nombre": "Av José Antonio Lavalle 675, Chorrillos 15067, Perú",
+    "destino_nombre": "Av. Primavera 2390, Santiago de Surco 15023, Perú",
+    "origen_lat": -12.19736,
+    "origen_lon": -77.00754,
+    "destino_lat": -12.1041,
+    "destino_lon": -76.96301,
+    "modo": "A pie",
+    "tiempo_minutos": 193,
+    "distancia_km": 13.29,
+    "polyline": "nhmiAbp_uMf@g@QQd@c@`@o@u@w@e@i@yAcBCKyA{AiAmA]_@IHoCjCmAfAoBnBsAnAK@[BE\\aDAyBBkBBq@@[SaBgA_Ak@i@]]^cA~@_AbAsA|@mAd@_APmAHuA?{DEwAIkDISEc@QWWKCHM?MMeA[}Ca@aDaB{AkBqAqEqDmB}AuEqD{HmGwLqJcBqAkGsEyDsCmCyBgEyD}@o@oB{A}EiE{BsBUUMUGUEc@?SsAGaHMkJL[B[GmBaA}I{DSKUBWA[K_EoBsAw@yBwAmAe@sCgAi@Og@Gm@Cu@@c@Dg@Fk@Po@VoAp@S[uCdBmBpAy@f@e@PqA\\{@HkAAkAQg@QkDsBYQ_Am@oBkAo@_@iAu@a@SsA{@[UgAeAuA}As@w@g@a@}@i@]OkDyA_Bq@}Ai@{AQiJy@}Iw@kOyAqQeB}NqAkCe@kGcB{IiCmD_AsCw@{Bo@_B]qAKeBFcAN_AXoAh@cAp@i@h@KL_BwAs@q@{@y@}DuDmEcEWKe@AiEFuCDgEDcDDEsFAyC?CJ?EMWGO??CCaAVAR?@A?C?Eq@BgDDcB?gADyCNiF^oCRK?Q_CQsCCOISqDuFgAiB{A_Cg@w@eBaCgEqGwEmH{LuQaCqDk@aAqBqCUe@kAkB}@yA_A{Ao@TUPE@c@i@I@O?MAOBAC",
+    "fecha": "2026-06-30 07:22 AM"
+  },
+  {
+    "id": 110,
+    "origen_nombre": "Av José Antonio Lavalle 675, Chorrillos 15067, Perú",
+    "destino_nombre": "Av. Primavera 2390, Santiago de Surco 15023, Perú",
+    "origen_lat": -12.1973588,
+    "origen_lon": -77.00754049999999,
+    "destino_lat": -12.1036764,
+    "destino_lon": -76.96321689999999,
+    "modo": "Auto",
+    "tiempo_minutos": 55,
+    "distancia_km": 19.53,
+    "polyline": "nhmiAbp_uMf@g@QQd@c@`@o@t@x@dBhBf@h@n@j@vAmBvFsH`@_@d@]pDeCNYtCoBvA_AfBeAfL}FZOs@gAqBwC_AyAaDmEu@iAe@g@kC}BqAkAwJsIMOXYXYfBeBbC_CbEaElHkHrFmFvJqJfEeEtDoDzByBjMgMhIaIrDqDd@g@Va@r@gAX]XUD?LCJIDMAMP_@NU~@s@vAwApBuBX_@f@aANw@HcAFoCFyBBy@D[Ha@JSb@i@^U\\Mj@Gd@FZRPVFT@`@K\\[^i@PoAPIBMHq@AyCI{IaAcTwBoPkBmCYqMsAmFm@mFi@eEg@eMsAaXoCgLoAyAK}AIiCIuA@eCFeAFu@FyATe@JsGrAqHbBoU~EoAXcDt@oQzDiGtAwQ|DmFjAmH|AkOfDsDr@qFbAsYxFkJlB{Y~FgF`AiDj@oCZkAFqCDyADgGOe@EwBQeDe@_Q{DsIyAcFi@u[_D{LkAyDg@oB_@k@MoBc@yHyBsVeHuJmCcBa@uAOgAGu@CkFFiA?sABgE@kDFiABk@BeSPoGHy@BGCGCk@MIEMAQkBqA}B_BkCgDyEkAcBg@}@aA\\eCdA_@k@yBgDcBcCyB_D]m@o@_AS[k@^kBpAi@Xm@PaBLa@BOBQFEIa@{@i@{@cD_FiF_I{EoHeA{AiBkC?CEKKKC?c@{@uE_Hs@eAJ?ND",
+    "fecha": "2026-06-30 07:21 AM"
+  },
+  {
+    "id": 109,
+    "origen_nombre": "Av José Antonio Lavalle 675, Chorrillos 15067, Perú",
+    "destino_nombre": "Av. Primavera 2390, Santiago de Surco 15023, Perú",
+    "origen_lat": -12.1973588,
+    "origen_lon": -77.00754049999999,
+    "destino_lat": -12.1041003,
+    "destino_lon": -76.9630111,
+    "modo": "A pie",
+    "tiempo_minutos": 193,
+    "distancia_km": 13.29,
+    "polyline": "nhmiAbp_uMf@g@QQd@c@`@o@u@w@e@i@yAcBCKyA{AiAmA]_@IHoCjCmAfAoBnBsAnAK@[BE\\aDAyBBkBBq@@[SaBgA_Ak@i@]]^cA~@_AbAsA|@mAd@_APmAHuA?{DEwAIkDISEc@QWWKCHM?MMeA[}Ca@aDaB{AkBqAqEqDmB}AuEqD{HmGwLqJcBqAkGsEyDsCmCyBgEyD}@o@oB{A}EiE{BsBUUMUGUEc@?SsAGaHMkJL[B[GmBaA}I{DSKUBWA[K_EoBsAw@yBwAmAe@sCgAi@Og@Gm@Cu@@c@Dg@Fk@Po@VoAp@S[uCdBmBpAy@f@e@PqA\\{@HkAAkAQg@QkDsBYQ_Am@oBkAo@_@iAu@a@SsA{@[UgAeAuA}As@w@g@a@}@i@]OkDyA_Bq@}Ai@{AQiJy@}Iw@kOyAqQeB}NqAkCe@kGcB{IiCmD_AsCw@{Bo@_B]qAKeBFcAN_AXoAh@cAp@i@h@KL_BwAs@q@{@y@}DuDmEcEWKe@AiEFuCDgEDcDDEsFAyC?CJ?EMWGO??CCaAVAR?@A?C?Eq@BgDDcB?gADyCNiF^oCRK?Q_CQsCCOISqDuFgAiB{A_Cg@w@eBaCgEqGwEmH{LuQaCqDk@aAqBqCUe@kAkB}@yA_A{Ao@TUPE@c@i@I@O?MAOBAC",
+    "fecha": "2026-06-30 07:21 AM"
+  },
+  {
+    "id": 108,
+    "origen_nombre": "Av José Antonio Lavalle 675, Chorrillos 15067, Perú",
+    "destino_nombre": "Q3R8+RF6, Villa EL Salvador 15834, Perú",
+    "origen_lat": -12.1973588,
+    "origen_lon": -77.00754049999999,
+    "destino_lat": -12.2081475,
+    "destino_lon": -76.9337631,
+    "modo": "A pie",
+    "tiempo_minutos": 160,
+    "distancia_km": 10.66,
+    "polyline": "nhmiAbp_uMf@g@QQd@c@`@o@u@w@e@i@yAcBCKyA{AqD{DuD}DaBiBFCNM@IKYDARMBYAUdA}@X[`@_@n@q@PSGUU}@Os@Mw@Em@QaBAq@Fm@D]Lc@La@RYn@o@x@a@pAe@t@Y\\WP]HYNo@Tq@NWh@q@~@gAtCkDbAqA`AcAhEaFhCwCr@q@v@k@`@Wv@e@k@mAy@kBa@k@y@cA{JaKuCsChCkCnCuCjCyClCoC`@c@b@e@R[XcALs@^w@dAoAcBcBuCqCgAgAoB}BkBgBgBiB}@w@eCcCiCkCqBqBTmBb@uEPiBV}@XsB`@eEw@IB[?ATHJ}@UGHYg@Em@Ib@wEr@mGb@wCVkBZyBN{A?g@L_AT{Bj@eFh@sDPuAbAeJnAqL^gCCYc@uCUm@s@qAyAsCuBuEeLqUyAwCcBkDqGyMaBmDo@oA`D{Ao@qAnAq@yAwCEMpAq@pCyApKoFzPwIhDiBxCyAvFwCvCwA|C_BzC_BHEwAyCzC}AfAk@NIGC\\qBbJ{EVMk@oA|C{AvC}Aq@{A",
+    "fecha": "2026-06-30 07:20 AM"
+  },
+  {
+    "id": 107,
+    "origen_nombre": "Av José Antonio Lavalle 675, Chorrillos 15067, Perú",
+    "destino_nombre": "W25F+337, Santiago de Surco 15023, Perú",
+    "origen_lat": -12.1973588,
+    "origen_lon": -77.00754049999999,
+    "destino_lat": -12.0922613,
+    "destino_lon": -76.9771928,
+    "modo": "Auto",
+    "tiempo_minutos": 59,
+    "distancia_km": 21.91,
+    "polyline": "nhmiAbp_uMf@g@QQd@c@`@o@t@x@dBhBf@h@n@j@vAmBvFsH`@_@d@]pDeCNYtCoBvA_AfBeAfL}FZOs@gAqBwC_AyAaDmEu@iAe@g@kC}BqAkAwJsIMOXYXYfBeBbC_CbEaElHkHrFmFvJqJfEeEtDoDzByBjMgMhIaIrDqDd@g@Va@r@gAX]XUD?LCJIDMAMP_@NU~@s@vAwApBuBX_@f@aANw@HcAFoCFyBBy@D[Ha@JSb@i@^U\\Mj@Gd@FZRPVFT@`@K\\[^i@PoAPIBMHq@AyCI{IaAcTwBoPkBmCYqMsAmFm@mFi@eEg@eMsAaXoCgLoAyAK}AIiCIuA@eCFeAFu@FyATe@JsGrAqHbBoU~EoAXcDt@oQzDiGtAwQ|DmFjAmH|AkOfDsDr@qFbAsYxFkJlB{Y~FgF`AiDj@oCZkAFqCDyADgGOe@EwBQeDe@_Q{D_Es@WYMGc@IIGAEUCo@EiLkAcQgBcAGEXwCYiFi@wEg@}Cc@w@QmBc@qBk@oX{H_RgFyAUu@CgBKoGFaID{FJmBDaIDoMPuBDuDPwKx@sCN{D\\aGf@aDTcCRwAHsHf@{ABgBP{CVAGEEwAMeCNgBLyFb@{E^{DVgGb@_BNaCNaBHq@?}@HaDVuDZi@HuF`@yRtAgKv@Ca@NCzAMzCM~CUvC[~Fc@vDW~AQLCNKHMAGEGv@g@^SgAqBg@}@Qa@@c@ZaAdAqCFINIn@kC^{AeCp@cDx@_BVOBUBOEKG[g@QS]MIAYBe@Z}A`BcAlAu@d@",
+    "fecha": "2026-06-30 07:13 AM"
+  },
+  {
+    "id": 106,
+    "origen_nombre": "Av José Antonio Lavalle 675, Chorrillos 15067, Perú",
+    "destino_nombre": "Registro Civil, Carabayllo, Lima",
+    "origen_lat": -12.1973588,
+    "origen_lon": -77.00754049999999,
+    "destino_lat": -11.8777535,
+    "destino_lon": -77.0260586,
+    "modo": "Auto",
+    "tiempo_minutos": 120,
+    "distancia_km": 55.73,
+    "polyline": "nhmiAbp_uMf@g@QQfAsAzCbDvAtAvAmBvFsHfA}@pDeCNYtCoBvA_AfBeAfL}FZOs@gAqBwCwGqJcGqFwJsIMOXYXYfBeBbC_CbEaElHkHjR_Rd]w\\|NsNpBqCr@s@D?LCPWAMP_@nAiAhEmE`AaBX{BFoCPoEHa@n@}@|@c@j@Gd@FZRXl@@`@K\\[^i@PoAPIBMHq@AyCI{IaAcTwBoPkBmY{C}cAqK}AI_FGkENoC\\e@JeQvD_XxFsVpFaZrGg`@pIyf@pJol@nLiDj@oCZ}ELyADmHUwBQeDe@_Q{DsIyAcFi@u[_DuRsBkGqAyHyBsVeHyMoD}CWkJBgML{VXoGHaDJuKv@cFZaHn@yJt@aHb@mGZqCX{Il@sRtAuTdBip@rE{GX{DX}ANm@P_CbAiDtAuA\\cADuB[oBgAmByBsIeJoJ}JwFyDgEiBeLqDkOwEe_@qLyBm@wCk@yAQ}KGmDTmDb@iCl@sEvAgNvEwHbCeCx@gAT{CpAyE|AeDhAwEpB_CxAgBrAyC`DgIpJ_O`QaQlSkBhB_Ar@yChBy@`@kBv@qDjAeHvAcG`AsATwFpAaFlByD|BqCrBqCpCiDjEqBbDiEhJg@hB_@rD?zBj@nD`CdJvElPv@vC~@fD|BrG|BdFhEvHbGhJ~D|EbRlUtCnEzBdEpC|GhDbJtCbJdAtGN`DG|EUzQG~Ae@bCoAjEwB|FeB|DgA|BgAnDgAnDi@lAg@z@{AnBqDnE{@zAK^q@`CcBvIoDpQ}AjIUpCo@tFg@jB}@bFiFfRaCvHcBhDeCtDiBxB_@XiB|AaGvDaAd@gAd@wDfAaDb@uUjB_Y`CsW|BoAHqFf@oGZiF^mGl@iDd@{E`AwRxA{FRaOjA_UtBqQzAoJ`AmI~@sHb@aM|@mo@jFa\\rCuGf@cShB{Gh@iNlAyLlAqLz@mL~@oMfAm[nCm_@`DmIp@{Mj@qHZuPr@yFXaBJg_@bBoFTa@Q}@m@g@aA]}EYeCa@uBwAuEsAkCgAeBoB_CaCqByAcAaEoB}N_HmZkNeYoMmIyDgDeBkGqCgSkJqOiHwLqFaQeIkY{MoP_IwEuCeDkCKGO_@]i@i@aAg@}BAqBXyBpAqFhA{DnAqBnBeCpGaIvAgBrBiCSOw@]cEqAaB]{CkAcIoD{G_DmCaBsHwD_HkDkIqEwQsJkSyK",
+    "fecha": "2026-06-30 07:01 AM"
+  },
+  {
+    "id": 105,
+    "origen_nombre": "Pasaje A Mz.D - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Calle 14 15122, Carabayllo 15122, Perú",
+    "origen_lat": -12.1862541,
+    "origen_lon": -76.97438369999999,
+    "destino_lat": -11.8247715,
+    "destino_lon": -77.0378562,
+    "modo": "Auto",
+    "tiempo_minutos": 78,
+    "distancia_km": 56.76,
+    "polyline": "`ckiAz`ytMpN{CXDfB[vCg@~Gw@|@]`@g@d@eBbAaFfCsWGmDWuEaA}PU_FNEFMKa@QGSFIJB\\p@lJ^lHj@bJDhCIzAw@~GcArLY|AOfA[v@_@^gAd@wD`@mFzA{@XIN{Cp@yBf@oU~EoAXcDt@yYpGeYhGyXdGeLvBcgAhTiDj@oCZ}ELyADmHU}Gw@_Q{DsIyAcFi@u[_DuRsBkGqAm`@_LyMoD}CWkJBgML{VXoGHaDJuKv@eOjAyJt@aHb@mGZqCX{Il@sRtAuTdBaTxAg[xB{GX{DXkC`@_CbAiDtAuA\\cADuB[oBgAmByBsIeJoJ}JwFyDgEiBeLqDeGiBua@sMoHyBwCk@yAQ}KGmDTmDb@iCl@cKbDoRnGmEnAuJnDeDhAwEpBgFlDyC`DgIpJ_O`QaQlSkBhB_Ar@yChBy@`@}GbCeHvAcG`AsATwFpAaFlByD|BqCrBqCpCiDjEqBbDiEhJg@hB_@rD?zBj@nD`CdJvElPv@vC~@fD|BrG|BdFhEvHbGhJpJlLpL|NpGtKzH`StCbJdAtGN`DG|EUzQG~Ae@bCoAjEwB|FeB|DgA|BgAnDgAnDi@lAcCjDqDnE{@zAK^q@`CcBvIoDpQ}AjIUpCo@tFg@jB}@bFiFfRaCvHcBhDeCtDiCrCiB|AcI|EgAd@wDfAaDb@uUjBmb@nDeNnAaIp@oGZiF^mGl@iDd@{E`AwRxA{FRaOjA_UtBqQzAoJ`AmI~@sHb@aM|@mo@jFa\\rCuGf@cShB{Gh@iNlAyLlAqLz@}ZfC{{@pHmIp@{Mj@qHZuPr@yFXib@nBaZpAsu@hDcWdA}FL_CSgAWqCmAoLsH_KsG}DsByM{EmJeDcBYkBOwOZmEJ{NXqENe[h@_cA|Bw`@|@}DJiALqCj@_Bn@wHnEqKbGoEbCYFgE~BaEdCSNKQYy@Sy@Sy@qB`A_@WeBuAuFqE_EwCkKoIyBcB_BeAoC_CsL_J[Iy@Ho@`@gClDsG`IWCoCsCqEyEkEcE_GaGqEqEaCaCoDoDaAu@kCq@iAUcAi@YWUKu@QsByAwF_EgGoEeNsJWUK[Dm@Xk@Do@_@qEg@}BwBsCEWV[V[d@}@x@}AdCyEPWRKRATOJYEc@[Wo@DSCcHwDcB}@gGyC{JmE}@e@a@I_DsEoB{CuAuBiE{BoDl@QB?IImA[gD]_CSkBmAkGJQAa@QS]AWRwDMmCYcBg@}@c@wAiA{@iA}@wBM{@LU?QCKZU?B?B@DDFH@BF?n@t@c@^S",
+    "fecha": "2026-06-29 10:03 PM"
+  },
+  {
+    "id": 104,
+    "origen_nombre": "5XC4+GW8, Las Lomas de Carabayllo, Carabayllo 15122, Perú",
+    "destino_nombre": "Calle Los Kiwis Mz.A8 - Lt.8, Carabayllo 15122, Perú",
+    "origen_lat": -11.8285501,
+    "origen_lon": -77.04267349999999,
+    "destino_lat": -11.8221491,
+    "destino_lon": -77.0363859,
+    "modo": "Auto",
+    "tiempo_minutos": 3,
+    "distancia_km": 1.32,
+    "polyline": "lgegAtkfuMS}BOqAa@mBQw@_@o@BIBSEMQSOCM@MFIJwDMeBOg@Ia@IaA]}@c@o@e@g@c@_@c@[e@e@}@Wy@Ic@CWLU?QGQQIOAKDKFCJAT]@?MBUDKU}Ac@_C_@iBo@wACAw@l@eB~A",
+    "fecha": "2026-06-29 10:01 PM"
+  },
+  {
+    "id": 103,
+    "origen_nombre": "5XFC+95 Carabayllo, Perú",
+    "destino_nombre": "5XC6+QPX PARQUE LAS ROSAS, C. 15, Carabayllo 15122, Perú",
+    "origen_lat": -11.8265654,
+    "origen_lon": -77.02956410000002,
+    "destino_lat": -11.8286601,
+    "destino_lon": -77.03852499999999,
+    "modo": "Auto",
+    "tiempo_minutos": 5,
+    "distancia_km": 1.34,
+    "polyline": "`{dgAvycuM`HrBGp@I`BYxEIlAGhBNV?TERSZOTARM^STMd@BHRBb@B|AAp@Jd@LFL@NM^W`@u@x@CHTZHRDX@F`@ZTh@VvAb@~@d@j@d@r@cApBKP}@EMBAJb@tC",
+    "fecha": "2026-06-29 09:59 PM"
+  },
+  {
+    "id": 102,
+    "origen_nombre": "5W6H+8R, Carabayllo 15122, Perú",
+    "destino_nombre": "6X2W+84, Carabayllo 15121, Perú",
+    "origen_lat": -11.838876,
+    "origen_lon": -77.07116649999999,
+    "destino_lat": -11.7985129,
+    "destino_lon": -77.0045117,
+    "modo": "Auto",
+    "tiempo_minutos": 34,
+    "distancia_km": 14.36,
+    "polyline": "~gggAx}kuMb@yFRqC?o@`IlFBS\\aCrAsHHo@B{@Ho@FWHMVkALk@Jc@j@}D`AyDPk@Xi@d@o@p@mALOr@i@p@e@f@a@b@i@x@uAZq@e@G_@Mc@[KMMIUKu@QsByAwF_EgGoEeNsJWUK[ASFYXk@Do@IuAU{BUuAQg@wBsCEWV[V[d@}@x@}AdCyEPWLKD?F?JATOJY?SEOBULa@~DiHd@}@d@}@x@}Ax@}Ad@kAfAiCfCiGn@aBl@w@R]hAoAv@aAvAoAn@a@l@a@pAcAf@c@b@Wh@Od@G\\API\\c@l@w@vAqBtDgFjBaClBuC~C{EjAoBxE{GpAcBl@q@jAu@hAa@HCO[aBsDy@yAqAiBg@}@{AgC{@}As@iA{AaCsA_By@mAe@m@sAwA_EiEuEgEYYcBkBiEwEgAmAo@{@sAkAaAk@yDmBu@UqC{@qAo@_Bq@k@Go@Nm@Zo@n@e@Za@Rc@Jc@D}@B_CBaEDuACs@Og@SmAi@yE_CuCyAgAg@UKgBu@]EaAQc@IoAQyCWgKm@qLw@wCCeA@_AHcALiAVuJfCaSnFw@^_@Z[\\k@hA[zAUdAO^WZs@^s@H_@A_A[}Aw@gCwAaHyDuDuBq@s@]q@Kq@Gc@C{@I{@K[SY]Sa@Qa@Ac@D_@LYRSXGLGXCb@@b@@t@Ad@M`@ORWPa@Fa@EYOWUMc@KuAKgC@k@Ls@`@y@lAyBJ[B_@AYEMO[KKgAw@w@o@k@k@]c@_AwAoCsE{@qAw@y@}A{@cA]wB]iAOiCWsEc@G@Kc@W_AUWIkAe@_Af@sAKa@o@kAk@s@a@[La@ZULIDQHc@BMj@i@^WB]NiCHk@Ju@\\k@j@kAFi@?o@Ym@MQk@s@i@_BY}@s@mBUU}@{@aBe@}A[kBYSBoAJ[PyCbBqDOyCMO?iAa@IC",
+    "fecha": "2026-06-29 09:57 PM"
+  },
+  {
+    "id": 101,
+    "origen_nombre": "5XFC+95 Carabayllo, Perú",
+    "destino_nombre": "5XC6+QPX PARQUE LAS ROSAS, C. 15, Carabayllo 15122, Perú",
+    "origen_lat": -11.8265654,
+    "origen_lon": -77.02956410000002,
+    "destino_lat": -11.82866,
+    "destino_lon": -77.03852499999999,
+    "modo": "Auto",
+    "tiempo_minutos": 5,
+    "distancia_km": 1.34,
+    "polyline": "`{dgAvycuM`HrBGp@I`BYxEIlAGhBNV?TERSZOTARM^STMd@BHRBb@B|AAp@Jd@LFL@NM^W`@u@x@CHTZHRDX@F`@ZTh@VvAb@~@d@j@d@r@cApBKP}@EMBAJb@tC",
+    "fecha": "2026-06-28 09:42 PM"
+  },
+  {
+    "id": 100,
+    "origen_nombre": "5X9F+CV, Carabayllo 15121, Perú",
+    "destino_nombre": "5X94+P83, Carabayllo 15122, Perú",
+    "origen_lat": -11.831650203821317,
+    "origen_lon": -77.02643394470216,
+    "destino_lat": -11.831230167732103,
+    "destino_lon": -77.04445838928224,
+    "modo": "Auto",
+    "tiempo_minutos": 9,
+    "distancia_km": 3.12,
+    "polyline": "b{egAzecuM_@]mAlACDEHElA?PAXCv@An@EpBEfBGhBCz@Oz@qDhO?PBRDPXXr@n@lAhAhA~@x@n@lCrBlCtBzB`Bp@f@t@p@XX{C~A_JjEuGfD{Av@yDxBUNO@a@HWNg@r@GJ]FEEMEOAMDIHGJAVDJFJJDB?PT`BhHL^PlBJXHe@~AKf@@t@Ad@Ct@_@t@]t@KfAMb@Bb@BCb@GhAQnCGzC",
+    "fecha": "2026-06-28 09:36 PM"
+  },
+  {
+    "id": 99,
+    "origen_nombre": "5X9F+CV, Carabayllo 15121, Perú",
+    "destino_nombre": "5X94+P83, Carabayllo 15122, Perú",
+    "origen_lat": -11.831650203821317,
+    "origen_lon": -77.02643394470216,
+    "destino_lat": -11.831230167732103,
+    "destino_lon": -77.04445838928224,
+    "modo": "Auto",
+    "tiempo_minutos": 9,
+    "distancia_km": 3.12,
+    "polyline": "b{egAzecuM_@]mAlACDEHElA?PAXCv@An@EpBEfBGhBCz@Oz@qDhO?PBRDPXXr@n@lAhAhA~@x@n@lCrBlCtBzB`Bp@f@t@p@XX{C~A_JjEuGfD{Av@yDxBUNO@a@HWNg@r@GJ]FEEMEOAMDIHGJAVDJFJJDB?PT`BhHL^PlBJXHe@~AKf@@t@Ad@Ct@_@t@]t@KfAMb@Bb@BCb@GhAQnCGzC",
+    "fecha": "2026-06-28 09:35 PM"
+  },
+  {
+    "id": 98,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 67,
+    "distancia_km": 50.52,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAwNxAyLx@oMbAoOtAwZhCaKx@}X`Cgj@~BeFTqBN{a@hB{BJQG]O{@u@Uc@Ku@_@eF_AoFc@_Bq@eB}AyCeA{AsB_CuBcBaBgAqDeBsR}I_OaHgT{J}LuFgIwD{FqC}GyCaQiIqOgHkLkFuJqEwFmCuKeFoJmEmHgDoGaDsEwCcCqBOKG[e@u@k@kAUaAIcABmBb@{BjB}Hp@gBvByCjA{AfH{IbDaE{@e@qAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuE_E{ByRiKqQsJ",
+    "fecha": "2026-06-28 09:21 PM"
+  },
+  {
+    "id": 97,
+    "origen_nombre": "52JC+JR Carabayllo, Perú",
+    "destino_nombre": "Av. Túpac Amaru 440, Carabayllo 15320, Perú",
+    "origen_lat": -11.818460762851442,
+    "origen_lon": -76.9779396057129,
+    "destino_lat": -11.817158586120236,
+    "destino_lon": -76.99201583862306,
+    "modo": "Auto",
+    "tiempo_minutos": 12,
+    "distancia_km": 5.66,
+    "polyline": "zzbgAzuytMCf@A^Sb@sAbDa@~@Sf@UbB?b@@p@a@n@IJAx@?hAFlAEbAEpCAhAUdASdASv@k@jB_AfD[xBQjBItAIhAIAiCg@qBYM`@c@fBUx@GHQBq@CmBEaAAOF]ZCFWK]IsAGuC[iQoBeJeA]GkAa@eAw@iAwAsA{AW_@SOa@Y[KWCoB?u@IYKUQm@}@aBqCw@}@w@o@yA}@e@tAsC_A]`AtAj@~@XDMz@oCxBvA|@~@f@r@jApBb@p@PPVP^HTDb@?lA?\\@TFZNf@^tAdBhAtAd@d@b@Zb@VbAZ|KpAtQpBlALz@D~@Hd@Pb@b@nApAlA|@x@d@zEtBnAp@bGvD|@d@`@NnAH`DFh@Fh@NXTNL",
+    "fecha": "2026-06-28 09:14 PM"
+  },
+  {
+    "id": 96,
+    "origen_nombre": "Prol. Ca. El Carmen 1463, Villa María del Triunfo 15809, Perú",
+    "destino_nombre": "R3PC+MHG, Villa María del Triunfo 15817, Perú",
+    "origen_lat": -12.15505268595712,
+    "origen_lon": -76.93682670593263,
+    "destino_lat": -12.16418319993928,
+    "destino_lon": -76.9280455153173,
+    "modo": "Auto",
+    "tiempo_minutos": 15,
+    "distancia_km": 3.04,
+    "polyline": "z_eiAhvqtMp@xA\\v@Np@N`@Hf@L`@NX[TA@AB?B@Fs@XQBYHOBMk@C{@k@_D[iAMo@Kc@AEAE]Fi@PMKKKKa@?QHg@DSAOCWn@yA@UCUG]CIM[Iq@Ga@AWUSn@STMOCMK?ONw@D_@Dm@Ce@IYU[SMSSNCFEIGSm@CM@EfAe@j@U`AYp@Ez@CTDLBHB\\Ax@Kr@@dANhBDfADd@FH?d@Dp@Gl@Wh@_@r@[T?^LRBf@JH?DKNB^Fn@HT?tAJp@Nz@TrADXVHX`@l@LV^LRDNEX?fAAj@?vALR@^?R?@E?QA[Qm@A_@D_@@q@C]jA@HC@EI}BO{F~CQFC@OKeBEaAAMID{AiB",
+    "fecha": "2026-06-28 09:09 PM"
+  },
+  {
+    "id": 95,
+    "origen_nombre": "7X9V+GJ Carabayllo, Perú",
+    "destino_nombre": "942C+5M Cocayalta, Perú",
+    "origen_lat": -11.731243281148604,
+    "origen_lon": -77.00592041015626,
+    "destino_lat": -11.649500060134985,
+    "destino_lon": -76.87831748882051,
+    "modo": "Auto",
+    "tiempo_minutos": 31,
+    "distancia_km": 16.31,
+    "polyline": "ntqfAzx{tMZG|@c@^Qp@YXE^?|@U\\CnAIz@]^MR?HNR^@DZFVD|@QLMx@k@~AiA\\k@HGA_@FW|AyAd@k@Zg@z@_CdAuCDODIHUTi@Ri@HQDKAMKSQMe@]GGECMQGSAMXu@pBmGb@sAHe@Dk@?k@c@oCa@}@yBwAQMQaA[cBq@qAYo@GmA?cBQqAg@gCWiBaAuBQg@SaAGa@CMWUw@c@{AaAi@g@USy@u@SKaB{@SG}@Sc@]o@{@aAm@cAs@{@m@eB}AmAcAs@a@m@MgB_@a@k@aFaHu@uAPBNA~Bw@BC@E|@[nAa@GOMk@KeAOsBOgAm@cCKy@@}AHmBNkBFiACgAOgA_@iBw@mD]aAs@_BcBeDs@mAwCuDcAsA{@kA{AgC_AgBu@m@s@[cBk@m@[e@a@i@w@yEeJeBwCy@iAuHsJkBsB{AyAiEoEyD_EgJiJ}CwCYQUMu@S}@Gm@AcDJgAEg@KmHaDu@]uCeAiEaBqBcAmIcF}OmJmBmAiAq@_@M_@Go@?wAH_@A]IUM_@c@Wu@Qo@Wq@]k@eAmAqDgEw@uAmAeCgD{GeCsE{CiFs@{@u@u@cC{BaBgBqAiBoByCWY_Au@q@]cBo@oAi@{@o@iAsAwBgC}A}Ai@a@kD}BmCcBeA}@qB{BqAaBeAyAoAiCaDeHaDiHuAyDs@qCw@mDy@mDqAeGcAkG{@sFCsAd@yM?gAGwBGkAA_B@gE?{ABo@T}BFs@BcGKiAGq@Bg@XyBPoAZoBNk@@ASCc@BSHsAbAiCtBs@n@SJ_@JECCI?iADUV_AFWCmABy@Fm@AoAESEI_@W[QYS_D{AOGMQEQHMT]Z_@`@eADSCOEMECaAUa@KsJ}B]SIMCS?MFg@La@DWHo@@S?mACaAAa@Lc@h@qAz@yAn@aDR_ALc@?U?WDSLm@FWh@}BL{@Pg@h@u@f@_@WEi@D@U\\a@d@kAXcATm@Ly@Hy@CKGLq@~@KF]PcAZk@NGG@KXa@L]f@y@^i@Zg@J[Py@E[MAmB`AOH{@R]Fy@HAET_@d@y@R]^_ACUFs@Ds@AQGEGBWTu@h@y@j@W^O?CK",
+    "fecha": "2026-06-28 09:08 PM"
+  },
+  {
+    "id": 94,
+    "origen_nombre": "F22G+X5 Ancón, Perú",
+    "destino_nombre": "F24P+R8 Ancón, Perú",
+    "origen_lat": -11.547622817184347,
+    "origen_lon": -76.97454929351808,
+    "destino_lat": -11.542972618885004,
+    "destino_lon": -76.9641538535907,
+    "modo": "Auto",
+    "tiempo_minutos": 1,
+    "distancia_km": 0.06,
+    "polyline": "|dneA`mxtMWBe@?e@EM?",
+    "fecha": "2026-06-28 09:08 PM"
+  },
+  {
+    "id": 93,
+    "origen_nombre": "C2Q4+RP Ancón, Perú",
+    "destino_nombre": "F37C+HV Ancón, Perú",
+    "origen_lat": -11.54812,
+    "origen_lon": -76.97062,
+    "destino_lat": -11.55168,
+    "destino_lon": -76.96825,
+    "modo": "Auto",
+    "tiempo_minutos": 1,
+    "distancia_km": 0.48,
+    "polyline": "vnneAjixtMDCX[V]j@i@n@_@tAi@p@[d@[NUZ]dAeA|@]nBm@dBi@",
+    "fecha": "2026-06-28 09:08 PM"
+  },
+  {
+    "id": 92,
+    "origen_nombre": "C2Q4+RP Ancón, Perú",
+    "destino_nombre": "F37C+HV Ancón, Perú",
+    "origen_lat": -11.560425738871473,
+    "origen_lon": -76.99321746826173,
+    "destino_lat": -11.536038717661112,
+    "destino_lon": -76.92781448364258,
+    "modo": "A pie",
+    "tiempo_minutos": 8,
+    "distancia_km": 0.48,
+    "polyline": "vnneAjixtMVUJQf@k@l@c@x@[lAk@v@a@LMV_@LMr@w@d@Y|FiB@?",
+    "fecha": "2026-06-28 09:07 PM"
+  },
+  {
+    "id": 91,
+    "origen_nombre": "VCGM+5C Cochahuayco, Perú",
+    "destino_nombre": "VFW7+X7 Cochahuayco, Perú",
+    "origen_lat": -12.13162,
+    "origen_lon": -76.56619,
+    "destino_lat": -12.07989,
+    "destino_lon": -76.5151,
+    "modo": "Auto",
+    "tiempo_minutos": 178,
+    "distancia_km": 65.84,
+    "polyline": "rm`iAtiirMfG}H~Lu@bFgBkAuBwHiEkBeLoC}Er@oMy@aOkAcHzEyE|QsBvF]vFHvFtDhBwInB_KbF_ItE_DtEg@lQJrCuFwBkHwHaO|BiEfBsFlQqPZiJnAgFzHuEdB{JyAeIOmChCiDXqHqLuFmNcNaAgPwA{K~CiFtEd@dGa@rEeIzDiAfHBfIlBfEz@dEmAFoH~BiBl@oCnDoFvJgD`CqBlDbCvAlApAmBtD_ElCIHsBbC`A`DsD`L{Fr[c@hDmBv@{DzKeHdI{HKaHlCyEdKsD_@sOwEiMqGiBcLeGuEyLqBwGnCmAtHyJfEqLdAqMnDeI[_K{G}KvKeB~IsBxEcIwCiJtAaIcCeKrGqEzS{K`GkHv@iKnClAp@_DiJkRLwKu@eYc@gRhG_PYmDwGuCmDgDOmD~AkIfDeMG_EkCA|AiFaF_I[mPcFuQ@{S_@eF_GqHfAkOaDuPqKmIgFiOLcI`C{EiDkC`CaBpH}KtBoOcArBuA~@qCiJmDsD_JaAuIrAcHw@{JjDuDv@A`Ds@lHkE`BmHfGoDnJeDnCcFzLsDpG|CmN_GnFr@cDlD}I}MhIqAtBd@fDExW`B|HfL~CdChB@bFqB|IApGxAtK\\vBgB@sLfAgBvA^rElEjPsBlHkEjAc@f@gAaCdAgDg@sBsBnF{Bf@LuIk@qH{F|FsAtHyEGVnD_HpKyCtGqGbBgH{C}F~@yChB_B_BcLm@cD`DgCsAoCeFoCbAgJnMgCfKqMx@gCgAF_GuKR_AlE|BhFHtB_HkI{DcRuBbFhCbMkOeO{KgEeESxCr@cJcAGgBq@h@tBlCjVpLzE`NqBlAAxEoA_Hf@vJdAfC}F`OyBzDpDaQn@{CyFmFfCjHgFxN}BtBr@qA`C{LuHlM|ClDcBb@uFpAYnDTdC_DbEe@a@hBwE]qA^wCpAsCzAgAyBaAoBe@bB{BkCaB~BaKgDaB{DaFrAcE~@}B|@gAeDsAuDGvE`BWnBwBYeAvC_@vHxDjFx@lK}F`D}DtH[bFGbEeAaEl@}Fe@wBXzFoBbFiFzH[fCOcBdD_Jk@{F_GxOaM`Q_UjXgC~QcI~Cq@hAxDMhPlCpKlEjGtBi@r@}PzCuNtAi@`IwIcEu@hCmEKqD`HuGfB_CrEMhD\\gMxKkIjEqHgGlGuPzJ}DkAeBFpFc@nDkDwJdCqSvG}IpCcBrH}CtQmGbRoCrJjAzFmBbAeCzGwB`DmH|g@iG|UoEfAiGpGsFbS_CfH_IEeA|JmSvHwTzTaJlX_DjClA|PeArC",
+    "fecha": "2026-06-28 09:07 PM"
+  },
+  {
+    "id": 90,
+    "origen_nombre": "VCGM+5C Cochahuayco, Perú",
+    "destino_nombre": "VFW7+X7 Cochahuayco, Perú",
+    "origen_lat": -12.13162,
+    "origen_lon": -76.56619,
+    "destino_lat": -12.07989,
+    "destino_lon": -76.5151,
+    "modo": "Auto",
+    "tiempo_minutos": 178,
+    "distancia_km": 65.84,
+    "polyline": "rm`iAtiirMfG}H~Lu@bFgBkAuBwHiEkBeLoC}Er@oMy@aOkAcHzEyE|QsBvF]vFHvFtDhBwInB_KbF_ItE_DtEg@lQJrCuFwBkHwHaO|BiEfBsFlQqPZiJnAgFzHuEdB{JyAeIOmChCiDXqHqLuFmNcNaAgPwA{K~CiFtEd@dGa@rEeIzDiAfHBfIlBfEz@dEmAFoH~BiBl@oCnDoFvJgD`CqBlDbCvAlApAmBtD_ElCIHsBbC`A`DsD`L{Fr[c@hDmBv@{DzKeHdI{HKaHlCyEdKsD_@sOwEiMqGiBcLeGuEyLqBwGnCmAtHyJfEqLdAqMnDeI[_K{G}KvKeB~IsBxEcIwCiJtAaIcCeKrGqEzS{K`GkHv@iKnClAp@_DiJkRLwKu@eYc@gRhG_PYmDwGuCmDgDOmD~AkIfDeMG_EkCA|AiFaF_I[mPcFuQ@{S_@eF_GqHfAkOaDuPqKmIgFiOLcI`C{EiDkC`CaBpH}KtBoOcArBuA~@qCiJmDsD_JaAuIrAcHw@{JjDuDv@A`Ds@lHkE`BmHfGoDnJeDnCcFzLsDpG|CmN_GnFr@cDlD}I}MhIqAtBd@fDExW`B|HfL~CdChB@bFqB|IApGxAtK\\vBgB@sLfAgBvA^rElEjPsBlHkEjAc@f@gAaCdAgDg@sBsBnF{Bf@LuIk@qH{F|FsAtHyEGVnD_HpKyCtGqGbBgH{C}F~@yChB_B_BcLm@cD`DgCsAoCeFoCbAgJnMgCfKqMx@gCgAF_GuKR_AlE|BhFHtB_HkI{DcRuBbFhCbMkOeO{KgEeESxCr@cJcAGgBq@h@tBlCjVpLzE`NqBlAAxEoA_Hf@vJdAfC}F`OyBzDpDaQn@{CyFmFfCjHgFxN}BtBr@qA`C{LuHlM|ClDcBb@uFpAYnDTdC_DbEe@a@hBwE]qA^wCpAsCzAgAyBaAoBe@bB{BkCaB~BaKgDaB{DaFrAcE~@}B|@gAeDsAuDGvE`BWnBwBYeAvC_@vHxDjFx@lK}F`D}DtH[bFGbEeAaEl@}Fe@wBXzFoBbFiFzH[fCOcBdD_Jk@{F_GxOaM`Q_UjXgC~QcI~Cq@hAxDMhPlCpKlEjGtBi@r@}PzCuNtAi@`IwIcEu@hCmEKqD`HuGfB_CrEMhD\\gMxKkIjEqHgGlGuPzJ}DkAeBFpFc@nDkDwJdCqSvG}IpCcBrH}CtQmGbRoCrJjAzFmBbAeCzGwB`DmH|g@iG|UoEfAiGpGsFbS_CfH_IEeA|JmSvHwTzTaJlX_DjClA|PeArC",
+    "fecha": "2026-06-28 09:07 PM"
+  },
+  {
+    "id": 89,
+    "origen_nombre": "VCGM+5C Cochahuayco, Perú",
+    "destino_nombre": "VFW7+X7 Cochahuayco, Perú",
+    "origen_lat": -12.124592890551417,
+    "origen_lon": -76.56646728515626,
+    "destino_lat": -12.102605972369158,
+    "destino_lon": -76.53685569763185,
+    "modo": "Auto",
+    "tiempo_minutos": 178,
+    "distancia_km": 65.84,
+    "polyline": "rm`iAtiirMfG}H~Lu@bFgBkAuBwHiEkBeLoC}Er@oMy@aOkAcHzEyE|QsBvF]vFHvFtDhBwInB_KbF_ItE_DtEg@lQJrCuFwBkHwHaO|BiEfBsFlQqPZiJnAgFzHuEdB{JyAeIOmChCiDXqHqLuFmNcNaAgPwA{K~CiFtEd@dGa@rEeIzDiAfHBfIlBfEz@dEmAFoH~BiBl@oCnDoFvJgD`CqBlDbCvAlApAmBtD_ElCIHsBbC`A`DsD`L{Fr[c@hDmBv@{DzKeHdI{HKaHlCyEdKsD_@sOwEiMqGiBcLeGuEyLqBwGnCmAtHyJfEqLdAqMnDeI[_K{G}KvKeB~IsBxEcIwCiJtAaIcCeKrGqEzS{K`GkHv@iKnClAp@_DiJkRLwKu@eYc@gRhG_PYmDwGuCmDgDOmD~AkIfDeMG_EkCA|AiFaF_I[mPcFuQ@{S_@eF_GqHfAkOaDuPqKmIgFiOLcI`C{EiDkC`CaBpH}KtBoOcArBuA~@qCiJmDsD_JaAuIrAcHw@{JjDuDv@A`Ds@lHkE`BmHfGoDnJeDnCcFzLsDpG|CmN_GnFr@cDlD}I}MhIqAtBd@fDExW`B|HfL~CdChB@bFqB|IApGxAtK\\vBgB@sLfAgBvA^rElEjPsBlHkEjAc@f@gAaCdAgDg@sBsBnF{Bf@LuIk@qH{F|FsAtHyEGVnD_HpKyCtGqGbBgH{C}F~@yChB_B_BcLm@cD`DgCsAoCeFoCbAgJnMgCfKqMx@gCgAF_GuKR_AlE|BhFHtB_HkI{DcRuBbFhCbMkOeO{KgEeESxCr@cJcAGgBq@h@tBlCjVpLzE`NqBlAAxEoA_Hf@vJdAfC}F`OyBzDpDaQn@{CyFmFfCjHgFxN}BtBr@qA`C{LuHlM|ClDcBb@uFpAYnDTdC_DbEe@a@hBwE]qA^wCpAsCzAgAyBaAoBe@bB{BkCaB~BaKgDaB{DaFrAcE~@}B|@gAeDsAuDGvE`BWnBwBYeAvC_@vHxDjFx@lK}F`D}DtH[bFGbEeAaEl@}Fe@wBXzFoBbFiFzH[fCOcBdD_Jk@{F_GxOaM`Q_UjXgC~QcI~Cq@hAxDMhPlCpKlEjGtBi@r@}PzCuNtAi@`IwIcEu@hCmEKqD`HuGfB_CrEMhD\\gMxKkIjEqHgGlGuPzJ}DkAeBFpFc@nDkDwJdCqSvG}IpCcBrH}CtQmGbRoCrJjAzFmBbAeCzGwB`DmH|g@iG|UoEfAiGpGsFbS_CfH_IEeA|JmSvHwTzTaJlX_DjClA|PeArC",
+    "fecha": "2026-06-28 09:06 PM"
+  },
+  {
+    "id": 88,
+    "origen_nombre": "3322+WG4, San Antonio de Chaclla 15446, Perú",
+    "destino_nombre": "34F7+XF San Antonio de Chaclla, Perú",
+    "origen_lat": -11.947975286928044,
+    "origen_lon": -76.94772720336914,
+    "destino_lat": -11.925050165589031,
+    "destino_lon": -76.88635826110841,
+    "modo": "Auto",
+    "tiempo_minutos": 48,
+    "distancia_km": 20.81,
+    "polyline": "xq|gAdzstMjAg@dAw@~@o@v@_@hAa@tAq@dAg@HM@INJj@ZNFGr@SpAI`@ALzARxAPtAZNy@R}@RwB@a@IAOYW]UUBGNQJO\\w@KaBR_@NM`@]FQLc@FUEc@C_@HYLa@Eg@CUJALETa@Da@Gw@E{@De@N[PO^K`AB^CPQVe@@e@q@gAc@}@AOP_@pAcBRM`@Bd@J`@EfAc@`@SJk@Ck@g@a@o@o@Ok@?UpAwD@YS[GSDy@Ao@E_@IGc@?wAd@k@?u@Y]UU_@KYCc@IyFEuEVi@DWGc@_@c@Wc@AOZqAXy@RUXMj@Q\\ARPSt@OdABRF\\P^TFRCp@o@`Au@`@AzAx@^TNHr@PpAVjCd@d@DREPUZ]\\ErDf@dAJtB\\dBRzDj@hB^z@^ZLjC`A~BbA^N|@`@JPvAl@`A^|An@`E~AnIbDrB|@pEfBlXtKzGrCrIbDlBt@|@d@vJvDTi@jAuAt@g@t@KrECNIb@a@~GuG~BwBhHkG`AaAj@k@FYrEoEzG}FzCaChMcJvVkQtDcCrDmCzB{B`C_DfBkCdBeCv@_BlA}CZ}@vBoGjAeD~A_ExBsFf@qAMo@[y@M]Uw@]e@sBwAq@q@mBiCcAy@y@]m@G_D?_@Cy@k@s@q@q@s@iAo@_Aw@U_@k@{AMg@Y}@U]YQ{@i@yAmAc@w@Ey@BeABgAGa@QuAk@cBcAeBcCqBqAeBy@eBc@eAcBiCkBsCcAeB{@}C_AyDo@iA}@s@uAw@eAu@qAs@aDeBuBwA[i@WcA[k@e@SuAe@qBg@w@EO?_@M]Wu@q@wCsCmD}CcDkDiA}@k@OuCAkAOgBaAoCyBaAg@yBi@c@KwAQ{ASgACk@@u@Lk@Ea@Ka@MWq@m@}@e@_@y@[k@CiBEsAHeAP_DJeAC{@?cCLaDDeAEoADwE@k@GmAa@iGkBm@[s@o@_Aq@_A_@gAS}BAyCQaAQ_A_@eAo@iA_Aa@XWD]?cAU[Gu@USk@GSHMRu@Gy@OWk@c@[Gw@DYLc@f@ENa@HqCCeAIaEeAoCw@eDeA}CwA_Ag@o@e@kB}@u@c@aBeAeHuDsF}CoEoCoEaDwOuKgOsKcCiBiE`GwArBeCjDMPkDeCuAcAsDkCWWIFs@^sGlDgAj@{@d@KGWM[E[B[NUXI^@b@L^cCdA{BjAuAz@aCzCeHrAiBd@kB|@q@F}@JwB~A{ErCcGnDaBz@W?_@OcCmAcB_Au@@",
+    "fecha": "2026-06-28 09:06 PM"
+  },
+  {
+    "id": 87,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "R29J+7C San Juan de Miraflores, Perú",
+    "origen_lat": -12.186326365901841,
+    "origen_lon": -76.9743600047071,
+    "destino_lat": -12.181775557267887,
+    "destino_lon": -76.96894884109498,
+    "modo": "Auto",
+    "tiempo_minutos": 10,
+    "distancia_km": 3.99,
+    "polyline": "pckiAv`ytMhH}A\\GxCq@RDtASpAU~Bc@jBUdCUj@K`@WV[HONg@VeA^iBR}@LeAXmCpAsMRoBBmA?o@IaBYkFWgFIgBe@cHGkAC{@B?FCBCDC@ICSIMQEQDA@EDQJuTzKqFrCeBx@{@RcB`@aG`BcAXVz@@A~@W`A[`AY`@IL`@H^?JGRWdACHILIDaA\\oBl@gJlCcEfAv@tCp@hC_EjA",
+    "fecha": "2026-06-28 09:05 PM"
+  },
+  {
+    "id": 86,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "R29J+7C San Juan de Miraflores, Perú",
+    "origen_lat": -12.186326365901841,
+    "origen_lon": -76.9743600047071,
+    "destino_lat": -12.181775557267887,
+    "destino_lon": -76.96894884109498,
+    "modo": "Auto",
+    "tiempo_minutos": 10,
+    "distancia_km": 3.99,
+    "polyline": "pckiAv`ytMhH}A\\GxCq@RDtASpAU~Bc@jBUdCUj@K`@WV[HONg@VeA^iBR}@LeAXmCpAsMRoBBmA?o@IaBYkFWgFIgBe@cHGkAC{@B?FCBCDC@ICSIMQEQDA@EDQJuTzKqFrCeBx@{@RcB`@aG`BcAXVz@@A~@W`A[`AY`@IL`@H^?JGRWdACHILIDaA\\oBl@gJlCcEfAv@tCp@hC_EjA",
+    "fecha": "2026-06-28 09:05 PM"
+  },
+  {
+    "id": 85,
+    "origen_nombre": "35JR+JH San Antonio de Chaclla, Perú",
+    "destino_nombre": "474H+99 Lurigancho-Chosica, Perú",
+    "origen_lat": -11.918415794532,
+    "origen_lon": -76.80850982666016,
+    "destino_lat": -11.894006951147599,
+    "destino_lon": -76.72158132572844,
+    "modo": "Auto",
+    "tiempo_minutos": 65,
+    "distancia_km": 23.95,
+    "polyline": "`|zgAzstsM|EnAZ{@jAZbAR^OFCHYV_A\\H|A`@DBHZ@PqAr@YVk@z@O\\AZHB`@FfAB|BXp@IRCZXPPRCAUMK@Ql@]r@[BUu@BOOJO\\ORIvAcBnBcCp@y@N[b@_ATs@BDJb@G`@Kh@H\\^OP]\\cADk@jA`@ZJLGrAgBPUNi@V}@X_A`@JrBh@TFT{@`@LdBd@jBh@vCz@fK~B~KjBb@Lt@f@f@w@h@{@l@d@xC|BhA~@\\Z`@NhBr@lAd@pFtAfI|BnCx@hA\\v@^hEnBZXZPjAj@`D~AlAn@pAp@X@^Rr@d@\\Vf@T~@T`BdA|@|@^RP@n@Vq@pAaBxCS^B@x@NjAThA\\jBx@hAt@fAl@~Ar@vAx@fCnAfMhG`EtB`Ad@`@R^RZG\\I~A[`B]j@IrBUl@CVDVRP`@dA~DfAbDl@zAR`@|ApGz@nDj@jCRf@Nh@LHNAmBmI_A}DgB}HuAsGm@{DiAyJWsDWoHc@{T[gQAaHA{BF}@BONGnCgA|@_@tBm@jAUPC[oBeA}HoAwKe@uDsBwPsAgKc@aCq@aDwE{ToCgMu@{Da@kHc@yJQaEGq@EOIiBKiAMo@wBeHqBuGsCmJ_JyZgAcDsCyJi@oBMs@k@_HQeAo@m@sEwBYW_D{DwDeFuFuHuC}DSc@{AyCgAaCq@kAu@cA{CgDuKqLgH_I{IsJsIiJuDeEsAiBuGuJo@kAa@eAGKwA_FgBeGyAqFuCqKgHiWs@cCScAMaASuCe@mHc@_DoAaGc@aAg@e@a@UcAUkB_@g@S[Us@aAc@iAOk@Ou@GOkAmIaByKo@sDo@sBuCuGiCdAuAv@w@f@}@wA{@gA}A{BsAeAGAY`@aApAM\\W\\o@h@gAl@kALkB@_HCuAAq@?e@A}A?u@EiDQoAIYI]Sg@GE`@Kb@qE[eAMiD]_@G_@Uy@]a@Mg@IgAGuAAQdBQr@ERICSAu@QaAMcBQQ?aA?mAAuA?{@\\[Zm@dAGb@UVm@TSDc@@aA@cACgAAgABc@DYFk@R{@h@{@f@]RMZg@Jc@F]DUPK?_@?UV]AaA`Aw@`@_@`@m@h@}@d@k@n@E@IGSM_@L]RMLCNGFOYIc@ESI?W@OHsA@]IQ@[Ea@Dk@Oe@Ma@W}@IYEEF_@PeB\\{@JqAKw@Jk@VwAl@Rh@AX\\`@v@l@~@~@nAG`@c@H_@HEP?HV?ZSz@m@h@y@|Ak@NGBc@IOGCD?RRZPDZH@HUVO^FFTIb@APBENYXQ^[`Ai@|@[j@a@T}@|@q@j@k@Pw@Ja@d@UV",
+    "fecha": "2026-06-28 09:04 PM"
+  },
+  {
+    "id": 84,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186299318734436,
+    "origen_lon": -76.97438819895702,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "A pie",
+    "tiempo_minutos": 583,
+    "distancia_km": 41.34,
+    "polyline": "tckiA`bytM_H~AnAbGnEdTd@rBHl@HH^BhBMj@@P@ZjBVhBhA~GNx@Pf@NTVRPhAdAjGLj@X~C@T_@|@Q\\c@x@cAfAyAhA_A|@eBtAiAx@kAz@_@RsBtA}IvFu@Xu@Lc@HiBAw@Em@B[F[XgBfCaBlCq@l@cIrKyD`FkDlEuJlMqAbBq@jAyCxLa@|Cg@`CUn@UVaAh@yAp@wCfBn@dArBpC`DzDhGhHtGzHvBfCZ^aI`Hw@p@_@Zq@d@oGdF}BrBaGlFyGfFeCfBoBbAcCbAGFQb@Oj@UZ[NwDCmLMsFI{F[iFc@_DU?HCVoDUyBOiAAyGn@{Gp@yGx@mBJgHb@}@JkBp@aFpA{DbAwCl@mF`AqDd@mOp@_CLcHRy@TiHXeEL_Hf@mCPqBTk@BcFpA}Bb@eINyFP_G\\gCNaJpAm@LkDFkFR{K`B}I|AkDdAaB^qC`@iALgBRA`FBvCcCEsA?q@?uBT_OrAyFh@s@BkANsD^qHt@wHp@{NvA_SlBqIx@uX`CkEXcGj@uQvAq@BuFf@sRtAcRvAqPlAoLfAkIj@aGf@_M`AyB\\yFXYBiAHcFP_@FoGt@uPvAeG`@cBD[L_AFeBHJnEcAH_@BuHVyDLwJ`@gOj@sEPcLl@}Gb@s@DcHb@S^{@|AaA~AsEhI_BnCi@Oc@@e@TU`@CZ?NHb@KEICQ@i@BqEVgBDQFWRMTURm@HW?WKc@g@s@IoDRsEVkC@}Lj@gEPeHTuIPcMh@wOl@e@Bg@N]ZgExEkLnMiHfJY`@[YICEFWXmA|@k@Tu@PmHp@_Gl@uCNiBUc@Ds@^}Aj@y[vEyInA{JpA{ShC}JfAyL`AcDRcBPkKr@cBBcFCcADe@HyBt@}@d@uFtCkBbAsAd@kAReBHgJe@mBOeDIsDf@qMpBkJrAwLlB}JdBi@Vo@R{AVgCXgCFsAIc@Gk@As@^g@F_GDoBAgZxDkZ|DyNtB{Dj@i@BCEGGWOQCa@Sg@k@uC{ByBeAmA]qNmCsCc@_AI_EG_DBgNNeGJiQjAcCNqBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iMiG}GcD{HoDsNoGiX_MmCiAuBm@iCg@kBUiD[iSmByFcAsCaAgCeAuCsAwL{F{DkBwE}BoAg@qD_BaXaMs]cP_Q}HoDgB{TgKwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuE_E{ByRiKqQsJ",
+    "fecha": "2026-06-28 09:03 PM"
+  },
+  {
+    "id": 83,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 70,
+    "distancia_km": 50.52,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAwNxAyLx@oMbAoOtAwZhCaKx@}X`Cgj@~BeFTqBN{a@hB{BJQG]O{@u@Uc@Ku@_@eF_AoFc@_Bq@eB}AyCeA{AsB_CuBcBaBgAqDeBsR}I_OaHgT{J}LuFgIwD{FqC}GyCaQiIqOgHkLkFuJqEwFmCuKeFoJmEmHgDoGaDsEwCcCqBOKG[e@u@k@kAUaAIcABmBb@{BjB}Hp@gBvByCjA{AfH{IbDaE{@e@qAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuE_E{ByRiKqQsJ",
+    "fecha": "2026-06-28 09:03 PM"
+  },
+  {
+    "id": 82,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 70,
+    "distancia_km": 50.52,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAwNxAyLx@oMbAoOtAwZhCaKx@}X`Cgj@~BeFTqBN{a@hB{BJQG]O{@u@Uc@Ku@_@eF_AoFc@_Bq@eB}AyCeA{AsB_CuBcBaBgAqDeBsR}I_OaHgT{J}LuFgIwD{FqC}GyCaQiIqOgHkLkFuJqEwFmCuKeFoJmEmHgDoGaDsEwCcCqBOKG[e@u@k@kAUaAIcABmBb@{BjB}Hp@gBvByCjA{AfH{IbDaE{@e@qAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuE_E{ByRiKqQsJ",
+    "fecha": "2026-06-28 09:03 PM"
+  },
+  {
+    "id": 81,
+    "origen_nombre": "26X5+58 Lurigancho-Chosica, Perú",
+    "destino_nombre": "35PR+67 San Antonio de Chaclla, Perú",
+    "origen_lat": -11.952005876967075,
+    "origen_lon": -76.79168701171876,
+    "destino_lat": -11.914384705073736,
+    "destino_lon": -76.80936813354494,
+    "modo": "Auto",
+    "tiempo_minutos": 63,
+    "distancia_km": 30.39,
+    "polyline": "lx}gAhjusMfEmFT]`@d@bB{AdBwArAgA|@b@xCzAzGtCOXLX\\^h@^|@PbAj@n@Xx@f@lB~@rAh@x@j@l@f@|@\\l@Nr@^nA`AzAl@pAz@t@h@z@^p@f@b@FvA|@|AbAZRn@`@`@u@T[x@NlBb@dBn@nDnBvCxAxC|AhJtEzDnBbD`B`Ad@^RZG\\I`Ey@vAStBOVDVRv@lCfBvF`A|BlB~HlBtI\\vAbArExAnI|A~Mh@lJZrEr@`It@zFtAbIh@jCrB|HnBvG`@jCdApGrBzInBvG`I~TjJrVrClHrB|CxB~CvAnA|At@lAb@xBdA~BvBxB~BlA|@jB|@hBl@fATzGjArCx@`AZrBbAzC|BhBjBxBdDfCdGv@pC`AhC`FtNzAtF`AxF^fCZnCX~C|BjXpA`Q^dHj@hL`AfY^jLr@hKnApMl@tEfCbSj@xHZjDvAbHzA~Ed@vAvCpIpBjHrAjH`@tCb@|FFdDLrGJlKBxE`@vGVvCN|Aj@nBj@~A^dBh@lArAtCL^GJkBfCu@jAmAnC_A~Aa@f@iAd@{Dr@{@^SI}@HwCLaBKkB]iC}@aEgCc@UeASsAH}@d@eBlDk@`A{@b@{CFqEBwAByAVuD~@uAr@i@t@eChDu@b@cAFUEgIeGkIyGsDyEcDmEkByAeDgAmGeBcAe@aAs@UQiAiBq@qAEGGMKQS_@W_@g@w@aA{A}@yA[e@_BqCoGkJuC}EaAsAe@[}A_@oBKw@GoB[qBc@gNoFaKgEeAk@qEkBeBa@mCYeAHw@LaFh@eKdAse@xE}FaAkCcA{B_CaBaCiAw@oGsDsDwBaC_A{Ag@qBIcEHoED}BUu@o@Uy@c@}@mEiEeAeCSw@Co@Cw@JmAl@IbAU`@QVaADc@e@sDG_@j@}@Ja@XkADkCCmBsAkE{CkIYiBg@eAe@e@c@S_AEkA~@m@`@y@CmGcJk@y@}@eCuBkGcGsU}@kDW_A]MeABiAa@eA_AY_Dm@qDu@}BYc@aAsA}@{DsBkDmDiAwAgB_@_Au@gCq@u@gBcBWYZ_C_@qA}@wAsByBaBiA_AwAYWkA]cAeBwA_Ac@mAe@qAB}AoAwBmBoBK}@Gc@cC}BK_@e@qDj@yELmBGa@eA_CO_@CiAEqAX{BFiBrAoA\\[`@cB`@{@vA_AXoBFYMk@WeAaAaCISgAm@qCaD_AaBy@}Ac@gBEOoAm@U[u@_BgB?u@BeC}AcBg@eB_@aBk@yC_BwDqBcBi@g@N",
+    "fecha": "2026-06-28 08:54 PM"
+  },
+  {
+    "id": 80,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186301122467915,
+    "origen_lon": -76.97439353488053,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 49.08,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAcGh@aB_@qDoCqEcCu@y@k@wAQqBm@uHIkABi@JIN[B[E]U_@_@QQAi@a@}@_A}CwBiBs@qL_CkGeA{BMkD?gJJyKJkJf@}Lx@qBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iFcC_FeC}GcDwOeHo[wN_IkDuBm@iCg@kBUwKeA{KcAyFcA{GgCmQoIwIgEkCiAqD_BeKyEaZeNma@cRyJyEqNuGwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuEeM}Ge]{Q",
+    "fecha": "2026-06-28 08:52 PM"
+  },
+  {
+    "id": 79,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 49.08,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAcGh@aB_@qDoCqEcCu@y@k@wAQqBm@uHIkABi@JIN[B[E]U_@_@QQAi@a@}@_A}CwBiBs@qL_CkGeA{BMkD?gJJyKJkJf@}Lx@qBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iFcC_FeC}GcDwOeHo[wN_IkDuBm@iCg@kBUwKeA{KcAyFcA{GgCmQoIwIgEkCiAqD_BeKyEaZeNma@cRyJyEqNuGwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuEeM}Ge]{Q",
+    "fecha": "2026-06-28 08:51 PM"
+  },
+  {
+    "id": 78,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 49.08,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAcGh@aB_@qDoCqEcCu@y@k@wAQqBm@uHIkABi@JIN[B[E]U_@_@QQAi@a@}@_A}CwBiBs@qL_CkGeA{BMkD?gJJyKJkJf@}Lx@qBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iFcC_FeC}GcDwOeHo[wN_IkDuBm@iCg@kBUwKeA{KcAyFcA{GgCmQoIwIgEkCiAqD_BeKyEaZeNma@cRyJyEqNuGwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuEeM}Ge]{Q",
+    "fecha": "2026-06-28 08:50 PM"
+  },
+  {
+    "id": 77,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 49.08,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAcGh@aB_@qDoCqEcCu@y@k@wAQqBm@uHIkABi@JIN[B[E]U_@_@QQAi@a@}@_A}CwBiBs@qL_CkGeA{BMkD?gJJyKJkJf@}Lx@qBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iFcC_FeC}GcDwOeHo[wN_IkDuBm@iCg@kBUwKeA{KcAyFcA{GgCmQoIwIgEkCiAqD_BeKyEaZeNma@cRyJyEqNuGwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuEeM}Ge]{Q",
+    "fecha": "2026-06-28 08:49 PM"
+  },
+  {
+    "id": 76,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 49.08,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAcGh@aB_@qDoCqEcCu@y@k@wAQqBm@uHIkABi@JIN[B[E]U_@_@QQAi@a@}@_A}CwBiBs@qL_CkGeA{BMkD?gJJyKJkJf@}Lx@qBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iFcC_FeC}GcDwOeHo[wN_IkDuBm@iCg@kBUwKeA{KcAyFcA{GgCmQoIwIgEkCiAqD_BeKyEaZeNma@cRyJyEqNuGwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuEeM}Ge]{Q",
+    "fecha": "2026-06-28 08:49 PM"
+  },
+  {
+    "id": 75,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 49.08,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAcGh@aB_@qDoCqEcCu@y@k@wAQqBm@uHIkABi@JIN[B[E]U_@_@QQAi@a@}@_A}CwBiBs@qL_CkGeA{BMkD?gJJyKJkJf@}Lx@qBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iFcC_FeC}GcDwOeHo[wN_IkDuBm@iCg@kBUwKeA{KcAyFcA{GgCmQoIwIgEkCiAqD_BeKyEaZeNma@cRyJyEqNuGwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuEeM}Ge]{Q",
+    "fecha": "2026-06-28 08:17 PM"
+  },
+  {
+    "id": 74,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 49.08,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAcGh@aB_@qDoCqEcCu@y@k@wAQqBm@uHIkABi@JIN[B[E]U_@_@QQAi@a@}@_A}CwBiBs@qL_CkGeA{BMkD?gJJyKJkJf@}Lx@qBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iFcC_FeC}GcDwOeHo[wN_IkDuBm@iCg@kBUwKeA{KcAyFcA{GgCmQoIwIgEkCiAqD_BeKyEaZeNma@cRyJyEqNuGwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuEeM}Ge]{Q",
+    "fecha": "2026-06-28 08:11 PM"
+  },
+  {
+    "id": 73,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 49.08,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAcGh@aB_@qDoCqEcCu@y@k@wAQqBm@uHIkABi@JIN[B[E]U_@_@QQAi@a@}@_A}CwBiBs@qL_CkGeA{BMkD?gJJyKJkJf@}Lx@qBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iFcC_FeC}GcDwOeHo[wN_IkDuBm@iCg@kBUwKeA{KcAyFcA{GgCmQoIwIgEkCiAqD_BeKyEaZeNma@cRyJyEqNuGwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuEeM}Ge]{Q",
+    "fecha": "2026-06-28 08:11 PM"
+  },
+  {
+    "id": 72,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 49.08,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAcGh@aB_@qDoCqEcCu@y@k@wAQqBm@uHIkABi@JIN[B[E]U_@_@QQAi@a@}@_A}CwBiBs@qL_CkGeA{BMkD?gJJyKJkJf@}Lx@qBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iFcC_FeC}GcDwOeHo[wN_IkDuBm@iCg@kBUwKeA{KcAyFcA{GgCmQoIwIgEkCiAqD_BeKyEaZeNma@cRyJyEqNuGwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuEeM}Ge]{Q",
+    "fecha": "2026-06-28 08:10 PM"
+  },
+  {
+    "id": 71,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 49.08,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAcGh@aB_@qDoCqEcCu@y@k@wAQqBm@uHIkABi@JIN[B[E]U_@_@QQAi@a@}@_A}CwBiBs@qL_CkGeA{BMkD?gJJyKJkJf@}Lx@qBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iFcC_FeC}GcDwOeHo[wN_IkDuBm@iCg@kBUwKeA{KcAyFcA{GgCmQoIwIgEkCiAqD_BeKyEaZeNma@cRyJyEqNuGwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuEeM}Ge]{Q",
+    "fecha": "2026-06-28 08:10 PM"
+  },
+  {
+    "id": 70,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 49.08,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAcGh@aB_@qDoCqEcCu@y@k@wAQqBm@uHIkABi@JIN[B[E]U_@_@QQAi@a@}@_A}CwBiBs@qL_CkGeA{BMkD?gJJyKJkJf@}Lx@qBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iFcC_FeC}GcDwOeHo[wN_IkDuBm@iCg@kBUwKeA{KcAyFcA{GgCmQoIwIgEkCiAqD_BeKyEaZeNma@cRyJyEqNuGwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuEeM}Ge]{Q",
+    "fecha": "2026-06-28 08:09 PM"
+  },
+  {
+    "id": 69,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 49.08,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAcGh@aB_@qDoCqEcCu@y@k@wAQqBm@uHIkABi@JIN[B[E]U_@_@QQAi@a@}@_A}CwBiBs@qL_CkGeA{BMkD?gJJyKJkJf@}Lx@qBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iFcC_FeC}GcDwOeHo[wN_IkDuBm@iCg@kBUwKeA{KcAyFcA{GgCmQoIwIgEkCiAqD_BeKyEaZeNma@cRyJyEqNuGwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuEeM}Ge]{Q",
+    "fecha": "2026-06-28 07:55 PM"
+  },
+  {
+    "id": 68,
+    "origen_nombre": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino_nombre": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "origen_lat": -12.186283501208656,
+    "origen_lon": -76.97439229067115,
+    "destino_lat": -11.8777498,
+    "destino_lon": -77.0260412,
+    "modo": "Auto",
+    "tiempo_minutos": 76,
+    "distancia_km": 49.08,
+    "polyline": "fckiAz`ytMrHaB\\GxCq@RDtASpAU~Bc@|Gw@`@W`@k@f@mB^iB`@cCjBaRRoBBmAIqCYkFWgFo@kKGkA?{@JGFMMa@QESFGTDRJhAl@~JVzEj@|J@~B[tCe@`FaA~K_@|BU`AQ^g@b@e@Rw@NuBRy@NwF~AYJIPcH~AiXzFeDt@cZtGkX`G_ZnGuMdC_fA~SyC`@kDZuDFaIKeBMiBSyFeAwJ{BaGiAcFq@oMsAwTyB}LoAaDe@eFmAwf@mNiEiAyAU}CO}HHsGBmFJ{BDeSRaGHuDPwKx@oIl@aGf@wGf@yKr@cET{CVoLv@wNfAqRxAaM~@uLt@sYrBi@CuAHsEZmAP{@ZoCnA{CfAaARmA?kBa@o@[cAu@mB{B{D}DgJgKkCiCuCwBsC_BiFoBoJyCgGiBua@uMeDeAaCk@aCe@cBSkAE}IByDVmC^gDv@kJzCmTlH}A`@eC|@yIxC}ChAuB|@qBhA_ExCuCdDqJbLgWjZeF`GgB`B_@b@sA`A{CbBq@\\uGzByGnAcHhA{E~@iBj@{ErB}D`CwC~BwC~CwC`EkB`DuCfGu@xB_@hBOzCBlBPpAfAxEv@tCZdAtEjPrA~ElAfErBjFjBtDfErHhEzGfAxAzDxEfD`EzLnOfC`EjC|ErClHxEvMr@rBj@dCv@`GD~CGxEU|QG|@o@vCkB|FiC~G}AbDs@hBqAtEyAhDs@lAsB`CsA|AsAzBYb@Ib@}@lDqA|GqDvQS`AkA|GYzCu@~Fa@rAYjB}@`EyF`SoAzDmAfCoAtBuBrCgChCwBzAkFbDm@ZaA`@qDbAeDd@iF\\wWxBiPvAwIp@_MjAiDT}Db@iFRsGd@_Gl@_C^{E~@{CTkJv@mCJ}BHsDPiQzA_NrA{LbAoE`@{Hr@wBZoD`@wCRwALaDP_T|Aco@hFwUvB_M`AqNpAsGh@oMhAcGh@aB_@qDoCqEcCu@y@k@wAQqBm@uHIkABi@JIN[B[E]U_@_@QQAi@a@}@_A}CwBiBs@qL_CkGeA{BMkD?gJJyKJkJf@}Lx@qBIq@?sAXo@Ly@Fo@?aGWmAOkDk@aD_AiBo@iFcC_FeC}GcDwOeHo[wN_IkDuBm@iCg@kBUwKeA{KcAyFcA{GgCmQoIwIgEkCiAqD_BeKyEaZeNma@cRyJyEqNuGwBgAyDgCuAaAmC{AqAg@oD}@eBg@eDyA_J_EoDaB}A_A{M_H_JuEeM}Ge]{Q",
+    "fecha": "2026-06-28 07:54 PM"
+  },
+  {
+    "id": 67,
+    "origen_nombre": "52JR+VX Carabayllo, Perú",
+    "destino_nombre": "52PQ+24 Carabayllo, Perú",
+    "origen_lat": -11.817872683804127,
+    "origen_lon": -76.95759773254396,
+    "destino_lat": -11.814900765015944,
+    "destino_lon": -76.96220040321352,
+    "modo": "Auto",
+    "tiempo_minutos": 62,
+    "distancia_km": 34.68,
+    "polyline": "t_cgAbpstMiAQ_@Q@S~@_@lAUIQ_Am@aBHa@Ou@[sAEOA?i@r@a@Bm@g@_@c@YiDs@kAu@k@GiBSqAZ{AWm@u@iD}@qBuA_EcBeBc@}Au@{Aw@sC}CMa@EUo@KcEq@cJUqU~E_ObDsVMmDCg@JE|DG~FEvDlArFtC|K~@jDr@tE|@|GR~FAdHMfAs@zFi@zD{C~HWZi@VoGh@c@AeBEe@NeBdBs@r@}FhG}JH{EF@zQXbd@R|P@nGKnDCTGl@@xA@nABvDB|CFnJBtDDbMo`@r@cECyGGyCYuEoB{DoBaCgBcJmGiNoImEeBaE{@wF}@uEQkEe@wNwDgE{A_K_DeEcAaCMcBPoBh@{Bf@sBHmAIeDs@kPmEgCa@qBAqVp@sDDMWa@oAc@qCoAcJIs@OLkBo@MEH]BMFYLk@`@_BTsADoAQi@Dm@PiBXkAoBc@_Ba@gBy@q@]w@Qq@Hq@`@yA~@sAjAkAf@iDt@iDp@gDl@yAh@}DbBwA|@u@t@a@He@D_Bv@yAp@aARuADa@HaC`Am@DkAAa@I|CvBpA|@~CxAxObGnEp@h]~@`JR~HCpVq@pB@fC`@~HzBpKdClAHrBIjFqAbBQ`CLhKnClHfCxJnCrEnAjEd@tEPhBTnIbBlEdBfDrBfLdH~JjHbI~DlA^xCX|MJn`@s@fNa@tAAfG|@lB?pBObAJ~Cj@z@UvBwC`AcApAu@bAYx@MxAAhBVnAh@zB`BrCx@lBp@~EzCdBrBnBbDh@b@t@NdDHbAn@~CzDhA`ApAj@j\\xDhGh@bAVrBtBfCbBjHfD`I|EhAVhEHrAVv@v@jAxB~A~ArAp@~Dt@zAHx@Sl@g@pAcD\\Qr@ChHdA\\TXl@N|Bd@t@rAd@`D|@nEjCtGxDdB\\~DCfAXl@j@~ApBjBbB|A\\|BPtBJ~@V`Ah@~DpCrBnAlAVdAB~HaBbCc@vFe@lBPxCj@rAN~AKjBc@~AMr@JhCdAnChAvFjBfFhBFUKEcBi@eDmAwFsBsCaAoAYw@KqADcB`@qBRaEi@uCc@kCLoEj@{InBsAAaAM}Au@wDsCoBgAmB_@uBK{BUuAk@qEcFu@YoBKmCBs@QsBgAwHwEgDwAiCo@m@o@OqBMm@_@g@aGcAsAKc@H]XWn@e@zAk@j@u@VaA@}E{@aAa@eBwAqAaC_AcAgA]iEIkAOwBkADSw@cAx@mC\\aEBiIi@kC?c@T_B^sB?}@g@Wa@KHYLa@~@kD^iB@qCHmBG_CBqBj@{@CsAPiAj@cBvBgFLeD",
+    "fecha": "2026-06-28 07:52 PM"
+  },
+  {
+    "id": 66,
+    "origen_nombre": "5XRW+8Q Carabayllo, Perú",
+    "destino_nombre": "5X67+M6 Carabayllo, Perú",
+    "origen_lat": -11.80921937469805,
+    "origen_lon": -77.00308799743654,
+    "destino_lat": -11.838286688402887,
+    "destino_lon": -77.03699111938478,
+    "modo": "Auto",
+    "tiempo_minutos": 29,
+    "distancia_km": 7.91,
+    "polyline": "dxagAdk~tMnAvAz@NnEx@nATxHGl@Bz@LrFz@tKtGxDjCVPdBn@bDlA`Cz@xBx@`Gl@nD`@dEvA~FpBfCh@dBbA^^tDxFd@h@\\Vf@Vr@Xv@RpFvA`AXr@Rj@VzBfAzBdAzExB^LdATjCl@rFnAhCl@hAPtKvBrDhAbJjEFLHZFFfBLxAXzA?RDXT\\`@HXNpATj@Jd@Bl@Db@RV|@f@n@n@PVTPp@`@z@X`Ar@n@b@TNPRLTD^B`AFf@@^?\\Ed@Az@FZXt@`DxGP~BKb@c@`@uJrKgEjEkAjAiDnDe@p@u@lAi@l@aChBeCvBmElDgLlJiCrBoH|FiJ~Hs@l@{C~AXVp@n@|@|@jAbB|@nAp@~@HDLCb@]|CgC`EgDvAkA",
+    "fecha": "2026-06-28 07:49 PM"
+  },
+  {
+    "id": 65,
+    "origen_nombre": "52JR+VX Carabayllo, Perú",
+    "destino_nombre": "52PQ+24 Carabayllo, Perú",
+    "origen_lat": -11.817872683804127,
+    "origen_lon": -76.95759773254396,
+    "destino_lat": -11.814900765015944,
+    "destino_lon": -76.96220040321352,
+    "modo": "Auto",
+    "tiempo_minutos": 62,
+    "distancia_km": 34.68,
+    "polyline": "t_cgAbpstMiAQ_@Q@S~@_@lAUIQ_Am@aBHa@Ou@[sAEOA?i@r@a@Bm@g@_@c@YiDs@kAu@k@GiBSqAZ{AWm@u@iD}@qBuA_EcBeBc@}Au@{Aw@sC}CMa@EUo@KcEq@cJUqU~E_ObDsVMmDCg@JE|DG~FEvDlArFtC|K~@jDr@tE|@|GR~FAdHMfAs@zFi@zD{C~HWZi@VoGh@c@AeBEe@NeBdBs@r@}FhG}JH{EF@zQXbd@R|P@nGKnDCTGl@@xA@nABvDB|CFnJBtDDbMo`@r@cECyGGyCYuEoB{DoBaCgBcJmGiNoImEeBaE{@wF}@uEQkEe@wNwDgE{A_K_DeEcAaCMcBPoBh@{Bf@sBHmAIeDs@kPmEgCa@qBAqVp@sDDMWa@oAc@qCoAcJIs@OLkBo@MEH]BMFYLk@`@_BTsADoAQi@Dm@PiBXkAoBc@_Ba@gBy@q@]w@Qq@Hq@`@yA~@sAjAkAf@iDt@iDp@gDl@yAh@}DbBwA|@u@t@a@He@D_Bv@yAp@aARuADa@HaC`Am@DkAAa@I|CvBpA|@~CxAxObGnEp@h]~@`JR~HCpVq@pB@fC`@~HzBpKdClAHrBIjFqAbBQ`CLhKnClHfCxJnCrEnAjEd@tEPhBTnIbBlEdBfDrBfLdH~JjHbI~DlA^xCX|MJn`@s@fNa@tAAfG|@lB?pBObAJ~Cj@z@UvBwC`AcApAu@bAYx@MxAAhBVnAh@zB`BrCx@lBp@~EzCdBrBnBbDh@b@t@NdDHbAn@~CzDhA`ApAj@j\\xDhGh@bAVrBtBfCbBjHfD`I|EhAVhEHrAVv@v@jAxB~A~ArAp@~Dt@zAHx@Sl@g@pAcD\\Qr@ChHdA\\TXl@N|Bd@t@rAd@`D|@nEjCtGxDdB\\~DCfAXl@j@~ApBjBbB|A\\|BPtBJ~@V`Ah@~DpCrBnAlAVdAB~HaBbCc@vFe@lBPxCj@rAN~AKjBc@~AMr@JhCdAnChAvFjBfFhBFUKEcBi@eDmAwFsBsCaAoAYw@KqADcB`@qBRaEi@uCc@kCLoEj@{InBsAAaAM}Au@wDsCoBgAmB_@uBK{BUuAk@qEcFu@YoBKmCBs@QsBgAwHwEgDwAiCo@m@o@OqBMm@_@g@aGcAsAKc@H]XWn@e@zAk@j@u@VaA@}E{@aAa@eBwAqAaC_AcAgA]iEIkAOwBkADSw@cAx@mC\\aEBiIi@kC?c@T_B^sB?}@g@Wa@KHYLa@~@kD^iB@qCHmBG_CBqBj@{@CsAPiAj@cBvBgFLeD",
+    "fecha": "2026-06-28 07:49 PM"
+  },
+  {
+    "fecha": "2026-06-28 06:42 PM",
+    "origen": "5X94+QH9, Carabayllo 15122, Perú",
+    "destino": "5X53+347, Carabayllo 15121, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.8304951,
+      "lng": -77.04344988
+    },
+    "destino_coord": {
+      "lat": -11.84208789,
+      "lng": -77.04716206
+    },
+    "tiempo_min": 6,
+    "distancia_km": 1.99
+  },
+  {
+    "fecha": "2026-06-28 06:41 PM",
+    "origen": "5X94+QH9, Carabayllo 15122, Perú",
+    "destino": "5X53+347, Carabayllo 15121, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.8304951,
+      "lng": -77.04344988
+    },
+    "destino_coord": {
+      "lat": -11.84208789,
+      "lng": -77.04716206
+    },
+    "tiempo_min": 6,
+    "distancia_km": 1.99
+  },
+  {
+    "fecha": "2026-06-28 06:41 PM",
+    "origen": "5X94+QH9, Carabayllo 15122, Perú",
+    "destino": "5X53+347, Carabayllo 15121, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.8304951,
+      "lng": -77.04344988
+    },
+    "destino_coord": {
+      "lat": -11.84208789,
+      "lng": -77.04716206
+    },
+    "tiempo_min": 6,
+    "distancia_km": 1.99
+  },
+  {
+    "fecha": "2026-06-28 06:27 PM",
+    "origen": "5X94+QH9, Carabayllo 15122, Perú",
+    "destino": "5X53+347, Carabayllo 15121, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.830495103023841,
+      "lng": -77.04344987869264
+    },
+    "destino_coord": {
+      "lat": -11.842087893395073,
+      "lng": -77.04716205596924
+    },
+    "tiempo_min": 6,
+    "distancia_km": 1.99
+  },
+  {
+    "fecha": "2026-06-28 06:26 PM",
+    "origen": "5XF8+58 Carabayllo, Perú",
+    "destino": "5X52+XJQ, Av. Santa María, Carabayllo 15122, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.82733,
+      "lng": -77.03404
+    },
+    "destino_coord": {
+      "lat": -11.840365807076024,
+      "lng": -77.04851388931276
+    },
+    "tiempo_min": 12,
+    "distancia_km": 4.05
+  },
+  {
+    "fecha": "2026-06-28 06:26 PM",
+    "origen": "5XF8+58 Carabayllo, Perú",
+    "destino": "C. 16 Mz.E17 - Lt.18, Carabayllo 15122, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.827029771365764,
+      "lng": -77.03415870666505
+    },
+    "destino_coord": {
+      "lat": -11.83394375354645,
+      "lng": -77.0436706509571
+    },
+    "tiempo_min": 10,
+    "distancia_km": 2.93
+  },
+  {
+    "fecha": "2026-06-04 01:13 AM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18633152,
+      "lng": -76.9743922
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 53,
+    "distancia_km": 49.09
+  },
+  {
+    "fecha": "2026-06-04 01:12 AM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.186331523151653,
+      "lng": -76.9743921998213
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 53,
+    "distancia_km": 49.09
+  },
+  {
+    "fecha": "2026-06-04 01:11 AM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18623933,
+      "lng": -76.97442082
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 53,
+    "distancia_km": 49.09
+  },
+  {
+    "fecha": "2026-06-03 10:03 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18623933,
+      "lng": -76.97442082
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 74,
+    "distancia_km": 53.78
+  },
+  {
+    "fecha": "2026-06-03 06:51 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18623933,
+      "lng": -76.97442082
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 126,
+    "distancia_km": 43.69
+  },
+  {
+    "fecha": "2026-06-03 06:50 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18623933,
+      "lng": -76.97442082
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 126,
+    "distancia_km": 43.69
+  },
+  {
+    "fecha": "2026-06-03 06:45 PM",
+    "origen": "Av. El Parque Mz.A - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18604,
+      "lng": -76.97467
+    },
+    "destino_coord": {
+      "lat": -11.87775,
+      "lng": -77.02606
+    },
+    "tiempo_min": 126,
+    "distancia_km": 43.69
+  },
+  {
+    "fecha": "2026-06-03 06:45 PM",
+    "origen": "Av. El Parque Mz.A - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "A pie",
+    "origen_coord": {
+      "lat": -12.186056,
+      "lng": -76.97451
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 582,
+    "distancia_km": 41.31
+  },
+  {
+    "fecha": "2026-06-03 05:53 PM",
+    "origen": "34X9+XV, San Antonio de Chaclla 15510, Perú",
+    "destino": "34V5+FQ San Antonio de Chaclla, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.90979,
+      "lng": -76.87173
+    },
+    "destino_coord": {
+      "lat": -11.92487,
+      "lng": -76.88986
+    },
+    "tiempo_min": 12,
+    "distancia_km": 6.96
+  },
+  {
+    "fecha": "2026-06-02 07:55 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "4X5F+X4P, Av. Túpac Amaru, Carabayllo 1733, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.186298794343172,
+      "lng": -76.97437905552688
+    },
+    "destino_coord": {
+      "lat": -11.8900371,
+      "lng": -77.0271779
+    },
+    "tiempo_min": 96,
+    "distancia_km": 44.73
+  },
+  {
+    "fecha": "2026-06-02 07:53 PM",
+    "origen": "34X9+XV, San Antonio de Chaclla 15510, Perú",
+    "destino": "34V5+FQ San Antonio de Chaclla, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.900125700695911,
+      "lng": -76.87898355114
+    },
+    "destino_coord": {
+      "lat": -11.906322346652187,
+      "lng": -76.89056396484376
+    },
+    "tiempo_min": 12,
+    "distancia_km": 6.96
+  },
+  {
+    "fecha": "2026-06-02 07:52 PM",
+    "origen": "Mz. F Lt. 07",
+    "destino": "Carabayllo, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.186767120735833,
+      "lng": -76.97414016171349
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 94,
+    "distancia_km": 46.5
+  },
+  {
+    "fecha": "2026-06-02 07:51 PM",
+    "origen": "Av. El Triunfo Mz.F - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "4X5F+X4P, Av. Túpac Amaru, Carabayllo 1733, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.186731281335211,
+      "lng": -76.97414580552379
+    },
+    "destino_coord": {
+      "lat": -11.8900371,
+      "lng": -77.0271779
+    },
+    "tiempo_min": 96,
+    "distancia_km": 44.73
+  },
+  {
+    "fecha": "2026-06-02 07:22 PM",
+    "origen": "Av. El Triunfo Mz.F - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "R29M+37M, San Juan de Miraflores 15842, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.186731281335211,
+      "lng": -76.97414580552379
+    },
+    "destino_coord": {
+      "lat": -12.182908178447988,
+      "lng": -76.96789741516115
+    },
+    "tiempo_min": 10,
+    "distancia_km": 4.28
+  },
+  {
+    "fecha": "2026-06-02 07:09 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.186381742278916,
+      "lng": -76.97434058859037
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 125,
+    "distancia_km": 47.3
+  },
+  {
+    "fecha": "2026-06-02 07:09 PM",
+    "origen": "Av. El Triunfo Mz.F - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "A pie",
+    "origen_coord": {
+      "lat": -12.186767120735833,
+      "lng": -76.97414016171349
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 582,
+    "distancia_km": 41.31
+  },
+  {
+    "fecha": "2026-06-02 07:06 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "A pie",
+    "origen_coord": {
+      "lat": -12.186228900204092,
+      "lng": -76.974425760898
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 582,
+    "distancia_km": 41.31
+  },
+  {
+    "fecha": "2026-06-02 07:05 PM",
+    "origen": "Av. El Parque Mz.A - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18604,
+      "lng": -76.97467
+    },
+    "destino_coord": {
+      "lat": -11.87775,
+      "lng": -77.02606
+    },
+    "tiempo_min": 125,
+    "distancia_km": 47.3
+  },
+  {
+    "fecha": "2026-06-02 07:05 PM",
+    "origen": "Av. El Parque Mz.A - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "A pie",
+    "origen_coord": {
+      "lat": -12.186056,
+      "lng": -76.97451
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 582,
+    "distancia_km": 41.31
+  },
+  {
+    "fecha": "2026-06-02 07:04 PM",
+    "origen": "5XC4+3MR, Carabayllo 15122, Perú",
+    "destino": "Huarangal Mz.I - Lt.10, Carabayllo 15122, Perú",
+    "modo": "A pie",
+    "origen_coord": {
+      "lat": -11.83005,
+      "lng": -77.04351
+    },
+    "destino_coord": {
+      "lat": -11.82855,
+      "lng": -77.03982
+    },
+    "tiempo_min": 9,
+    "distancia_km": 0.61
+  },
+  {
+    "fecha": "2026-06-02 07:04 PM",
+    "origen": "5XC4+3MR, Carabayllo 15122, Perú",
+    "destino": "Huarangal Mz.I - Lt.10, Carabayllo 15122, Perú",
+    "modo": "Moto",
+    "origen_coord": {
+      "lat": -11.83005,
+      "lng": -77.04351
+    },
+    "destino_coord": {
+      "lat": -11.82855,
+      "lng": -77.03982
+    },
+    "tiempo_min": 1,
+    "distancia_km": 0.61
+  },
+  {
+    "fecha": "2026-06-02 07:04 PM",
+    "origen": "5XC4+3MR, Carabayllo 15122, Perú",
+    "destino": "Huarangal Mz.I - Lt.10, Carabayllo 15122, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.83005,
+      "lng": -77.04351
+    },
+    "destino_coord": {
+      "lat": -11.82855,
+      "lng": -77.03982
+    },
+    "tiempo_min": 2,
+    "distancia_km": 0.61
+  },
+  {
+    "fecha": "2026-06-02 07:04 PM",
+    "origen": "5XC4+3MR, Carabayllo 15122, Perú",
+    "destino": "Huarangal Mz.I - Lt.10, Carabayllo 15122, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.830075065160793,
+      "lng": -77.04327821731569
+    },
+    "destino_coord": {
+      "lat": -11.828529676585568,
+      "lng": -77.03974989971054
+    },
+    "tiempo_min": 2,
+    "distancia_km": 0.61
+  },
+  {
+    "fecha": "2026-06-01 08:43 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "4X5F+X4P, Av. Túpac Amaru, Carabayllo 1733, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18626,
+      "lng": -76.97438
+    },
+    "destino_coord": {
+      "lat": -11.8900371,
+      "lng": -77.0271779
+    },
+    "tiempo_min": 54,
+    "distancia_km": 48.72
+  },
+  {
+    "fecha": "2026-06-01 08:42 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "4X5F+X4P, Av. Túpac Amaru, Carabayllo 1733, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18673,
+      "lng": -76.97447
+    },
+    "destino_coord": {
+      "lat": -11.8900371,
+      "lng": -77.0271779
+    },
+    "tiempo_min": 54,
+    "distancia_km": 48.72
+  },
+  {
+    "fecha": "2026-06-01 08:42 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.186264137351701,
+      "lng": -76.97442826080776
+    },
+    "destino_coord": {
+      "lat": -11.87775,
+      "lng": -77.02606
+    },
+    "tiempo_min": 71,
+    "distancia_km": 49.55
+  },
+  {
+    "fecha": "2026-06-01 08:41 PM",
+    "origen": "Pasaje A Mz.D - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "4X5F+X4P, Av. Túpac Amaru, Carabayllo 1733, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.186120640415787,
+      "lng": -76.97450309231853
+    },
+    "destino_coord": {
+      "lat": -11.8900371,
+      "lng": -77.0271779
+    },
+    "tiempo_min": 54,
+    "distancia_km": 48.72
+  },
+  {
+    "fecha": "2026-06-01 08:40 PM",
+    "origen": "Av. El Triunfo Mz.F - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "4X5F+X4P, Av. Túpac Amaru, Carabayllo 1733, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18626,
+      "lng": -76.97438
+    },
+    "destino_coord": {
+      "lat": -11.89034,
+      "lng": -77.02706
+    },
+    "tiempo_min": 54,
+    "distancia_km": 48.72
+  },
+  {
+    "fecha": "2026-06-01 08:40 PM",
+    "origen": "Av. El Triunfo Mz.F - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "4X5F+X4P, Av. Túpac Amaru, Carabayllo 1733, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.186120640415787,
+      "lng": -76.97450309231853
+    },
+    "destino_coord": {
+      "lat": -11.89019,
+      "lng": -77.02728
+    },
+    "tiempo_min": 54,
+    "distancia_km": 48.72
+  },
+  {
+    "fecha": "2026-06-01 08:38 PM",
+    "origen": "Av. Umanmarca Mz.F - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "4X5F+X4P, Av. Túpac Amaru, Carabayllo 1733, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.1960728,
+      "lng": -76.9734831
+    },
+    "destino_coord": {
+      "lat": -11.8900371,
+      "lng": -77.0271779
+    },
+    "tiempo_min": 83,
+    "distancia_km": 50.9
+  },
+  {
+    "fecha": "2026-05-31 10:26 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18673,
+      "lng": -76.97447
+    },
+    "destino_coord": {
+      "lat": -11.87775,
+      "lng": -77.02606
+    },
+    "tiempo_min": 71,
+    "distancia_km": 49.55
+  },
+  {
+    "fecha": "2026-05-31 10:21 PM",
+    "origen": "5WG5+QH, Puente Piedra 15122, Perú",
+    "destino": "54MH+QP San Antonio de Chaclla, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.823669407843589,
+      "lng": -77.0903778076172
+    },
+    "destino_coord": {
+      "lat": -11.815604367077407,
+      "lng": -76.8706512451172
+    },
+    "tiempo_min": 90,
+    "distancia_km": 40.81
+  },
+  {
+    "fecha": "2026-05-31 10:20 PM",
+    "origen": "5X32+6MV Parque Los Molles 2 de la Urb. Santa Maria Etapa 8, Carabayllo 15121, Perú",
+    "destino": "5X43+4V2 Parque Los Lirios de Santa María, Carabayllo 15121, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.846939078208054,
+      "lng": -77.0485782623291
+    },
+    "destino_coord": {
+      "lat": -11.844983394105022,
+      "lng": -77.04547581952039
+    },
+    "tiempo_min": 2,
+    "distancia_km": 0.74
+  },
+  {
+    "fecha": "2026-05-31 10:15 PM",
+    "origen": "Calle Matin Enrriquez de Almansa Mz.H1 - Lt.50, Carabayllo 15121, Perú",
+    "destino": "5W3W+7X2, Carabayllo 15121, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.850551159859249,
+      "lng": -77.04694747924806
+    },
+    "destino_coord": {
+      "lat": -11.847254087230231,
+      "lng": -77.05250501632692
+    },
+    "tiempo_min": 12,
+    "distancia_km": 3.85
+  },
+  {
+    "fecha": "2026-05-31 10:06 PM",
+    "origen": "Av. El Triunfo Mz.F - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.186785114503532,
+      "lng": -76.97417423777667
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 71,
+    "distancia_km": 49.55
+  },
+  {
+    "fecha": "2026-05-31 09:33 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "656G+JH San Antonio de Chaclla, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18625,
+      "lng": -76.97438
+    },
+    "destino_coord": {
+      "lat": -11.76391,
+      "lng": -76.82449
+    },
+    "tiempo_min": 140,
+    "distancia_km": 82.77
+  },
+  {
+    "fecha": "2026-05-31 09:30 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "656G+JH San Antonio de Chaclla, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.186264137351701,
+      "lng": -76.97442826080776
+    },
+    "destino_coord": {
+      "lat": -11.788383102002129,
+      "lng": -76.82361602783205
+    },
+    "tiempo_min": 139,
+    "distancia_km": 82.77
+  },
+  {
+    "fecha": "2026-05-31 09:01 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.186262244059728,
+      "lng": -76.97442815800656
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 71,
+    "distancia_km": 49.55
+  },
+  {
+    "fecha": "2026-05-31 04:47 PM",
+    "origen": "C. D Mz.F11 - Lt.28, Carabayllo 15122, Perú",
+    "destino": "Calle 2 Mz J 5 Villaclub, Carabayllo 15122, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.837131615639887,
+      "lng": -77.04779505729677
+    },
+    "destino_coord": {
+      "lat": -11.836048106248578,
+      "lng": -77.05293580648343
+    },
+    "tiempo_min": 2,
+    "distancia_km": 0.89
+  },
+  {
+    "fecha": "2026-05-31 04:14 PM",
+    "origen": "Pasaje A Mz.D - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "R28H+PG San Juan de Miraflores, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18611,
+      "lng": -76.97443
+    },
+    "destino_coord": {
+      "lat": -12.18334,
+      "lng": -76.97144
+    },
+    "tiempo_min": 11,
+    "distancia_km": 4.6
+  },
+  {
+    "fecha": "2026-05-31 04:02 PM",
+    "origen": "5X42+W7Q, Av. Alameda Principal, Carabayllo 15121, Perú",
+    "destino": "C. 10 Mz.F21 - Lt.61, Carabayllo 15122, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.84235,
+      "lng": -77.04958
+    },
+    "destino_coord": {
+      "lat": -11.83413,
+      "lng": -77.04681
+    },
+    "tiempo_min": 3,
+    "distancia_km": 1.35
+  },
+  {
+    "fecha": "2026-05-31 03:51 PM",
+    "origen": "Ca. Pachacutec Mz.Q - Lt.1, Santa Anita 15011, Perú",
+    "destino": "X28H+JP El Agustino, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.03775,
+      "lng": -76.96183
+    },
+    "destino_coord": {
+      "lat": -12.03436,
+      "lng": -76.97018
+    },
+    "tiempo_min": 14,
+    "distancia_km": 5.34
+  },
+  {
+    "fecha": "2026-05-31 03:38 PM",
+    "origen": "Av. El Triunfo Mz.F - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18673,
+      "lng": -76.97447
+    },
+    "destino_coord": {
+      "lat": -11.87775,
+      "lng": -77.02606
+    },
+    "tiempo_min": 70,
+    "distancia_km": 47.14
+  },
+  {
+    "fecha": "2026-05-31 02:28 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "R25G+JVX, Lima 15842, Perú",
+    "modo": "Moto",
+    "origen_coord": {
+      "lat": -12.18648,
+      "lng": -76.97453
+    },
+    "destino_coord": {
+      "lat": -12.19084,
+      "lng": -76.97258
+    },
+    "tiempo_min": 6,
+    "distancia_km": 3.84
+  },
+  {
+    "fecha": "2026-05-31 02:28 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "R25G+JVX, Lima 15842, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18648,
+      "lng": -76.97453
+    },
+    "destino_coord": {
+      "lat": -12.19084,
+      "lng": -76.97258
+    },
+    "tiempo_min": 8,
+    "distancia_km": 3.84
+  },
+  {
+    "fecha": "2026-05-31 02:28 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "R25G+JVX, Lima 15842, Perú",
+    "modo": "A pie",
+    "origen_coord": {
+      "lat": -12.18648,
+      "lng": -76.97453
+    },
+    "destino_coord": {
+      "lat": -12.19086,
+      "lng": -76.97266
+    },
+    "tiempo_min": 11,
+    "distancia_km": 0.82
+  },
+  {
+    "fecha": "2026-05-31 02:27 PM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "R25G+JVX, Lima 15842, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18638,
+      "lng": -76.97434
+    },
+    "destino_coord": {
+      "lat": -12.19089,
+      "lng": -76.97275
+    },
+    "tiempo_min": 8,
+    "distancia_km": 8.09
+  },
+  {
+    "fecha": "2026-05-31 02:17 PM",
+    "origen": "Av. El Triunfo Mz.F - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18678,
+      "lng": -76.97422
+    },
+    "destino_coord": {
+      "lat": -11.87775,
+      "lng": -77.02606
+    },
+    "tiempo_min": 70,
+    "distancia_km": 49.14
+  },
+  {
+    "fecha": "2026-05-31 01:52 PM",
+    "origen": "Pasaje A Mz.D - Lt.1, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.186120640415787,
+      "lng": -76.97450309231853
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 113,
+    "distancia_km": 47.3
+  },
+  {
+    "fecha": "2026-05-31 01:51 PM",
+    "origen": "5W3W+C4 Carabayllo, Perú",
+    "destino": "5XFM+8H Carabayllo, Perú",
+    "modo": "A pie",
+    "origen_coord": {
+      "lat": -11.84648,
+      "lng": -77.05448
+    },
+    "destino_coord": {
+      "lat": -11.82721,
+      "lng": -77.01767
+    },
+    "tiempo_min": 91,
+    "distancia_km": 6.21
+  },
+  {
+    "fecha": "2026-05-31 03:36 AM",
+    "origen": "5W3W+C4 Carabayllo, Perú",
+    "destino": "5XFM+8H Carabayllo, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.84648,
+      "lng": -77.05448
+    },
+    "destino_coord": {
+      "lat": -11.82721,
+      "lng": -77.01767
+    },
+    "tiempo_min": 14,
+    "distancia_km": 6.79
+  },
+  {
+    "fecha": "2026-05-31 03:28 AM",
+    "origen": "Av. Túpac Amaru 226, Carabayllo 15324, Perú",
+    "destino": "Parroquias Locales, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.90908,
+      "lng": -77.03059
+    },
+    "destino_coord": {
+      "lat": -11.89213,
+      "lng": -77.04373
+    },
+    "tiempo_min": 11,
+    "distancia_km": 3.89
+  },
+  {
+    "fecha": "2026-05-31 03:27 AM",
+    "origen": "Av. Túpac Amaru 226, Carabayllo 15324, Perú",
+    "destino": "Instituciones Educativas (Públicas/Privadas), Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.90908,
+      "lng": -77.03059
+    },
+    "destino_coord": {
+      "lat": -12.22704,
+      "lng": -76.84605
+    },
+    "tiempo_min": 81,
+    "distancia_km": 69.96
+  },
+  {
+    "fecha": "2026-05-31 03:27 AM",
+    "origen": "Calle 2b Mz.B - Lt.20, Carabayllo 15324, Perú",
+    "destino": "Av. Túpac Amaru 478, Carabayllo 15324, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.90436,
+      "lng": -77.02812
+    },
+    "destino_coord": {
+      "lat": -11.90324,
+      "lng": -77.03041
+    },
+    "tiempo_min": 1,
+    "distancia_km": 0.34
+  },
+  {
+    "fecha": "2026-05-31 03:19 AM",
+    "origen": "Mz. F Lt. 07, Ctra. Panamericana Sur Km. 15, San Juan de Miraflores 15058, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -12.18631704256035,
+      "lng": -76.97441707477687
+    },
+    "destino_coord": {
+      "lat": -11.87775,
+      "lng": -77.02606
+    },
+    "tiempo_min": 55,
+    "distancia_km": 49.09
+  },
+  {
+    "fecha": "2026-05-31 03:17 AM",
+    "origen": "Calle Las Palmeras Mz.D - Lt.11, Carabayllo 15121, Perú",
+    "destino": "5X8C+QW Carabayllo, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.83578,
+      "lng": -77.02307
+    },
+    "destino_coord": {
+      "lat": -11.83293,
+      "lng": -77.02749
+    },
+    "tiempo_min": 3,
+    "distancia_km": 0.9
+  },
+  {
+    "fecha": "2026-05-31 03:14 AM",
+    "origen": "Av. Túpac Amaru 226, Carabayllo 15324, Perú",
+    "destino": "C. 5 Mz.O1 - Lt.13, Carabayllo 15318, Perú",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.90908,
+      "lng": -77.03059
+    },
+    "destino_coord": {
+      "lat": -11.88603,
+      "lng": -77.0397
+    },
+    "tiempo_min": 13,
+    "distancia_km": 4.67
+  },
+  {
+    "fecha": "2026-05-31 03:12 AM",
+    "origen": "Av. Túpac Amaru 226, Carabayllo 15324, Perú",
+    "destino": "Municipalidad de Carabayllo, Carabayllo, Lima",
+    "modo": "Auto",
+    "origen_coord": {
+      "lat": -11.9090808,
+      "lng": -77.0305847
+    },
+    "destino_coord": {
+      "lat": -11.8777498,
+      "lng": -77.0260412
+    },
+    "tiempo_min": 14,
+    "distancia_km": 5.34
+  }
+]
