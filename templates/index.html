@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoRuta Pro | Navegación Inteligente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&libraries=places"></script>
+    
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+        #map { height: 100vh; width: 100vw; z-index: 1; }
+        .glass-panel { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); }
+        .transport-btn.active { border-color: #2563eb; color: #2563eb; background-color: #eff6ff; }
+        .fade-transition { transition: opacity 0.5s ease-in-out; }
+        .pac-container { z-index: 10000 !important; border-radius: 10px; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .marker-popup-card .leaflet-popup-content-wrapper { border-radius: 24px; box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18); background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); }
+        .marker-popup-card .leaflet-popup-tip { display: none; }
+        .marker-popup-card .leaflet-popup-content { margin: 0; padding: 0; }
+        .marker-popup-card .leaflet-popup-close-button { display: none; }
+        
+        /* Animación GPS de Navegación */
+        .custom-user-marker { display: flex; justify-content: center; align-items: center; }
+        .pulsing-arrow {
+            color: #2563eb;
+            font-size: 22px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(-45deg);
+        }
+        .pulsing-arrow::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: rgba(37, 99, 235, 0.3);
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+            z-index: -1;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.5); opacity: 1; }
+            100% { transform: scale(1.8); opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans antialiased text-slate-800">
+
+<div style="position: absolute; top: 15px; right: 150px; z-index: 9999; background: white; border-radius: 15px; padding: 10px 20px; display: flex; align-items: center; gap: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); font-family: sans-serif;">
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <div style="width: 35px; height: 35px; background: #2563eb; color: white; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 14px;">
+      <i class="fa-solid fa-user"></i>
+    </div>
+    <div style="line-height: 1.2;">
+      <span style="font-size: 11px; color: #6b7280; text-transform: uppercase; font-weight: bold;">Conectado como</span><br>
+      <span id="nombrePerfil" style="font-size: 14px; font-weight: bold; color: #1f2937; text-transform: capitalize;">Cargando...</span>
+    </div>
+  </div>
+  <div style="width: 1px; height: 30px; background: #e5e7eb;"></div>
+  <button onclick="cerrarSesion()" style="background: none; border: none; color: #ef4444; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px; font-size: 14px;">
+    <i class="fa-solid fa-right-from-bracket"></i> Salir
+  </button>
+</div>
+
+<nav class="absolute top-4 left-4 right-4 z-50 flex justify-between items-center pointer-events-none">
+    <div class="glass-panel px-6 py-3 rounded-full flex items-center gap-3 border border-gray-200 pointer-events-auto">
+        <i class="fa-solid fa-earth-americas text-blue-600 text-2xl"></i>
+        <h1 class="text-xl font-extrabold tracking-tight">GeoRuta <span class="text-blue-600">Pro</span></h1>
+    </div>
+    
+    <div class="relative pointer-events-auto">
+        <div id="btn-perfil" class="glass-panel px-4 py-2 rounded-full flex items-center gap-3 border border-gray-200 cursor-pointer hover:bg-gray-50 transition">
+            <div class="text-right hidden md:block">
+                <p class="text-sm font-bold m-0">Historial</p>
+            </div>
+            <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center border-2 border-white shadow-md"><i class="fa-solid fa-clock-rotate-left"></i></div>
+        </div>
+        
+        <div id="menu-perfil" class="hidden absolute right-0 mt-2 w-80 bg-white rounded-xl shadow-xl border border-gray-100 p-4 max-h-[400px] overflow-y-auto">
+            <h3 class="font-bold text-gray-800 border-b pb-2 mb-3">Últimas Búsquedas</h3>
+            <ul id="lista-historial" class="text-sm text-gray-600 space-y-3">
+                <li class="italic text-gray-400 text-center">Cargando...</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="absolute top-24 left-4 z-50 w-96 pointer-events-auto flex flex-col gap-4">
+    
+    <div class="glass-panel rounded-2xl p-6 border border-gray-200 shadow-xl flex flex-col gap-4">
+        <div class="flex flex-col gap-1">
+            <h2 class="text-lg font-bold">Planifica tu viaje</h2>
+            
+            <div id="indicador-clic-mapa" class="text-xs font-bold px-3 py-2 rounded-xl text-center shadow-sm border transition-all duration-200 mt-1">
+                Inicializando indicador vial...
+            </div>
+        </div>
+
+        <div class="relative flex flex-col gap-3">
+            <div class="relative flex items-center gap-3">
+                <div class="w-3 h-3 rounded-full bg-blue-500 z-10 outline outline-4 outline-white"></div>
+                <div class="relative w-full">
+                    <input type="text" id="input-origen" placeholder="Busca punto de partida..." class="w-full bg-white border border-gray-300 text-sm rounded-xl pl-4 pr-10 py-3 shadow-sm focus:outline-none">
+                    <button id="btn-gps" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-blue-600 transition" title="Usar mi ubicación actual">
+                        <i class="fa-solid fa-location-crosshairs text-lg"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="relative flex items-center gap-3">
+                <div class="w-3 h-3 rounded-none bg-red-500 z-10 outline outline-4 outline-white"></div>
+                <input type="text" id="input-destino" placeholder="Busca destino final..." class="w-full bg-white border border-gray-300 text-sm rounded-xl px-4 py-3 shadow-sm focus:outline-none">
+            </div>
+        </div>
+
+        <div>
+            <div class="grid grid-cols-3 gap-2">
+                <button data-modo="Auto" class="transport-btn active border-2 border-transparent bg-gray-50 rounded-xl py-3 flex flex-col items-center gap-1 transition">
+                    <i class="fa-solid fa-car text-lg"></i><span class="text-xs font-semibold">Auto</span>
+                </button>
+                <button data-modo="Moto" class="transport-btn border-2 border-transparent bg-gray-50 rounded-xl py-3 flex flex-col items-center gap-1 transition">
+                    <i class="fa-solid fa-motorcycle text-lg"></i><span class="text-xs font-semibold">Moto</span>
+                </button>
+                <button data-modo="A pie" class="transport-btn border-2 border-transparent bg-gray-50 rounded-xl py-3 flex flex-col items-center gap-1 transition">
+                    <i class="fa-solid fa-person-walking text-lg"></i><span class="text-xs font-semibold">A pie</span>
+                </button>
+            </div>
+        </div>
+
+        <button id="btn-buscar" class="w-full bg-emerald-400 text-white rounded-xl py-4 font-bold text-lg hover:bg-emerald-500 transition flex justify-center items-center gap-2 disabled:opacity-60" disabled>
+            <i class="fa-solid fa-route"></i> trazar ruta
+        </button>
+
+        <div class="grid grid-cols-2 gap-2">
+            <button id="btn-comparar" type="button" class="w-full bg-orange-500 text-white rounded-xl py-2.5 font-bold text-xs hover:bg-orange-600 transition flex justify-center items-center gap-1 disabled:opacity-50 shadow-sm" disabled>
+                <i class="fa-solid fa-code-compare"></i> Comparar Dijkstra
+            </button>
+            <button id="btn-limpiar-comparar" type="button" class="hidden w-full bg-slate-600 text-white rounded-xl py-2.5 font-bold text-xs hover:bg-slate-700 transition flex justify-center items-center gap-1 shadow-sm">
+                <i class="fa-solid fa-xmark"></i> Ocultar Comparación
+            </button>
+        </div>
+
+        <button id="btn-limpiar" class="w-full bg-white text-gray-700 border-2 border-gray-200 rounded-xl py-2 font-bold text-sm hover:bg-gray-50 transition flex justify-center items-center gap-2 mt-1">
+            <i class="fa-solid fa-trash-can"></i> Limpiar Mapa
+        </button>
+
+        <div id="loading" class="hidden text-center text-sm text-blue-600 font-semibold mt-2">
+            <i class="fa-solid fa-circle-notch fa-spin"></i> Procesando ruta...
+        </div>
+
+        <div id="info-ruta" class="hidden mt-2 p-4 bg-blue-50 rounded-xl border border-blue-200">
+            <div class="flex justify-between items-center mb-2">
+                <p class="text-3xl font-extrabold text-blue-800"><span id="txt-tiempo">0</span><span class="text-lg font-bold text-blue-600 ml-1">min</span></p>
+                <div class="text-right">
+                    <p class="text-sm font-bold text-gray-700"><span id="txt-distancia">0.0</span> km</p>
+                    <p class="text-xs font-semibold text-blue-500">Velocidad: <span id="txt-velocidad">0</span> km/h</p>
+                </div>
+            </div>
+            <p id="txt-explicacion" class="text-xs text-blue-700 leading-relaxed font-medium bg-white p-2 rounded-lg border border-blue-100 mb-3"></p>
+            
+            <div class="mt-3">
+                <button id="btn-toggle-segmentos" class="text-xs font-semibold text-blue-600 hover:text-blue-800 flex items-center gap-1">
+                    📋 Ver detalle de tramos paso a paso <span id="toggle-icon">▼</span>
+                </button>
+                <div id="segmentos-container" class="hidden mt-2 max-h-48 overflow-y-auto space-y-2 bg-white p-3 rounded-lg border border-blue-100 shadow-inner">
+                    <ul id="lista-segmentos" class="text-xs text-gray-700 space-y-2"></ul>
+                </div>
+            </div>
+
+            <div class="mt-3 grid grid-cols-2 gap-2">
+                <button id="btn-iniciar-nav" class="hidden w-full bg-blue-600 text-white rounded-xl py-2 font-bold text-xs hover:bg-blue-700 transition flex justify-center items-center gap-1 shadow-sm">
+                    <i class="fa-solid fa-location-arrow"></i> Iniciar GPS
+                </button>
+                <button id="btn-detener-nav" class="hidden w-full bg-red-500 text-white rounded-xl py-2 font-bold text-xs hover:bg-red-600 transition flex justify-center items-center gap-1 shadow-sm">
+                    <i class="fa-solid fa-stop"></i> Detener GPS
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="glass-panel rounded-2xl p-4 border border-gray-200 bg-white shadow-xl max-h-[250px] overflow-hidden flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+            <div>
+                <p class="text-sm font-bold text-gray-900">Eventos Cercanos</p>
+                <p class="text-[10px] text-gray-500">Toca un evento para ir hacia allá automáticamente</p>
+            </div>
+            <i class="fa-solid fa-calendar-check text-blue-500 text-xl"></i>
+        </div>
+        <div class="overflow-y-auto pr-2 flex-1">
+            <ul id="lista-eventos" class="space-y-3 text-sm text-gray-700">
+                <li class="italic text-gray-400">Cargando eventos CSV...</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="absolute bottom-10 right-4 z-[999] glass-panel p-5 rounded-2xl border border-gray-200 shadow-xl w-[450px] pointer-events-auto">
+    <div class="flex items-center gap-2 mb-3">
+        <i class="fa-solid fa-camera-retro text-blue-600 text-xl"></i>
+        <h3 class="text-base font-bold text-gray-800">Cultura Carabayllo</h3>
+    </div>
+    <div class="relative w-full h-72 rounded-lg overflow-hidden bg-gray-200 shadow-inner">
+        <img id="carrusel-img" src="" alt="Festividad" class="w-full h-full object-cover fade-transition opacity-0">
+    </div>
+    <p id="carrusel-texto" class="text-sm text-center mt-3 font-semibold text-gray-700 fade-transition opacity-0"></p>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    let seleccionandoOrigen = true;
+    const googleMapsApiKey = '{{ api_key }}';
+
+    // Variable global segura para guardar los datos del historial y evitar truncamientos en HTML
+    window.historialGlobal = [];
+
+    function actualizarIndicadorClic() {
+        const indicador = document.getElementById('indicador-clic-mapa');
+        if (!indicador) return;
+        if (seleccionandoOrigen) {
+            indicador.innerHTML = '<i class="fa-solid fa-location-dot text-blue-500 mr-1"></i> Próximo clic: <span class="text-blue-600 font-extrabold">ORIGEN</span>';
+            indicador.className = "text-xs font-bold px-3 py-2 rounded-xl text-center shadow-sm border border-blue-200 bg-blue-50 text-blue-700 transition-all duration-200";
+            inputDestino.classList.remove('ring-2', 'ring-blue-500');
+            inputOrigen.classList.add('ring-2', 'ring-blue-500');
+        } else {
+            indicador.innerHTML = '<i class="fa-solid fa-flag text-red-500 mr-1"></i> Próximo clic: <span class="text-red-600 font-extrabold">DESTINO FINAL</span>';
+            indicador.className = "text-xs font-bold px-3 py-2 rounded-xl text-center shadow-sm border border-red-200 bg-red-50 text-red-700 transition-all duration-200";
+            inputOrigen.classList.remove('ring-2', 'ring-blue-500');
+            inputDestino.classList.add('ring-2', 'ring-blue-500');
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let usuarioGuardado = localStorage.getItem('usuarioActivo') || "Usuario"; 
+        document.getElementById('nombrePerfil').innerText = usuarioGuardado;
+        actualizarIndicadorClic();
+        cargarEventos();
+    });
+
+    function cerrarSesion() {
+        localStorage.removeItem('usuarioActivo');
+        window.location.href = '/login.html'; 
+    }
+
+    var map = L.map('map', {zoomControl: false}).setView([-11.85, -77.03], 14); 
+    L.control.zoom({ position: 'bottomright' }).addTo(map);
+    
+    // Integración de Base Map de Google Maps (Reemplazando OSM/Carto)
+    L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        attribution: '&copy; Google Maps'
+    }).addTo(map);
+
+    let markerOrigen = null; let markerDestino = null; let polylineRuta = null; let polylineDijkstra = null;
+    let modalEventoSeleccionado = { nombre: '', lat: 0, lng: 0 };
+    let currentPopupMarker = null;
+    let markersConPopup = [];   
+
+    // Variables de Navegación GPS
+    let watchId = null;
+    let markerUsuario = null;
+    let navActiva = false;
+    let recalculando = false;
+
+    function cerrarTodosLosPopups() {
+        markersConPopup.forEach(m => {
+            try { m.closePopup(); } catch (e) {}
+        });
+        try { map.closePopup(); } catch (e) {}
+        currentPopupMarker = null;
+    }
+
+    const inputOrigen = document.getElementById('input-origen');
+    const inputDestino = document.getElementById('input-destino');
+    const btnBuscar = document.getElementById('btn-buscar');
+    const btnLimpiar = document.getElementById('btn-limpiar');
+    const btnGps = document.getElementById('btn-gps');
+    const btnComparar = document.getElementById('btn-comparar');
+    const btnLimpiarComparar = document.getElementById('btn-limpiar-comparar');
+    const btnIniciarNav = document.getElementById('btn-iniciar-nav');
+    const btnDetenerNav = document.getElementById('btn-detener-nav');
+
+    const geocoder = new google.maps.Geocoder();
+    const placeService = new google.maps.places.PlacesService(document.createElement('div'));
+
+    async function obtenerClima(lat, lng) {
+        try {
+            const resp = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current_weather=true`);
+            const data = await resp.json();
+            if (data.current_weather) {
+                return data.current_weather;
+            }
+        } catch (e) {
+            console.warn('Clima API falló', e);
+        }
+        return null;
+    }
+
+    function obtenerHtmlPopupLugar(info) {
+        const imagen = info.photo ? `<img src="${info.photo}" class="w-full h-32 object-cover rounded-xl mb-3 shadow-sm">` : '<div class="w-full h-32 rounded-xl mb-3 bg-slate-200 flex items-center justify-center text-sm text-slate-500">Imagen no disponible</div>';
+        const rating = info.googleRating ? `<span class="text-amber-500 font-semibold">⭐ ${info.googleRating} (${info.googleRatingsTotal})</span>` : '<span class="text-slate-500">Sin valoración Google</span>';
+        const promedioLocal = info.localAverage ? `<span class="text-blue-600 font-semibold">Promedio local: ${info.localAverage} ⭐</span>` : '<span class="text-slate-500">Sin reseñas locales</span>';
+        const tempText = info.temperature !== null ? `<span class="text-sm text-slate-700">🌡️ ${info.temperature}°C</span>` : '<span class="text-sm text-slate-500">Clima no disponible</span>';
+
+        return `
+            <div class="p-2" style="min-width:220px; font-family:sans-serif; position:relative;">
+                <button onclick="cerrarPopupAbierto()" aria-label="Cerrar" title="Cerrar" style="position:absolute;right:8px;top:8px;background:transparent;border:none;font-size:18px;color:#64748b;">×</button>
+                ${imagen}
+                <div class="font-bold text-sm text-slate-900 mb-1">${info.name || info.address || 'Lugar seleccionado'}</div>
+                <div class="text-xs text-slate-600 mb-2">${info.address || 'Dirección no disponible'}</div>
+                <div class="flex flex-col gap-1 text-xs">${rating}<br>${promedioLocal}<br>${tempText}</div>
+                <button onclick='abrirModalResena(${JSON.stringify(info.reviewName)}, ${info.lat}, ${info.lng})' class="mt-3 w-full bg-blue-600 text-white text-[11px] font-bold py-2 rounded-xl hover:bg-blue-700 transition">Ver / Agregar Reseñas</button>
+            </div>`;
+    }
+
+    function mostrarPopupMarker(marker, info) {
+        const popup = L.popup({ closeButton: true, autoClose: true, closeOnClick: true, autoPan: false, offset: [0, -20], className: 'marker-popup-card' })
+            .setContent(obtenerHtmlPopupLugar(info));
+
+        popup.on('add', () => {
+            const el = popup.getElement();
+            if (el) {
+                L.DomEvent.disableClickPropagation(el);
+                L.DomEvent.disableScrollPropagation(el);
+            }
+        });
+        marker.bindPopup(popup).openPopup();
+    }
+
+    async function cargarInfoLugar(latlng, fallbackName) {
+        const cacheKey = `lugar_${latlng.lat.toFixed(4)}_${latlng.lng.toFixed(4)}`;
+        const datosGuardados = localStorage.getItem(cacheKey);
+
+        if (datosGuardados) {
+            const info = JSON.parse(datosGuardados);
+            const weather = await obtenerClima(latlng.lat, latlng.lng);
+            if (weather) info.temperature = weather.temperature;
+            return info;
+        }
+
+        return new Promise((resolve) => {
+            geocoder.geocode({ location: latlng }, async (results, status) => {
+                const info = {
+                    name: fallbackName || '', address: '', googleRating: null,
+                    googleRatingsTotal: null, photo: null, temperature: null,
+                    localAverage: null, reviewName: fallbackName || 'Lugar'
+                };
+
+                if (results && results[0]) {
+                    info.address = results[0].formatted_address || info.address;
+                    info.reviewName = results[0].formatted_address || info.reviewName;
+                    info.name = info.name || results[0].formatted_address;
+                }
+
+                const weather = await obtenerClima(latlng.lat, latlng.lng);
+                if (weather) info.temperature = weather.temperature;
+
+                if (results && results[0] && results[0].place_id) {
+                    placeService.getDetails({
+                        placeId: results[0].place_id,
+                        fields: ['name','formatted_address','photos','rating','user_ratings_total']
+                    }, (place, placeStatus) => {
+                        if (placeStatus === google.maps.places.PlacesServiceStatus.OK && place) {
+                            info.name = place.name || info.name;
+                            info.address = place.formatted_address || info.address;
+                            info.googleRating = place.rating || info.googleRating;
+                            info.googleRatingsTotal = place.user_ratings_total || info.googleRatingsTotal;
+                            if (place.photos && place.photos.length) {
+                                info.photo = place.photos[0].getUrl({ maxWidth: 300, maxHeight: 250 });
+                            }
+                        }
+                        if (!info.photo && results[0].photos && results[0].photos.length) {
+                            try { info.photo = results[0].photos[0].getUrl({ maxWidth: 300, maxHeight: 250 }); } catch (e) {}
+                        }
+                        if (!info.photo) {
+                            info.photo = `https://maps.googleapis.com/maps/api/staticmap?center=${encodeURIComponent(latlng.lat + ',' + latlng.lng)}&zoom=16&size=400x250&maptype=roadmap&markers=color:red%7C${encodeURIComponent(latlng.lat + ',' + latlng.lng)}&key=${googleMapsApiKey}`;
+                        }
+                        
+                        const infoParaGuardar = { ...info, temperature: null };
+                        localStorage.setItem(cacheKey, JSON.stringify(infoParaGuardar));
+                        resolve(info);
+                    });
+                } else {
+                    info.photo = info.photo || 'https://via.placeholder.com/400x250?text=Sin+imagen';
+                    const infoParaGuardar = { ...info, temperature: null };
+                    localStorage.setItem(cacheKey, JSON.stringify(infoParaGuardar));
+                    resolve(info);
+                }
+            });
+        });
+    }
+
+    async function adicionarPopupA(marker, latlng, titulo) {
+        const info = await cargarInfoLugar(latlng, titulo);
+        info.lat = latlng.lat;
+        info.lng = latlng.lng;
+        info.reviewName = titulo;
+
+        if (!markersConPopup.includes(marker)) {
+            markersConPopup.push(marker);
+            marker.on('remove', () => {
+                markersConPopup = markersConPopup.filter(m => m !== marker);
+            });
+        }
+
+        let popupTimeout = null;
+
+        marker.on('mouseover', () => {
+            clearTimeout(popupTimeout);
+            cerrarTodosLosPopups();
+            mostrarPopupMarker(marker, info);
+            currentPopupMarker = marker;
+        });
+
+        marker.on('mouseout', () => {
+            popupTimeout = setTimeout(() => {
+                try {
+                    if (currentPopupMarker === marker) {
+                        marker.closePopup();
+                        currentPopupMarker = null;
+                    }
+                } catch (e) {}
+            }, 2000);
+        });
+
+        marker.on('click', (ev) => {
+            if (ev.originalEvent) L.DomEvent.stopPropagation(ev.originalEvent);
+            clearTimeout(popupTimeout);
+            if (marker.isPopupOpen && marker.isPopupOpen()) {
+                cerrarTodosLosPopups();
+            } else {
+                cerrarTodosLosPopups();
+                mostrarPopupMarker(marker, info);
+                currentPopupMarker = marker;
+            }
+        });
+    }
+
+    const autoOrigen = new google.maps.places.Autocomplete(inputOrigen);
+    autoOrigen.setFields(['geometry','formatted_address','photos','name','rating','user_ratings_total','place_id']);
+    const autoDestino = new google.maps.places.Autocomplete(inputDestino);
+    autoDestino.setFields(['geometry','formatted_address','photos','name','rating','user_ratings_total','place_id']);
+
+    async function manejarPlaceSeleccionado(place, tipo) {
+        if (!place || !place.geometry) return;
+        const latlng = { lat: place.geometry.location.lat(), lng: place.geometry.location.lng() };
+        const title = place.name || place.formatted_address || (tipo === 'origen' ? 'Origen' : 'Destino');
+
+        if (tipo === 'origen') {
+            if (markerOrigen) map.removeLayer(markerOrigen);
+            markerOrigen = L.marker(latlng, { icon: L.divIcon({className: 'bg-blue-600 w-4 h-4 rounded-full border-2 border-white shadow-md'}) }).addTo(map);
+            inputOrigen.value = place.formatted_address || inputOrigen.value;
+            await adicionarPopupA(markerOrigen, latlng, title);
+        } else {
+            if (markerDestino) map.removeLayer(markerDestino);
+            markerDestino = L.marker(latlng, { icon: L.divIcon({className: 'bg-red-600 w-4 h-4 rounded-none border-2 border-white shadow-md'}) }).addTo(map);
+            inputDestino.value = place.formatted_address || inputDestino.value;
+            await adicionarPopupA(markerDestino, latlng, title);
+        }
+
+        map.panTo(latlng);
+        map.setZoom(15);
+        verificarBotones();
+    }
+
+    autoOrigen.addListener('place_changed', async () => {
+        const place = autoOrigen.getPlace();
+        await manejarPlaceSeleccionado(place, 'origen');
+    });
+
+    autoDestino.addListener('place_changed', async () => {
+        const place = autoDestino.getPlace();
+        await manejarPlaceSeleccionado(place, 'destino');
+    });
+
+    async function snapPoint(latlng) {
+        try {
+            const resp = await fetch('/snap', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(latlng)
+            });
+            const data = await resp.json();
+            if (data && typeof data.lat === 'number' && typeof data.lng === 'number') {
+                return { lat: data.lat, lng: data.lng };
+            }
+        } catch (e) {
+            console.warn('snap error', e);
+        }
+        return latlng;
+    }
+
+    const festividades = [
+        { img: '/static/foto1.jpg', texto: 'Aniversario de Carabayllo' },
+        { img: '/static/foto2.jpg', texto: 'Municipalidad de Carabayllo' },
+        { img: '/static/foto3.jpg', texto: 'Lomas de Carabayllo' },
+        { img: '/static/foto4.jpg', texto: 'Plaza Central' }
+    ];
+
+    let indexFestividad = 0;
+    const imgElement = document.getElementById('carrusel-img');
+    const textElement = document.getElementById('carrusel-texto');
+
+    function actualizarCarrusel() {
+        if (festividades.length === 0) return;
+        imgElement.classList.remove('opacity-100'); textElement.classList.remove('opacity-100');
+        imgElement.classList.add('opacity-0'); textElement.classList.add('opacity-0');
+
+        setTimeout(() => {
+            imgElement.src = festividades[indexFestividad].img;
+            imgElement.onerror = () => { imgElement.src = 'https://via.placeholder.com/400x300?text=Foto+Cultura'; };
+            textElement.innerText = festividades[indexFestividad].texto;
+            
+            imgElement.classList.remove('opacity-0'); textElement.classList.remove('opacity-0');
+            imgElement.classList.add('opacity-100'); textElement.classList.add('opacity-100');
+            indexFestividad = (indexFestividad + 1) % festividades.length;
+        }, 500); 
+    }
+    actualizarCarrusel();
+    setInterval(actualizarCarrusel, 4000); 
+
+    btnGps.addEventListener('click', () => {
+        btnGps.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-blue-500"></i>';
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const latlng = { lat: position.coords.latitude, lng: position.coords.longitude };
+                    
+                    geocoder.geocode({ location: latlng }, (results, status) => {
+                        let direccionStr = `${latlng.lat.toFixed(5)}, ${latlng.lng.toFixed(5)}`;
+                        if (status === "OK" && results[0]) direccionStr = results[0].formatted_address;
+                        
+                        if (markerOrigen) map.removeLayer(markerOrigen);
+                        markerOrigen = L.marker(latlng, { icon: L.divIcon({className: 'bg-blue-600 w-4 h-4 rounded-full border-2 border-white shadow-md'}) }).addTo(map);
+                        adicionarPopupA(markerOrigen, latlng, direccionStr);
+                        
+                        inputOrigen.value = direccionStr;
+                        map.panTo(latlng);
+                        map.setZoom(16);
+                        
+                        seleccionandoOrigen = false;
+                        actualizarIndicadorClic();
+                        verificarBotones();
+                        btnGps.innerHTML = '<i class="fa-solid fa-location-crosshairs text-lg"></i>';
+                    });
+                },
+                (error) => {
+                    alert("No se pudo obtener tu ubicación. Revisa los permisos de tu navegador.");
+                    btnGps.innerHTML = '<i class="fa-solid fa-location-crosshairs text-lg text-red-500"></i>';
+                },
+                { enableHighAccuracy: true, timeout: 15000 }
+            );
+        } else {
+            alert("Tu navegador no soporta GPS.");
+        }
+    });
+
+    async function cargarEventos() {
+        try {
+            const res = await fetch('/eventos');
+            const eventos = await res.json();
+            const lista = document.getElementById('lista-eventos');
+            lista.innerHTML = '';
+            if (!eventos || eventos.length === 0) {
+                lista.innerHTML = '<li class="italic text-gray-400">No hay eventos recientes.</li>';
+                return;
+            }
+            eventos.slice(0, 15).forEach(evento => {
+                const lugarBusqueda = `${evento.Entidad_Relacionada}, Carabayllo, Lima`;
+                const eventoNombre = evento.Evento || evento.Entidad_Relacionada || 'Evento';
+                const lat = evento.Latitud || 0;
+                const lng = evento.Longitud || 0;
+                lista.innerHTML += `
+                    <li class="rounded-2xl border border-gray-100 p-3 bg-slate-50 shadow-sm hover:bg-blue-50 transition border-l-4 border-l-blue-500 group">
+                        <div class="flex justify-between items-start gap-2 mb-1">
+                            <span class="text-xs font-bold text-gray-500">${evento.Fecha || 'Hoy'}</span>
+                            <span class="text-[10px] uppercase tracking-wider text-blue-600 font-bold bg-blue-100 px-2 py-0.5 rounded-md">${evento.Categoría || 'General'}</span>
+                        </div>
+                        <div class="font-bold text-gray-800 text-sm leading-tight mb-1">${eventoNombre}</div>
+                        <div class="text-xs font-semibold text-gray-600 mb-2"><i class="fa-solid fa-location-dot mr-1"></i> ${evento.Entidad_Relacionada || 'Carabayllo'}</div>
+                        <div class="flex gap-2">
+                            <button data-lugar="${lugarBusqueda}" class="evento-ir text-xs bg-blue-500 text-white px-2 py-1 rounded flex-1 hover:bg-blue-600 transition">
+                                <i class="fa-solid fa-route mr-1"></i> Ir
+                            </button>
+                            <button data-nombre="${eventoNombre.replace(/\"/g,'&quot;')}" data-lat="${lat}" data-lng="${lng}" class="evento-resena text-xs bg-yellow-500 text-white px-2 py-1 rounded hover:bg-yellow-600 transition">
+                                <i class="fa-solid fa-star"></i>
+                            </button>
+                        </div>
+                    </li>`;
+            });
+
+            setTimeout(() => {
+                document.querySelectorAll('.evento-ir').forEach(btn => {
+                    btn.removeEventListener('click', handleIrEvento);
+                    btn.addEventListener('click', handleIrEvento);
+                });
+                document.querySelectorAll('.evento-resena').forEach(btn => {
+                    btn.removeEventListener('click', handleAbrirResena);
+                    btn.addEventListener('click', handleAbrirResena);
+                });
+            }, 0);
+        } catch (e) {
+            document.getElementById('lista-eventos').innerHTML = '<li class="italic text-red-500">Error cargando CSV.</li>';
+        }
+    }
+
+    function handleIrEvento(e) {
+        const btn = e.currentTarget;
+        const lugar = btn.dataset.lugar;
+        if (lugar) irAEvento(lugar);
+    }
+
+    function handleAbrirResena(e) {
+        const btn = e.currentTarget;
+        const nombre = btn.dataset.nombre || 'Evento';
+        const lat = parseFloat(btn.dataset.lat) || 0;
+        const lng = parseFloat(btn.dataset.lng) || 0;
+        abrirModalResena(nombre, lat, lng);
+    }
+
+    async function irAEvento(lugar) {
+        inputDestino.value = lugar;
+        await cerrarPopupAbierto();
+
+        try {
+            const results = await geocodeAddress(lugar);
+            const latlng = { lat: results.geometry.location.lat(), lng: results.geometry.location.lng() };
+
+            if (markerDestino) map.removeLayer(markerDestino);
+            markerDestino = L.marker(latlng, { icon: L.divIcon({className: 'bg-red-600 w-4 h-4 rounded-none border-2 border-white shadow-md'}) }).addTo(map);
+            await adicionarPopupA(markerDestino, latlng, results.formatted_address || lugar);
+            abrirModalResena(results.formatted_address || lugar, latlng.lat, latlng.lng);
+
+            if (markerOrigen) {
+                map.removeLayer(markerOrigen);
+                markerOrigen = null;
+            }
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const posLatLng = { lat: position.coords.latitude, lng: position.coords.longitude };
+                        geocoder.geocode({ location: posLatLng }, async (res, status) => {
+                            if (status === "OK" && res[0]) {
+                                if (markerOrigen) map.removeLayer(markerOrigen);
+                                markerOrigen = L.marker(posLatLng, { icon: L.divIcon({className: 'bg-blue-600 w-4 h-4 rounded-full border-2 border-white shadow-md'}) }).addTo(map);
+                                await adicionarPopupA(markerOrigen, posLatLng, res[0].formatted_address);
+                                inputOrigen.value = res[0].formatted_address;
+                                seleccionandoOrigen = false;
+                                actualizarIndicadorClic();
+                                verificarBotones();
+                                btnBuscar.click();
+                            } else {
+                                alert('No se pudo obtener la dirección de tu ubicación actual.');
+                            }
+                        });
+                    },
+                    (error) => {
+                        alert('No se pudo obtener tu ubicación. Revisa los permisos de tu navegador.');
+                    },
+                    { enableHighAccuracy: true, timeout: 15000 } // Corregido: Retirado el maximumAge: 0 que forzaba error
+                );
+            } else {
+                alert('Tu navegador no soporta GPS.');
+            }
+        } catch (error) {
+            console.warn("Error geocodificando evento.");
+        }
+    }
+
+    map.on('zoomstart', cerrarTodosLosPopups);
+    map.on('dragstart', cerrarTodosLosPopups);
+
+    map.on('click', async function(e) {
+        const clickedPopup = e.originalEvent && e.originalEvent.target.closest && e.originalEvent.target.closest('.leaflet-popup');
+        const clickedMarker = e.originalEvent && e.originalEvent.target.closest && e.originalEvent.target.closest('.leaflet-marker-icon');
+        const hayPopupAbierto = markersConPopup.some(m => { try { return m.isPopupOpen(); } catch (e) { return false; } });
+        if (hayPopupAbierto && !clickedPopup && !clickedMarker) {
+            cerrarTodosLosPopups();
+            return;
+        }
+        if (clickedPopup || clickedMarker) {
+            return;
+        }
+        let latlng = e.latlng;
+
+        geocoder.geocode({ location: latlng }, async (results, status) => {
+            let direccionStr = `${latlng.lat.toFixed(5)}, ${latlng.lng.toFixed(5)}`;
+            if (status === "OK" && results[0]) direccionStr = results[0].formatted_address;
+
+            if (seleccionandoOrigen) {
+                if (markerOrigen) map.removeLayer(markerOrigen);
+                markerOrigen = L.marker(latlng, { icon: L.divIcon({className: 'bg-blue-600 w-4 h-4 rounded-full border-2 border-white shadow-md'}) }).addTo(map);
+                inputOrigen.value = direccionStr;
+                await adicionarPopupA(markerOrigen, latlng, direccionStr);
+                seleccionandoOrigen = false;
+            } else {
+                if (markerDestino) map.removeLayer(markerDestino);
+                markerDestino = L.marker(latlng, { icon: L.divIcon({className: 'bg-red-600 w-4 h-4 rounded-none border-2 border-white shadow-md'}) }).addTo(map);
+                inputDestino.value = direccionStr;
+                await adicionarPopupA(markerDestino, latlng, direccionStr);
+                seleccionandoOrigen = true; 
+            }
+            map.flyTo(latlng, 17, { animate: true, duration: 1.5 });
+            actualizarIndicadorClic();
+            verificarBotones();
+        });
+    });
+
+    function verificarBotones() {
+        const valOrigen = inputOrigen.value.trim();
+        const valDestino = inputDestino.value.trim();
+        const habilitar = (valOrigen.length > 0 && valDestino.length > 0);
+        
+        btnBuscar.disabled = !habilitar;
+        btnComparar.disabled = !habilitar;
+    }
+
+    inputOrigen.addEventListener('input', verificarBotones);
+    inputDestino.addEventListener('input', verificarBotones);
+
+    async function geocodeAddress(address) {
+        return new Promise((resolve, reject) => {
+            if (!address || !address.trim()) return reject('Dirección vacía.');
+            geocoder.geocode({ address: address }, (results, status) => {
+                if (status === 'OK' && results[0]) {
+                    resolve(results[0]);
+                } else {
+                    reject('No se pudo geocodificar la dirección: ' + address);
+                }
+            });
+        });
+    }
+
+    async function actualizarMarcadorDesdeDireccion(address, tipo) {
+        try {
+            const place = await geocodeAddress(address);
+            const latlng = { lat: place.geometry.location.lat(), lng: place.geometry.location.lng() };
+            const formatted = place.formatted_address || address;
+
+            if (tipo === 'origen') {
+                if (markerOrigen) map.removeLayer(markerOrigen);
+                markerOrigen = L.marker(latlng, { icon: L.divIcon({className: 'bg-blue-600 w-4 h-4 rounded-full border-2 border-white shadow-md'}) }).addTo(map);
+                inputOrigen.value = formatted;
+                await adicionarPopupA(markerOrigen, latlng, formatted);
+            } else {
+                if (markerDestino) map.removeLayer(markerDestino);
+                markerDestino = L.marker(latlng, { icon: L.divIcon({className: 'bg-red-600 w-4 h-4 rounded-none border-2 border-white shadow-md'}) }).addTo(map);
+                inputDestino.value = formatted;
+                await adicionarPopupA(markerDestino, latlng, formatted);
+            }
+
+            map.panTo(latlng);
+            verificarBotones();
+            return true;
+        } catch (error) {
+            console.warn(error);
+            return false;
+        }
+    }
+
+    async function cerrarPopupAbierto() {
+        if (currentPopupMarker) {
+            try { currentPopupMarker.closePopup(); } catch (e) {}
+            currentPopupMarker = null;
+        }
+    }
+
+    btnLimpiar.addEventListener('click', () => {
+        detenerNavegacion();
+        if (markerOrigen) map.removeLayer(markerOrigen);
+        if (markerDestino) map.removeLayer(markerDestino);
+        if (polylineRuta) map.removeLayer(polylineRuta);
+        if (polylineDijkstra) map.removeLayer(polylineDijkstra);
+        
+        markerOrigen = null; markerDestino = null; polylineRuta = null; polylineDijkstra = null;
+        inputOrigen.value = ''; inputDestino.value = '';
+        
+        seleccionandoOrigen = true;
+        actualizarIndicadorClic();
+        btnBuscar.disabled = true;
+        btnComparar.disabled = true;
+        btnLimpiarComparar.classList.add('hidden');
+        document.getElementById('info-ruta').classList.add('hidden');
+        btnIniciarNav.classList.add('hidden');
+    });
+
+    inputOrigen.addEventListener('click', () => { seleccionandoOrigen = true; actualizarIndicadorClic(); });
+    inputDestino.addEventListener('click', () => { seleccionandoOrigen = false; actualizarIndicadorClic(); });
+
+    document.querySelectorAll('.transport-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.transport-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
+    document.getElementById('btn-toggle-segmentos').addEventListener('click', () => {
+        const container = document.getElementById('segmentos-container');
+        const icon = document.getElementById('toggle-icon');
+        container.classList.toggle('hidden');
+        icon.innerText = container.classList.contains('hidden') ? '▼' : '▲';
+    });
+
+    function decodePolyline(encoded) {
+        if (!encoded || encoded === "null" || encoded === "undefined" || encoded === "") return [];
+        let points = [], index = 0, len = encoded.length;
+        let lat = 0, lng = 0;
+        while (index < len) {
+            let b, shift = 0, result = 0;
+            do {
+                b = encoded.charCodeAt(index++) - 63;
+                result |= (b & 0x1f) << shift;
+                shift += 5;
+            } while (b >= 0x20);
+            let dlat = ((result & 1) ? ~(result >> 1) : (result >> 1));
+            lat += dlat;
+            shift = 0; result = 0;
+            do {
+                b = encoded.charCodeAt(index++) - 63;
+                result |= (b & 0x1f) << shift;
+                shift += 5;
+            } while (b >= 0x20);
+            let dlng = ((result & 1) ? ~(result >> 1) : (result >> 1));
+            lng += dlng;
+            points.push([lat / 1e5, lng / 1e5]);
+        }
+        return points;
+    }
+
+    async function renderHistorialMenu() {
+        const res = await fetch('/historial');
+        const historial = await res.json();
+        
+        window.historialGlobal = historial;
+        
+        const lista = document.getElementById('lista-historial');
+        lista.innerHTML = '';
+
+        if (!historial || historial.length === 0) {
+            lista.innerHTML = '<li class="italic text-gray-400 text-center">No hay viajes guardados.</li>';
+            return;
+        }
+
+        historial.forEach((viaje, idx) => {
+            let icon = viaje.modo === 'Auto' ? 'fa-car' : (viaje.modo === 'Moto' ? 'fa-motorcycle' : 'fa-person-walking');
+            
+            let origenCorto = (viaje.origen_nombre || viaje.origen || 'Origen').split(',')[0];
+            let destinoCorto = (viaje.destino_nombre || viaje.destino || 'Destino').split(',')[0];
+            let tiempoMinutos = viaje.tiempo_minutos !== undefined ? viaje.tiempo_minutos : (viaje.tiempo_min !== undefined ? viaje.tiempo_min : 0);
+            let distanciaKm = viaje.distancia_km !== undefined ? viaje.distancia_km : 0;
+
+            lista.innerHTML += `
+                <li class="border-b border-gray-100 pb-3 group mt-2">
+                    <div class="flex justify-between text-gray-400 mb-1 text-[10px] uppercase font-bold tracking-wider">
+                        <span>${viaje.fecha || ''}</span>
+                        <span class="text-blue-500"><i class="fa-solid ${icon}"></i> ${viaje.modo}</span>
+                    </div>
+                    <div class="font-extrabold text-gray-700 text-sm mb-2 leading-tight">${origenCorto}<br><i class="fa-solid fa-arrow-down my-1 text-emerald-400"></i><br>${destinoCorto}</div>
+                    <div class="flex items-center gap-3 text-[11px] text-slate-600 font-semibold mb-2">
+                        <span><i class="fa-solid fa-clock text-blue-400"></i> ${tiempoMinutos} min</span>
+                        <span><i class="fa-solid fa-road text-blue-400"></i> ${distanciaKm} km</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2 items-center">
+                        <button onclick="verViajeHistorial(${idx})" class="text-[11px] bg-slate-100 border border-slate-300 px-3 py-1.5 rounded-lg text-slate-700 font-bold hover:bg-slate-200 transition shadow-sm"><i class="fa-solid fa-eye"></i> Ver viaje</button>
+                        <button onclick="repetirRutaG(${idx})" class="text-[11px] bg-white border border-blue-200 px-3 py-1.5 rounded-lg text-blue-700 font-bold hover:bg-blue-50 transition shadow-sm"><i class="fa-solid fa-rotate-right"></i> Repetir</button>
+                        <button onclick="eliminarViajeHistorial(${viaje.id}, event)" title="Eliminar viaje" class="ml-auto text-[11px] bg-white border border-red-200 px-2.5 py-1.5 rounded-lg text-red-600 font-bold hover:bg-red-50 transition shadow-sm"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </li>`;
+        });
+    }
+
+    document.getElementById('btn-perfil').addEventListener('click', async () => {
+        const menu = document.getElementById('menu-perfil');
+        menu.classList.toggle('hidden');
+        if (!menu.classList.contains('hidden')) {
+            document.getElementById('lista-historial').innerHTML = '<li class="italic text-gray-400 text-center">Cargando...</li>';
+            await renderHistorialMenu();
+        }
+    });
+
+    async function eliminarViajeHistorial(id, ev) {
+        if (ev) ev.stopPropagation();
+        if (!confirm('¿Eliminar este viaje del historial?')) return;
+        try {
+            const res = await fetch('/historial/eliminar/' + id, { method: 'DELETE' });
+            const data = await res.json();
+            if (data.status === 'success') {
+                await renderHistorialMenu();   
+            } else {
+                alert('No se pudo eliminar: ' + (data.mensaje || 'error'));
+            }
+        } catch (e) {
+            alert('Error de conexión al eliminar el viaje.');
+        }
+    }
+
+    function verViajeHistorial(index) {
+        const viaje = window.historialGlobal[index];
+        detenerNavegacion();
+
+        if (markerOrigen) map.removeLayer(markerOrigen);
+        if (markerDestino) map.removeLayer(markerDestino);
+        if (polylineRuta) map.removeLayer(polylineRuta);
+        if (polylineDijkstra) map.removeLayer(polylineDijkstra);
+
+        let puntos = [];
+        if (viaje.polyline && viaje.polyline !== "null" && viaje.polyline !== "") {
+            try {
+                puntos = decodePolyline(viaje.polyline);
+            } catch (error) {
+                console.warn("No se pudo decodificar la ruta de este historial.", error);
+            }
+        }
+
+        const oLat = parseFloat(viaje.origen_lat != null ? viaje.origen_lat : (viaje.origen_coord ? viaje.origen_coord.lat : 0));
+        const oLon = parseFloat(viaje.origen_lon != null ? viaje.origen_lon : (viaje.origen_coord ? viaje.origen_coord.lng : 0));
+        const dLat = parseFloat(viaje.destino_lat != null ? viaje.destino_lat : (viaje.destino_coord ? viaje.destino_coord.lat : 0));
+        const dLon = parseFloat(viaje.destino_lon != null ? viaje.destino_lon : (viaje.destino_coord ? viaje.destino_coord.lng : 0));
+        
+        const tiempoMinutos = viaje.tiempo_minutos !== undefined ? viaje.tiempo_minutos : (viaje.tiempo_min !== undefined ? viaje.tiempo_min : 0);
+        const distanciaKm = viaje.distancia_km !== undefined ? viaje.distancia_km : 0;
+
+        const oLatLng = L.latLng(oLat, oLon);
+        const dLatLng = L.latLng(dLat, dLon);
+
+        markerOrigen = L.marker(oLatLng, { icon: L.divIcon({className: 'bg-blue-600 w-4 h-4 rounded-full border-2 border-white shadow-md'}) }).addTo(map);
+        markerDestino = L.marker(dLatLng, { icon: L.divIcon({className: 'bg-red-600 w-4 h-4 rounded-none border-2 border-white shadow-md'}) }).addTo(map);
+
+        inputOrigen.value = viaje.origen_nombre || viaje.origen || `${oLat}, ${oLon}`;
+        inputDestino.value = viaje.destino_nombre || viaje.destino || `${dLat}, ${dLon}`;
+
+        if (puntos.length > 0) {
+            polylineRuta = L.polyline(puntos, { color: '#2563eb', weight: 6, opacity: 0.85 }).addTo(map);
+            map.fitBounds(polylineRuta.getBounds(), { padding: [50, 50] });
+        } else {
+            map.fitBounds(L.featureGroup([markerOrigen, markerDestino]).getBounds(), { padding: [50, 50] });
+        }
+
+        document.getElementById('txt-tiempo').innerText = tiempoMinutos;
+        document.getElementById('txt-distancia').innerText = distanciaKm;
+        let vel = viaje.modo === 'A pie' ? 5 : (viaje.modo === 'Moto' ? 30 : 40);
+        document.getElementById('txt-velocidad').innerText = vel;
+        document.getElementById('txt-explicacion').innerHTML = `<i class="fa-solid fa-clock-rotate-left mr-1"></i> <b>Viaje histórico</b> del ${viaje.fecha || 'Registro'}. Tiempo congelado del momento de consulta.`;
+        document.getElementById('lista-segmentos').innerHTML = '<li class="italic text-gray-500">Historial cargado con éxito. Presione "Repetir" si desea evaluar tráfico actual.</li>';
+        document.getElementById('info-ruta').classList.remove('hidden');
+
+        document.querySelectorAll('.transport-btn').forEach(b => b.classList.remove('active'));
+        const btnModo = document.querySelector(`.transport-btn[data-modo="${viaje.modo}"]`);
+        if (btnModo) btnModo.classList.add('active');
+
+        btnIniciarNav.classList.remove('hidden');
+        seleccionandoOrigen = true;
+        actualizarIndicadorClic();
+        verificarBotones();
+        document.getElementById('menu-perfil').classList.add('hidden');
+    }
+
+    async function repetirRutaG(index) {
+        const viaje = window.historialGlobal[index];
+        detenerNavegacion();
+        
+        if (markerOrigen) map.removeLayer(markerOrigen);
+        if (markerDestino) map.removeLayer(markerDestino);
+        if (polylineRuta) map.removeLayer(polylineRuta);
+        if (polylineDijkstra) map.removeLayer(polylineDijkstra);
+
+        const oLat = parseFloat(viaje.origen_lat != null ? viaje.origen_lat : (viaje.origen_coord ? viaje.origen_coord.lat : 0));
+        const oLon = parseFloat(viaje.origen_lon != null ? viaje.origen_lon : (viaje.origen_coord ? viaje.origen_coord.lng : 0));
+        const dLat = parseFloat(viaje.destino_lat != null ? viaje.destino_lat : (viaje.destino_coord ? viaje.destino_coord.lat : 0));
+        const dLon = parseFloat(viaje.destino_lon != null ? viaje.destino_lon : (viaje.destino_coord ? viaje.destino_coord.lng : 0));
+
+        const oCoord = { lat: oLat, lng: oLon };
+        const dCoord = { lat: dLat, lng: dLon };
+        const oLatLng = L.latLng(oLat, oLon);
+        const dLatLng = L.latLng(dLat, dLon);
+
+        markerOrigen = L.marker(oLatLng, { icon: L.divIcon({className: 'bg-blue-600 w-4 h-4 rounded-full border-2 border-white shadow-md'}) }).addTo(map);
+        await adicionarPopupA(markerOrigen, oCoord, viaje.origen_nombre || viaje.origen || `${oLat}, ${oLon}`);
+        markerDestino = L.marker(dLatLng, { icon: L.divIcon({className: 'bg-red-600 w-4 h-4 rounded-none border-2 border-white shadow-md'}) }).addTo(map);
+        await adicionarPopupA(markerDestino, dCoord, viaje.destino_nombre || viaje.destino || `${dLat}, ${dLon}`); 
+
+        inputOrigen.value = viaje.origen_nombre || viaje.origen || `${oLat}, ${oLon}`;
+        inputDestino.value = viaje.destino_nombre || viaje.destino || `${dLat}, ${dLon}`;
+
+        document.querySelectorAll('.transport-btn').forEach(b => b.classList.remove('active'));
+        const btnModo = document.querySelector(`.transport-btn[data-modo="${viaje.modo}"]`);
+        if (btnModo) btnModo.classList.add('active');
+
+        map.fitBounds(L.featureGroup([markerOrigen, markerDestino]).getBounds(), { padding: [50, 50] });
+        
+        seleccionandoOrigen = true;
+        actualizarIndicadorClic();
+        verificarBotones();
+        document.getElementById('menu-perfil').classList.add('hidden');
+
+        await trazarRuta();
+    }
+
+    async function trazarRuta() {
+        if (!markerOrigen) {
+            const ok = await actualizarMarcadorDesdeDireccion(inputOrigen.value, 'origen');
+            if (!ok) {
+                alert('Selecciona o escribe un origen válido antes de trazar la ruta.');
+                return false;
+            }
+        }
+
+        if (!markerDestino) {
+            const ok = await actualizarMarcadorDesdeDireccion(inputDestino.value, 'destino');
+            if (!ok) {
+                alert('Selecciona o escribe un destino válido antes de trazar la ruta.');
+                return false;
+            }
+        }
+
+        verificarBotones();
+        if (!markerOrigen || !markerDestino) return false;
+
+        const modoActivo = document.querySelector('.transport-btn.active').dataset.modo;
+        document.getElementById('loading').classList.remove('hidden');
+        document.getElementById('info-ruta').classList.add('hidden');
+        btnBuscar.classList.add('hidden');
+        if (polylineRuta) map.removeLayer(polylineRuta);
+
+        try {
+            const response = await fetch('/calcular_ruta', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ 
+                    origen: markerOrigen.getLatLng(), 
+                    destino: markerDestino.getLatLng(), 
+                    modo: modoActivo,
+                    direccion_origen: inputOrigen.value,
+                    direccion_destino: inputDestino.value
+                })
+            });
+            
+            const data = await response.json();
+            
+            if (data.status === 'success') {
+                const colorLinea = '#2563eb'; // Cambiado a Azul para ruta óptima principal
+                polylineRuta = L.polyline(data.ruta, { color: colorLinea, weight: 6, opacity: 0.9 }).addTo(map);
+                map.fitBounds(polylineRuta.getBounds(), { padding: [50, 50] });
+                
+                if (data.ruta && data.ruta.length > 0) {
+                    markerOrigen.setLatLng(data.ruta[0]);
+                    markerDestino.setLatLng(data.ruta[data.ruta.length - 1]);
+                }
+
+                document.getElementById('txt-tiempo').innerText = data.tiempo;
+                document.getElementById('txt-distancia').innerText = data.distancia;
+                document.getElementById('txt-velocidad').innerText = data.velocidad;
+                document.getElementById('txt-explicacion').innerHTML = data.explicacion || 'Ruta calculada con éxito.';
+
+                const listaSegmentos = document.getElementById('lista-segmentos');
+                listaSegmentos.innerHTML = '';
+                if (data.segmentos && data.segmentos.length > 0) {
+                    data.segmentos.forEach((seg, idx) => {
+                        const li = document.createElement('li');
+                        li.className = 'border-l-4 border-blue-400 pl-3 py-2 bg-slate-50 rounded-r-md';
+                        li.innerHTML = `
+                            <div class="font-semibold text-gray-800 text-sm">${idx + 1}. ${seg.nombre}</div>
+                            <div class="text-gray-500 font-medium mt-1">Avance: <span class="text-blue-600">${seg.distancia_m}</span></div>
+                        `;
+                        listaSegmentos.appendChild(li);
+                    });
+                } else {
+                    listaSegmentos.innerHTML = '<li class="italic text-gray-500">Ruta cargada correctamente. No se encontraron tramos detallados.</li>';
+                }
+
+                fetch(`https://api.open-meteo.com/v1/forecast?latitude=${data.snapped_destino[0]}&longitude=${data.snapped_destino[1]}&current_weather=true`)
+                    .then(res => res.json())
+                    .then(climaData => {
+                        const temp = climaData.current_weather.temperature;
+                        const code = climaData.current_weather.weathercode;
+                        let emoji = '🌤️';
+                        if(code === 0) emoji = '☀️'; else if(code <= 3) emoji = '⛅'; else if(code <= 67) emoji = '🌧️'; else emoji = '☁️';
+                        document.getElementById('txt-explicacion').innerHTML = `${document.getElementById('txt-explicacion').innerHTML}<br><span class="inline-block mt-2 bg-orange-100 text-orange-800 px-2 py-1 rounded shadow-sm text-[11px]"><i class="fa-solid fa-cloud-sun mr-1"></i> <b>Clima al llegar:</b> ${emoji} ${temp}°C</span>`;
+                    }).catch(e => console.log("Error clima"));
+
+                document.getElementById('info-ruta').classList.remove('hidden');
+                
+                // Mostrar opción de GPS en vivo
+                btnIniciarNav.classList.remove('hidden');
+                return true;
+            }
+            alert("Error: " + data.mensaje);
+            return false;
+        } catch (err) {
+            alert("Error de conexión con el servidor local.");
+            return false;
+        } finally {
+            document.getElementById('loading').classList.add('hidden');
+            btnBuscar.classList.remove('hidden');
+            actualizarIndicadorClic();
+        }
+    }
+
+    btnBuscar.addEventListener('click', trazarRuta);
+
+    // SISTEMA DE NAVEGACIÓN GPS EN TIEMPO REAL
+    btnIniciarNav.addEventListener('click', iniciarNavegacion);
+    btnDetenerNav.addEventListener('click', detenerNavegacion);
+
+    function iniciarNavegacion() {
+        if (!navigator.geolocation) {
+            alert("Tu navegador no soporta GPS.");
+            return;
+        }
+
+        // Obtener ubicacion inicial para trazar desde ahi y no desde el click viejo
+        btnIniciarNav.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Conectando...';
+        btnIniciarNav.disabled = true;
+
+        navigator.geolocation.getCurrentPosition(
+            async (pos) => {
+                const latlng = L.latLng(pos.coords.latitude, pos.coords.longitude);
+                
+                geocoder.geocode({ location: latlng }, async (results, status) => {
+                    let direccionStr = `${latlng.lat.toFixed(5)}, ${latlng.lng.toFixed(5)}`;
+                    if (status === "OK" && results[0]) direccionStr = results[0].formatted_address;
+
+                    if (markerOrigen) map.removeLayer(markerOrigen);
+                    markerOrigen = L.marker(latlng, { icon: L.divIcon({className: 'bg-blue-600 w-4 h-4 rounded-full border-2 border-white shadow-md'}) }).addTo(map);
+                    
+                    // Colocar nombre real, para evitar bug de la base de datos
+                    inputOrigen.value = direccionStr;
+                    
+                    await trazarRuta();
+
+                    navActiva = true;
+                    btnIniciarNav.classList.add('hidden');
+                    btnIniciarNav.innerHTML = '<i class="fa-solid fa-location-arrow"></i> Iniciar GPS';
+                    btnIniciarNav.disabled = false;
+                    btnDetenerNav.classList.remove('hidden');
+
+                    const iconUsuario = L.divIcon({
+                        className: 'custom-user-marker',
+                        html: '<div class="pulsing-arrow"><i class="fa-solid fa-location-arrow"></i></div>',
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+
+                    if (markerUsuario) map.removeLayer(markerUsuario);
+                    markerUsuario = L.marker(latlng, {icon: iconUsuario, zIndexOffset: 1000}).addTo(map);
+                    map.setZoom(18);
+
+                    watchId = navigator.geolocation.watchPosition(
+                        (wpos) => {
+                            actualizarPosicionGPS(wpos);
+                        },
+                        (error) => {
+                            console.warn("GPS Navegación error:", error);
+                        },
+                        { enableHighAccuracy: true, maximumAge: 2000, timeout: 5000 }
+                    );
+                });
+            },
+            (error) => {
+                alert("No se pudo obtener tu ubicación actual. Asegúrate de dar permisos.");
+                btnIniciarNav.innerHTML = '<i class="fa-solid fa-location-arrow"></i> Iniciar GPS';
+                btnIniciarNav.disabled = false;
+            },
+            { enableHighAccuracy: true, timeout: 15000 }
+        );
+    }
+
+    function actualizarPosicionGPS(pos) {
+        const latlng = L.latLng(pos.coords.latitude, pos.coords.longitude);
+        const velocidad_ms = pos.coords.speed || 0;
+        const velocidad_kmh = (velocidad_ms * 3.6).toFixed(1);
+
+        if (markerUsuario) markerUsuario.setLatLng(latlng);
+        map.panTo(latlng);
+
+        document.getElementById('txt-velocidad').innerText = velocidad_kmh;
+
+        // Comprobar si nos hemos desviado más de 50m
+        if (polylineRuta && !recalculando) {
+            const dist = distanciaPuntoALinea(latlng, polylineRuta);
+            
+            if (dist > 50) { 
+                recalculando = true;
+                markerOrigen.setLatLng(latlng);
+                
+                geocoder.geocode({ location: latlng }, (results, status) => {
+                    if (status === "OK" && results[0]) inputOrigen.value = results[0].formatted_address;
+                    else inputOrigen.value = `${latlng.lat.toFixed(5)}, ${latlng.lng.toFixed(5)}`;
+                    
+                    trazarRuta().then(() => { recalculando = false; }).catch(() => { recalculando = false; });
+                });
+            } else {
+                // Efecto "Pac-Man": Cortar la linea para que no quede estática desde el origen
+                let pts = polylineRuta.getLatLngs();
+                if (pts.length > 1) {
+                    let minDist = Infinity;
+                    let closestIndex = 0;
+                    for(let i=0; i<pts.length; i++){
+                        let d = map.distance(latlng, pts[i]);
+                        if(d < minDist){ minDist = d; closestIndex = i; }
+                    }
+                    
+                    // Solo recorta si ya pasamos al menos el primer punto de la polyline original
+                    if (closestIndex > 0) {
+                        let newPts = pts.slice(closestIndex);
+                        newPts.unshift(latlng); // Anclar la linea al GPS actual
+                        polylineRuta.setLatLngs(newPts);
+                    } else {
+                        pts[0] = latlng; // Mantener la conexión al origen visual
+                        polylineRuta.setLatLngs(pts);
+                    }
+                }
+            }
+        }
+    }
+
+    function detenerNavegacion() {
+        navActiva = false;
+        if (watchId) {
+            navigator.geolocation.clearWatch(watchId);
+            watchId = null;
+        }
+        if (markerUsuario) {
+            map.removeLayer(markerUsuario);
+            markerUsuario = null;
+        }
+        btnIniciarNav.classList.remove('hidden');
+        btnDetenerNav.classList.add('hidden');
+    }
+
+    function distanciaPuntoALinea(latlng, polyline) {
+        let minDist = Infinity;
+        const pts = polyline.getLatLngs();
+        for (let i = 0; i < pts.length - 1; i++) {
+            const d = distanciaPuntoASegmento(latlng, pts[i], pts[i+1]);
+            if (d < minDist) minDist = d;
+        }
+        return minDist;
+    }
+
+    function distanciaPuntoASegmento(p, p1, p2) {
+        const x = p.lat, y = p.lng;
+        const x1 = p1.lat, y1 = p1.lng;
+        const x2 = p2.lat, y2 = p2.lng;
+        
+        const A = x - x1, B = y - y1, C = x2 - x1, D = y2 - y1;
+        const dot = A * C + B * D;
+        const len_sq = C * C + D * D;
+        let param = -1;
+        if (len_sq != 0) param = dot / len_sq;
+        
+        let xx, yy;
+        if (param < 0) { xx = x1; yy = y1; }
+        else if (param > 1) { xx = x2; yy = y2; }
+        else { xx = x1 + param * C; yy = y1 + param * D; }
+        
+        return map.distance(p, L.latLng(xx, yy));
+    }
+
+    btnComparar.addEventListener('click', async () => {
+        if (!markerOrigen || !markerDestino) return;
+        btnComparar.disabled = true;
+        
+        try {
+            const response = await fetch('/comparar_dijkstra', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    origen: markerOrigen.getLatLng(),
+                    destino: markerDestino.getLatLng()
+                })
+            });
+            const data = await response.json();
+            if (data.status === 'success') {
+                if (polylineDijkstra) map.removeLayer(polylineDijkstra);
+                
+                // Línea Lisa y Negra sin guiones según requerimiento
+                polylineDijkstra = L.polyline(data.ruta, { color: '#000000', weight: 5, opacity: 0.9 }).addTo(map);
+                
+                const txtExp = document.getElementById('txt-explicacion');
+                const nodoContenedorComp = document.getElementById('comp-badge-box');
+                if (nodoContenedorComp) nodoContenedorComp.remove();
+                
+                txtExp.innerHTML += `
+                    <div id="comp-badge-box" class="mt-2 bg-orange-50 text-orange-900 p-2.5 rounded-lg border border-orange-200 text-[11px]">
+                        <i class="fa-solid fa-calculator text-orange-600 mr-1"></i> 
+                        <b>Dijkstra Local con Tráfico Variable:</b> ${data.tiempo} min (${data.distancia} km).<br>
+                        <span class="text-slate-500 font-normal">${data.explicacion}</span>
+                    </div>`;
+                
+                btnLimpiarComparar.classList.remove('hidden');
+            } else {
+                alert("Error en Dijkstra local: " + data.mensaje);
+            }
+        } catch (e) {
+            alert("Error al procesar la ruta comparativa local.");
+        } finally {
+            btnComparar.disabled = false;
+        }
+    });
+
+    btnLimpiarComparar.addEventListener('click', () => {
+        if (polylineDijkstra) {
+            map.removeLayer(polylineDijkstra);
+            polylineDijkstra = null;
+        }
+        const nodoContenedorComp = document.getElementById('comp-badge-box');
+        if (nodoContenedorComp) nodoContenedorComp.remove();
+        btnLimpiarComparar.classList.add('hidden');
+    });
+</script>
+
+<div id="modalResena" class="fixed top-0 -right-full w-96 h-full bg-white shadow-2xl z-[10000] transition-all duration-300 flex flex-col">
+    <div class="p-6 bg-blue-600 text-white flex justify-between items-start gap-4 shadow-md">
+        <div>
+            <h3 class="text-xl font-bold">Detalle del Lugar</h3>
+            <p id="modalLugarTipo" class="text-sm text-blue-200">Foto, calificaciones y reseñas</p>
+        </div>
+        <button onclick="cerrarModalResena()" class="text-white hover:text-gray-200 text-2xl transition"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="p-6 flex-1 overflow-y-auto bg-slate-50 space-y-5">
+        <div class="rounded-3xl overflow-hidden bg-white shadow-sm border border-gray-200">
+            <img id="modalFotoLugar" class="w-full h-44 object-cover" src="https://via.placeholder.com/400x220?text=Lugar" alt="Imagen del lugar">
+            <div class="p-4">
+                <h4 id="nombreEventoResena" class="text-xl font-extrabold text-slate-900 mb-2"></h4>
+                <div class="flex flex-col gap-1 text-sm text-slate-600 mb-3">
+                    <span id="modalRatingGoogle"></span>
+                    <span id="modalRatingLocal" class="text-blue-600 font-semibold"></span>
+                    <span id="modalDireccionLugar" class="text-slate-500"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-3xl border border-gray-200 p-4 shadow-sm">
+            <div class="flex items-center justify-between mb-3">
+                <span class="text-sm font-bold text-slate-900">Reseñas recientes</span>
+                <span id="modalTotalResenas" class="text-xs text-slate-500"></span>
+            </div>
+            <div id="listaResenas" class="space-y-3 min-h-[90px]"></div>
+        </div>
+
+        <div class="bg-white rounded-3xl border border-gray-200 p-4 shadow-sm">
+            <p class="text-sm font-bold text-slate-900 mb-3">Agrega una reseña</p>
+            <label class="text-xs text-slate-600 block mb-1">Calificación</label>
+            <select id="calificacionResena" class="w-full border border-gray-200 rounded-2xl px-4 py-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="1">⭐ Pobre</option>
+                <option value="2">⭐⭐ Regular</option>
+                <option value="3" selected>⭐⭐⭐ Bien</option>
+                <option value="4">⭐⭐⭐⭐ Muy Bien</option>
+                <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+            </select>
+            <label class="text-xs text-slate-600 block mb-1">Comentario</label>
+            <textarea id="comentarioResena" rows="4" class="w-full border border-gray-200 rounded-2xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Comparte tu experiencia..."></textarea>
+            <button onclick="guardarResena()" class="mt-4 w-full bg-blue-600 text-white py-3 rounded-2xl font-bold hover:bg-blue-700 transition">Guardar reseña</button>
+        </div>
+    </div>
+</div>
+<script>
+    async function abrirModalResena(eventoNombre, eventoLat, eventoLon) {
+        modalEventoSeleccionado = { nombre: eventoNombre, lat: eventoLat, lng: eventoLon };
+        
+        if (currentPopupMarker) {
+            try { currentPopupMarker.closePopup(); } catch (e) {}
+            currentPopupMarker = null;
+        }
+        
+        document.getElementById('modalResena').style.right = '0';
+        document.getElementById('nombreEventoResena').innerText = eventoNombre;
+        document.getElementById('modalDireccionLugar').innerText = `Coordenadas: ${eventoLat.toFixed(5)}, ${eventoLon.toFixed(5)}`;
+        document.getElementById('calificacionResena').value = 3;
+        document.getElementById('comentarioResena').value = '';
+        document.getElementById('modalFotoLugar').src = 'https://via.placeholder.com/400x220?text=Lugar';
+        document.getElementById('modalRatingGoogle').innerText = '';
+        document.getElementById('modalRatingLocal').innerText = '';
+        document.getElementById('modalTotalResenas').innerText = '';
+
+        const details = await cargarInfoLugar({ lat: eventoLat, lng: eventoLon }, eventoNombre);
+        document.getElementById('modalFotoLugar').src = details.photo || 'https://via.placeholder.com/400x220?text=Lugar';
+        document.getElementById('modalRatingGoogle').innerText = details.googleRating ? `Google: ⭐ ${details.googleRating}` : 'Google: sin nota';
+        if (details.address) document.getElementById('modalDireccionLugar').innerText = details.address;
+
+        const res = await fetch('/api/ver_resenas/' + encodeURIComponent(eventoNombre));
+        const json = await res.json();
+        const contenedor = document.getElementById('listaResenas');
+        if (json.status === 'success' && json.data.length > 0) {
+            contenedor.innerHTML = json.data.map(r => `
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-3 shadow-sm">
+                    <div class="text-sm text-amber-500 font-bold mb-1">⭐ ${r.calificacion}/5</div>
+                    <div class="text-sm text-slate-700">${r.comentario || 'Sin comentario'}</div>
+                </div>
+            `).join('');
+            const promedio = json.data.reduce((sum, r) => sum + Number(r.calificacion), 0) / json.data.length;
+            document.getElementById('modalTotalResenas').innerText = `${json.data.length} reseña(s)`;
+            document.getElementById('modalRatingLocal').innerText = `Local: ⭐ ${promedio.toFixed(1)}`;
+        } else {
+            contenedor.innerHTML = '<p class="text-sm text-slate-500 italic">Sé el primero en opinar sobre este lugar.</p>';
+        }
+    }
+
+    function cerrarModalResena() { document.getElementById('modalResena').style.right = '-100%'; }
+
+    async function guardarResena() {
+        const calificacion = parseInt(document.getElementById('calificacionResena').value, 10);
+        const comentario = document.getElementById('comentarioResena').value;
+        const nombreEvento = document.getElementById('nombreEventoResena').innerText;
+
+        try {
+            const response = await fetch('/api/agregar_resena', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ evento_nombre: nombreEvento, calificacion, comentario })
+            });
+            const data = await response.json();
+            if (data.status === 'success') {
+                alert('✅ Reseña guardada.');
+                abrirModalResena(modalEventoSeleccionado.nombre, modalEventoSeleccionado.lat, modalEventoSeleccionado.lng);
+            } else {
+                alert('Error: ' + data.mensaje);
+            }
+        } catch (err) {
+            alert('Error guardando reseña.');
+        }
+    }
+</script>
+</body>
+</html>

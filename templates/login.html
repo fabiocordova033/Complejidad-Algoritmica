@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GeoRuta Pro | Inicio de Sesión</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    body{
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top left, #2563eb 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #0f172a 0%, transparent 35%),
+        #020617;
+    }
+
+    .glass{
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow:
+        0 8px 32px rgba(0,0,0,0.35),
+        inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .input-style{
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: white;
+    }
+
+    .input-style::placeholder{
+      color: rgba(255,255,255,0.5);
+    }
+
+    .input-style:focus{
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+    }
+  </style>
+</head>
+
+<body class="w-screen h-screen flex items-center justify-center font-sans">
+
+  <!-- Fondo decorativo -->
+  <div class="absolute w-[500px] h-[500px] bg-blue-500/20 blur-3xl rounded-full top-[-120px] left-[-120px]"></div>
+  <div class="absolute w-[400px] h-[400px] bg-cyan-400/10 blur-3xl rounded-full bottom-[-100px] right-[-100px]"></div>
+
+  <!-- Card Login -->
+  <div class="glass relative z-10 w-[420px] rounded-3xl p-8 text-white">
+
+    <!-- Logo -->
+    <div class="flex flex-col items-center mb-8">
+      <div class="w-20 h-20 rounded-2xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/30">
+        <i class="fa-solid fa-earth-americas text-4xl"></i>
+      </div>
+
+      <h1 class="text-3xl font-black mt-5 tracking-tight">
+        GeoRuta <span class="text-blue-400">Pro</span>
+      </h1>
+
+      <p class="text-sm text-slate-300 mt-2">
+        Plataforma Inteligente de Navegación
+      </p>
+    </div>
+
+    <!-- Formulario -->
+    <form id="loginForm" class="space-y-5">
+
+      <div>
+        <label class="text-sm text-slate-300 font-semibold mb-2 block">
+          Usuario
+        </label>
+
+        <div class="relative">
+          <i class="fa-solid fa-user absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+
+          <input
+            type="text"
+            id="usuario"
+            placeholder="Ingrese su usuario"
+            class="input-style w-full rounded-2xl py-4 pl-12 pr-4 transition"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label class="text-sm text-slate-300 font-semibold mb-2 block">
+          Contraseña
+        </label>
+
+        <div class="relative">
+          <i class="fa-solid fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+
+          <input
+            type="password"
+            id="password"
+            placeholder="Ingrese su contraseña"
+            class="input-style w-full rounded-2xl py-4 pl-12 pr-4 transition"
+          />
+        </div>
+      </div>
+
+      <!-- Botón -->
+      <button
+        type="submit"
+        class="w-full bg-blue-600 hover:bg-blue-700 transition-all rounded-2xl py-4 font-bold text-lg shadow-lg shadow-blue-500/20 mt-2"
+      >
+        <i class="fa-solid fa-right-to-bracket mr-2"></i>
+        Ingresar
+      </button>
+
+    </form>
+
+    <!-- Mensaje -->
+    <div
+      id="mensaje"
+      class="hidden mt-5 text-center text-sm font-semibold rounded-xl py-3"
+    ></div>
+
+    <!-- Usuarios demo -->
+    <div class="mt-8 border-t border-white/10 pt-5 text-xs text-slate-400 space-y-2">
+
+      <p class="font-bold text-slate-300">Usuarios precargados:</p>
+
+      <div class="bg-white/5 rounded-xl p-3">
+        👨‍💼 Admin:
+        <span class="text-blue-400">admin</span>
+        /
+        <span class="text-blue-400">1234</span>
+      </div>
+
+      <div class="bg-white/5 rounded-xl p-3">
+        🗺 Usuario:
+        <span class="text-blue-400">usuario</span>
+        /
+        <span class="text-blue-400">1234</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    const usuarios = [
+      {
+        usuario: "admin",
+        password: "1234",
+        destino: "admin.html"
+      },
+      {
+        usuario: "usuario",
+        password: "1234",
+        destino: "index.html"
+      }
+    ];
+
+    const form = document.getElementById("loginForm");
+
+    form.addEventListener("submit", function(e){
+
+      e.preventDefault();
+
+      const usuario = document.getElementById("usuario").value;
+      const password = document.getElementById("password").value;
+
+      const mensaje = document.getElementById("mensaje");
+
+      const encontrado = usuarios.find(u =>
+        u.usuario === usuario &&
+        u.password === password
+      );
+
+      if(encontrado){
+
+        mensaje.classList.remove("hidden");
+        mensaje.className =
+          "mt-5 text-center text-sm font-semibold rounded-xl py-3 bg-green-500/20 text-green-300 border border-green-500/20";
+
+        mensaje.innerHTML =
+          '<i class="fa-solid fa-circle-check mr-1"></i> Acceso correcto...';
+
+        setTimeout(() => {
+          window.location.href = encontrado.destino;
+        }, 1200);
+
+      }else{
+
+        mensaje.classList.remove("hidden");
+
+        mensaje.className =
+          "mt-5 text-center text-sm font-semibold rounded-xl py-3 bg-red-500/20 text-red-300 border border-red-500/20";
+
+        mensaje.innerHTML =
+          '<i class="fa-solid fa-triangle-exclamation mr-1"></i> Usuario o contraseña incorrectos';
+
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>

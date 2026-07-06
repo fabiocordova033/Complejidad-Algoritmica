@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GeoRuta Pro | Panel Administrador</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    body{
+      background:
+        radial-gradient(circle at top left, #2563eb 0%, transparent 30%),
+        radial-gradient(circle at bottom right, #0f172a 0%, transparent 30%),
+        #020617;
+    }
+
+    .glass{
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow:
+        0 8px 32px rgba(0,0,0,0.35),
+        inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+
+    .input-style{
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: white;
+    }
+
+    .input-style::placeholder{
+      color: rgba(255,255,255,0.4);
+    }
+
+    .input-style:focus{
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen text-white font-sans">
+
+  <!-- Fondo -->
+  <div class="absolute w-[500px] h-[500px] bg-blue-500/10 blur-3xl rounded-full top-[-150px] left-[-150px]"></div>
+  <div class="absolute w-[400px] h-[400px] bg-cyan-400/10 blur-3xl rounded-full bottom-[-120px] right-[-120px]"></div>
+
+  <!-- Navbar -->
+  <nav class="relative z-10 flex justify-between items-center px-8 py-6">
+
+    <div class="flex items-center gap-4">
+      <div class="w-14 h-14 rounded-2xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
+        <i class="fa-solid fa-bus text-2xl"></i>
+      </div>
+
+      <div>
+        <h1 class="text-2xl font-black">
+          GeoRuta <span class="text-blue-400">Admin</span>
+        </h1>
+
+        <p class="text-sm text-slate-400">
+          Panel de empresas de entregas
+        </p>
+      </div>
+    </div>
+
+    <button
+      onclick="window.location.href='login.html'"
+      class="glass px-5 py-3 rounded-2xl hover:bg-white/10 transition"
+    >
+      <i class="fa-solid fa-right-from-bracket mr-2"></i>
+      Cerrar sesión
+    </button>
+
+  </nav>
+
+  <!-- Contenido -->
+  <main class="relative z-10 px-8 pb-10">
+
+    <!-- Estadísticas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
+
+      <div class="glass rounded-3xl p-6">
+        <p class="text-slate-400 text-sm">Empresas registradas</p>
+        <h2 id="totalEmpresas" class="text-4xl font-black mt-2 text-blue-400">
+          3
+        </h2>
+      </div>
+
+      <div class="glass rounded-3xl p-6">
+        <p class="text-slate-400 text-sm">Unidades totales</p>
+        <h2 id="totalUnidades" class="text-4xl font-black mt-2 text-cyan-400">
+          148
+        </h2>
+      </div>
+
+      <div class="glass rounded-3xl p-6">
+        <p class="text-slate-400 text-sm">Sistema activo</p>
+        <h2 class="text-4xl font-black mt-2 text-green-400">
+          ONLINE
+        </h2>
+      </div>
+
+    </div>
+
+    <!-- Tabla y formulario -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <!-- Tabla -->
+      <div class="lg:col-span-2 glass rounded-3xl p-6">
+
+        <div class="flex justify-between items-center mb-6">
+          <div>
+            <h2 class="text-2xl font-black">
+              Empresas de Entregas
+            </h2>
+
+            <p class="text-slate-400 text-sm mt-1">
+              Empresas registradas en el sistema
+            </p>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto">
+
+          <table class="w-full">
+
+            <thead>
+              <tr class="text-left text-slate-400 border-b border-white/10">
+                <th class="pb-4">Empresa</th>
+                <th class="pb-4">Unidades</th>
+                <th class="pb-4">Fecha Registro</th>
+                <th class="pb-4">Estado</th>
+              </tr>
+            </thead>
+
+            <tbody id="tablaEmpresas" class="text-sm">
+
+              <tr class="border-b border-white/5">
+                <td class="py-5 font-semibold">DHL Express</td>
+                <td>54</td>
+                <td>12/01/2025</td>
+                <td>
+                  <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-xs">
+                    Activo
+                  </span>
+                </td>
+              </tr>
+
+              <tr class="border-b border-white/5">
+                <td class="py-5 font-semibold">FedEx</td>
+                <td>37</td>
+                <td>08/11/2024</td>
+                <td>
+                  <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-xs">
+                    Activo
+                  </span>
+                </td>
+              </tr>
+
+              <tr class="border-b border-white/5">
+                <td class="py-5 font-semibold">Ups</td>
+                <td>57</td>
+                <td>20/03/2026</td>
+                <td>
+                  <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-xs">
+                    Activo
+                  </span>
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+
+      <!-- Formulario -->
+      <div class="glass rounded-3xl p-6 h-fit">
+
+        <h2 class="text-2xl font-black mb-1">
+          Agregar Empresa
+        </h2>
+
+        <p class="text-sm text-slate-400 mb-6">
+          Registrar nueva empresa de transporte
+        </p>
+
+        <form id="formEmpresa" class="space-y-5">
+
+          <div>
+            <label class="text-sm font-semibold text-slate-300 block mb-2">
+              Nombre de empresa
+            </label>
+
+            <input
+              type="text"
+              id="nombreEmpresa"
+              placeholder="Ingrese nombre"
+              class="input-style w-full rounded-2xl py-4 px-4"
+            />
+          </div>
+
+          <div>
+            <label class="text-sm font-semibold text-slate-300 block mb-2">
+              Cantidad de unidades
+            </label>
+
+            <input
+              type="number"
+              id="unidadesEmpresa"
+              placeholder="Ejemplo: 45"
+              class="input-style w-full rounded-2xl py-4 px-4"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-blue-600 hover:bg-blue-700 transition rounded-2xl py-4 font-bold text-lg shadow-lg shadow-blue-500/20"
+          >
+            <i class="fa-solid fa-plus mr-2"></i>
+            Agregar Empresa
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <!-- Sección: Predicción de Demanda (ML) -->
+    <div class="mt-12">
+      <h2 class="text-3xl font-black mb-6 text-center">
+        <i class="fa-solid fa-brain mr-2 text-blue-400"></i>
+        Predicción de Demanda con IA
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+        <!-- Formulario -->
+        <div class="glass rounded-3xl p-8">
+          <h3 class="text-xl font-bold mb-6">Ingrese parámetros</h3>
+
+          <form id="formPrediccion" class="space-y-5">
+
+            <div>
+              <label class="text-sm font-semibold text-slate-300 block mb-2">
+                🕐 Hora del Día (0-23)
+              </label>
+              <input
+                type="number"
+                id="horaPrediccion"
+                min="0"
+                max="23"
+                value="12"
+                class="input-style w-full rounded-2xl py-3 px-4"
+              />
+            </div>
+
+            <div>
+              <label class="text-sm font-semibold text-slate-300 block mb-2">
+                📅 Día de la Semana (0=Lunes, 6=Domingo)
+              </label>
+              <select id="diaPrediccion" class="input-style w-full rounded-2xl py-3 px-4">
+                <option value="0">Lunes</option>
+                <option value="1">Martes</option>
+                <option value="2">Miércoles</option>
+                <option value="3">Jueves</option>
+                <option value="4">Viernes</option>
+                <option value="5">Sábado</option>
+                <option value="6">Domingo</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="text-sm font-semibold text-slate-300 block mb-2">
+                🌧️ ¿Lluvia?
+              </label>
+              <select id="lluviaPrediccion" class="input-style w-full rounded-2xl py-3 px-4">
+                <option value="0">Sin lluvia</option>
+                <option value="1">Con lluvia</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="text-sm font-semibold text-slate-300 block mb-2">
+                🌡️ Temperatura (°C)
+              </label>
+              <input
+                type="number"
+                id="tempPrediccion"
+                min="15"
+                max="32"
+                value="25"
+                class="input-style w-full rounded-2xl py-3 px-4"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 transition rounded-2xl py-4 font-bold text-lg shadow-lg shadow-blue-500/20"
+            >
+              <i class="fa-solid fa-wand-magic-sparkles mr-2"></i>
+              Predecir Demanda
+            </button>
+
+          </form>
+        </div>
+
+        <!-- Resultado -->
+        <div id="resultadoPrediccion" class="glass rounded-3xl p-8 hidden">
+          <h3 class="text-xl font-bold mb-6">📊 Resultado de Predicción</h3>
+
+          <div class="space-y-6">
+            <div>
+              <p class="text-slate-400 text-sm">Demanda Predicha</p>
+              <p id="demandaValor" class="text-5xl font-black text-blue-400">-- %</p>
+            </div>
+
+            <div>
+              <p class="text-slate-400 text-sm">Categoría</p>
+              <p id="categoriaValor" class="text-2xl font-bold text-cyan-300">--</p>
+            </div>
+
+            <div class="bg-white/10 rounded-2xl p-4 border border-white/10">
+              <p class="text-slate-400 text-sm mb-2">💡 Recomendación</p>
+              <p id="sugerenciaValor" class="text-lg font-semibold text-yellow-300">--</p>
+            </div>
+
+            <div>
+              <p class="text-slate-400 text-sm">Multiplicador de Tarifa</p>
+              <p id="multiplicadorValor" class="text-3xl font-black text-green-400">1.0x</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+
+    const form = document.getElementById("formEmpresa");
+    const tabla = document.getElementById("tablaEmpresas");
+
+    let totalEmpresas = 3;
+    let totalUnidades = 148;
+
+    form.addEventListener("submit", function(e){
+
+      e.preventDefault();
+
+      const nombre = document.getElementById("nombreEmpresa").value;
+      const unidades = parseInt(document.getElementById("unidadesEmpresa").value);
+
+      if(nombre === "" || !unidades){
+        alert("Complete todos los campos");
+        return;
+      }
+
+      const fecha = new Date().toLocaleDateString();
+
+      tabla.innerHTML += `
+        <tr class="border-b border-white/5">
+          <td class="py-5 font-semibold">${nombre}</td>
+          <td>${unidades}</td>
+          <td>${fecha}</td>
+          <td>
+            <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-xs">
+              Activo
+            </span>
+          </td>
+        </tr>
+      `;
+
+      totalEmpresas++;
+      totalUnidades += unidades;
+
+      document.getElementById("totalEmpresas").innerText = totalEmpresas;
+      document.getElementById("totalUnidades").innerText = totalUnidades;
+
+      form.reset();
+
+    });
+
+    // =============================================
+    // Machine Learning: Predicción de Demanda
+    // =============================================
+    const formPrediccion = document.getElementById("formPrediccion");
+    const resultadoDiv = document.getElementById("resultadoPrediccion");
+
+    formPrediccion.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const hora = parseInt(document.getElementById("horaPrediccion").value);
+      const dia = parseInt(document.getElementById("diaPrediccion").value);
+      const lluvia = parseInt(document.getElementById("lluviaPrediccion").value);
+      const temperatura = parseInt(document.getElementById("tempPrediccion").value);
+
+      try {
+        const response = await fetch('/api/prediccion_demanda', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            hora: hora,
+            dia: dia,
+            lluvia: lluvia,
+            temperatura: temperatura
+          })
+        });
+
+        const data = await response.json();
+
+        if (data.status === 'success') {
+          // Mostrar resultado
+          resultadoDiv.classList.remove('hidden');
+
+          document.getElementById("demandaValor").innerText = 
+            `${data.demanda_predicha.toFixed(1)} %`;
+
+          document.getElementById("categoriaValor").innerText = 
+            data.categoria;
+
+          document.getElementById("sugerenciaValor").innerText = 
+            data.sugerencia;
+
+          document.getElementById("multiplicadorValor").innerText = 
+            `${data.multiplicador_tarifa.toFixed(2)}x`;
+
+        } else {
+          alert("Error: " + data.mensaje);
+          resultadoDiv.classList.add('hidden');
+        }
+
+      } catch (error) {
+        console.error("Error:", error);
+        alert("Error de conexión con el servidor");
+        resultadoDiv.classList.add('hidden');
+      }
+    });
+
+  </script>
+
+</body>
+</html>
